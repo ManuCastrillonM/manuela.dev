@@ -1,0 +1,61 @@
+<div id="parallax">
+
+</div>
+
+<div id="contact" class="fondo-rosado-claro">
+    <div class="wow fadeInDown" data-wow-duration="2s">
+        <div class="center blanco">
+            <h1 class="fuente-principal no-margin"><b>Contact me</b></h1>
+            <h4>I wanna know more about you</h4>
+        </div>
+        <!-- EMAIL -->
+        <div class="row">
+            <form class="col m12 l8 offset-l2">
+                <div class="row">
+                    <div class="input-field col m12 l6">
+                        <input id="name" type="text" class="validate" ng-model="$ctrl.mensaje.nombre" ng-model-options="{ updateOn: 'blur' }" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field col m12 l6">
+                        <input id="email" type="email" class="validate" ng-model="$ctrl.mensaje.correo" ng-model-options="{ updateOn: 'blur' }" required>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <!-- MESSAGE -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea-message" class="materialize-textarea" class="validate" ng-model="$ctrl.mensaje.mensaje" ng-model-options="{ updateOn: 'blur' }" required></textarea>
+                        <label for="textarea-message">Message</label>
+                    </div>
+                    <a type="submit" class="waves-effect waves-light btn right" ng-click="$ctrl.enviarMensaje()">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>Send
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="row">
+        <ul class="center">
+            <li class="wow swing" data-wow-delay="0.5s">
+                <a href="http://www.github.com/manucastrillonm" target="_blank">
+                    <i class="fa fa-3x fa-github blanco waves-effect" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li class="wow swing" data-wow-delay="0.7s">
+                <a href="http://www.linkedin.com/in/manuelacastrillon" target="_blank">
+                    <i class="fa fa-3x fa-linkedin blanco waves-effect" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li class="wow swing" data-wow-delay="0.9s">
+                <a href="http://www.instagram.com/manucastrillonm" target="_blank">
+                    <i class="fa fa-3x fa-instagram blanco waves-effect" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>

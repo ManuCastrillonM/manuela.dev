@@ -1,0 +1,79 @@
+body {
+    font-family: $fuente-texto;
+}
+
+.verde-oscuro {
+    color: $verde-oscuro;
+}
+
+.verde-claro {
+    color: $verde-claro;
+}
+
+.rosado {
+    color: $rosado;
+}
+
+.rosado-claro {
+    color: $rosado-claro;
+}
+
+.rosado-oscuro {
+    color: $rosado-oscuro;
+}
+
+.gris {
+    color: $gris;
+}
+
+.blanco {
+    color: $blanco;
+}
+
+.fondo-verde-oscuro {
+    background-color: $verde-oscuro;
+}
+
+.fondo-verde-claro {
+    background-color: $verde-claro;
+}
+
+.fondo-rosado {
+    background-color: $rosado;
+}
+
+.fondo-rosado-claro {
+    background-color: $rosado-claro;
+}
+
+.fondo-rosado-oscuro {
+    background-color: $rosado-oscuro;
+}
+
+.fondo-gris {
+    background-color: $gris;
+}
+
+.fondo-blanco {
+    background-color: $blanco !important;
+}
+/*fuentes*/
+.fuente-principal {
+    font-family: $fuente-principal;
+}
+
+.fuente-texto {
+    font-family: $fuente-texto;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.text-bold{
+  font-weight: bold;
+}

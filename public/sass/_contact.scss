@@ -1,0 +1,27 @@
+#parallax {
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include background-image(linear-gradient(to right, rgba(0,142, 140, 0.4), rgba(0,142, 140, 0.4)),url('/public/app/common/contact/src/img/parallax-contacto.jpg'));
+}
+
+#contact {
+    padding: 3em;
+
+    form {
+        margin-top: 3em;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin: 1em;
+
+        i {
+            &:hover {
+                color: $rosado-oscuro;
+            }
+        }
+    }
+}
