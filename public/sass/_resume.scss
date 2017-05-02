@@ -1,6 +1,11 @@
 #resume {
-  padding-top: 3em;
-  
+    padding-top: 3em;
+    background-color: $blanco;
+
+    h1 {
+        font-size: 4em;
+    }
+
     .timeline {
         position: relative;
         overflow: auto;
@@ -12,14 +17,14 @@
             position: absolute;
             height: 100%;
             width: 5px;
-            background: $gris;
+            background: $color-secondary;
             left: 0;
         }
 
         .año {
-            background: $gris;
+            background: $color-secondary;
             font-family: $fuente-principal;
-            color: $verde-oscuro;
+            color: $color-darker;
             box-shadow: 2px 2px 4px #717070;
             font-weight: bold;
             max-width: 6em;
@@ -37,7 +42,7 @@
         }
 
         .evento {
-            background: $gris;
+            background: $color-secondary;
             padding: 1em;
             margin-bottom: 1em;
             position: relative;
@@ -45,7 +50,7 @@
 
             h5 {
                 font-family: $fuente-principal;
-                color: $verde-oscuro;
+                color: $color-darker;
             }
 
             p {
@@ -57,7 +62,7 @@
                 content: '';
                 width: 0;
                 height: 0;
-                border-top: 1em solid $gris;
+                border-top: 1em solid $color-secondary;
                 border-left: 1em solid transparent;
                 position: absolute;
                 left: -1em;
@@ -95,7 +100,7 @@
                 float: left;
 
                 &:before {
-                    border-top: 1em solid $gris;
+                    border-top: 1em solid $color-secondary;
                     border-right: 1em solid transparent;
                     right: -1em;
                     left: auto;

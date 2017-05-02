@@ -1,61 +1,59 @@
 body {
     font-family: $fuente-texto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.verde-oscuro {
-    color: $verde-oscuro;
+.color-primary {
+    color: $color-primary;
 }
 
-.verde-claro {
-    color: $verde-claro;
+.color-darker {
+    color: $color-darker;
 }
 
-.rosado {
-    color: $rosado;
+.color-lighter {
+    color: $color-lighter;
 }
 
-.rosado-claro {
-    color: $rosado-claro;
+.color-secondary {
+    color: $color-secondary;
 }
 
-.rosado-oscuro {
-    color: $rosado-oscuro;
-}
-
-.gris {
-    color: $gris;
+.color-accent{
+  color: $color-accent;
 }
 
 .blanco {
     color: $blanco;
 }
 
-.fondo-verde-oscuro {
-    background-color: $verde-oscuro;
+.fondo-color-primary {
+    background-color: $color-primary;
 }
 
-.fondo-verde-claro {
-    background-color: $verde-claro;
+.fondo-color-darker {
+    background-color: $color-darker;
 }
 
-.fondo-rosado {
-    background-color: $rosado;
+.fondo-color-lighter {
+    background-color: $color-lighter;
 }
 
-.fondo-rosado-claro {
-    background-color: $rosado-claro;
-}
-
-.fondo-rosado-oscuro {
-    background-color: $rosado-oscuro;
-}
-
-.fondo-gris {
-    background-color: $gris;
+.fondo-color-secondary {
+    background-color: $color-secondary;
 }
 
 .fondo-blanco {
-    background-color: $blanco !important;
+    background-color: $blanco;
+}
+
+.fondo-color-accent{
+  background-color: $color-accent !important;
 }
 /*fuentes*/
 .fuente-principal {
@@ -74,6 +72,6 @@ body {
     padding: 0 !important;
 }
 
-.text-bold{
-  font-weight: bold;
+.text-bold {
+    font-weight: bold;
 }

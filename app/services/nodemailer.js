@@ -11,8 +11,8 @@ console.log('Inicio CREAR CORREO');
     var options = {
         service: 'SendGrid',
         auth: {
-            api_user: 'myuser',
-            api_key: 'mypass'
+            api_user: 'MY_USER',
+            api_key: 'MY_KEY'
         }
     }
     var client = nodemailer.createTransport(sgTransport(options));
@@ -21,20 +21,10 @@ console.log('Inicio CREAR CORREO');
     var informacion = req.body;
     var myhtml = correo.correo(informacion.nombre,informacion.correo,informacion.mensaje)
     var informacion = req.body;
+    console.log("esta es la info del post-->" + JSON.stringify(informacion))
     var emailAdmin = {
         from: 'contacto@manucastrillonm.com',
-        to: 'mymail',
+        to: 'manu.cm43@gmail.com',
         subject: "Te dejaron un mensaje en manucastrillonm.com",
         html: myhtml
     }
-
-    //Email Admin
-    client.sendMail(emailAdmin).then(function(info) {
-
-    }).catch(function(err) {
-        console.log(err)
-    })
-
-    return res
-        .status(200).send("Todo Bello")
-}

@@ -8,9 +8,23 @@
 
 #contact {
     padding: 3em;
+    color: $blanco;
+
+    h1 {
+        font-size: 4em;
+    }
 
     form {
         margin-top: 3em;
+
+        input,
+        textarea {
+            border-bottom: 1px solid $blanco;
+        }
+
+        label {
+            color: $blanco;
+        }
     }
 
     li {
@@ -20,7 +34,7 @@
 
         i {
             &:hover {
-                color: $rosado-oscuro;
+                color: $color-accent;
             }
         }
     }

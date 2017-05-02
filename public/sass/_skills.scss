@@ -30,6 +30,11 @@
 #skills {
     min-height: 50vh;
     padding: 2em 1em;
+
+    h1{
+        font-size: 4em;
+    }
+
     @media screen and(max-width: 992px) {
         padding: 1em;
     }
@@ -78,7 +83,7 @@
         &:after {
             content: "";
             display: block;
-            background-color: $rosado-claro;
+            background-color: $blanco;
             box-shadow: 1px 2px 2px #4a4a4a;
             width: 50px;
             margin-bottom: 10px;
