@@ -1,1 +1,8 @@
-angular.module('common',['about','myfooter','home','navbar','projects','skills','contact','resume']);
+angular.module("common", [
+  "about",
+  "myfooter",
+  "home",
+  "skills",
+  "contact",
+  "resume"
+]);

@@ -1,44 +1,39 @@
-@include font-face("disney",font-files("/public/app/common/skills/src/font/waltographUI.ttf","/public/app/common/skills/src/font/waltographUI.otf"));
-
+@include font-face("disney", font-files("/public/app/common/skills/src/font/waltographUI.ttf", "/public/app/common/skills/src/font/waltographUI.otf"));
 #parallax2 {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: "disney";
-    @include background-image(linear-gradient(to right, rgba(253,174,173, 0.4), rgba(205,62,61, 0.4)),url('/public/app/common/skills/src/parallax.jpg'));
-
-    @media screen and(min-width: 993px){
-      padding: 3em 1em;
-      p{
-        font-size: 3em
-      }
+    @include background-image(linear-gradient(to right, rgba(253, 174, 173, 0.4), rgba(205, 62, 61, 0.4)), url('/public/app/common/skills/src/parallax.jpg'));
+    @media screen and(min-width: 993px) {
+        padding: 3em 1em;
+        p {
+            font-size: 3em
+        }
     }
-    @media screen and(max-width: 992px){
-      padding: 3em 5em;
-      p{
-      font-size: 2em
-      }
+    @media screen and(max-width: 992px) {
+        padding: 3em 5em;
+        p {
+            font-size: 2em
+        }
     }
-    @media screen and(max-width: 600px){
-      padding: 3em 3em;
-      p{
-      font-size: 1em
-      }
+    @media screen and(max-width: 600px) {
+        padding: 3em 3em;
+        p {
+            font-size: 1em
+        }
     }
 }
 
 #skills {
     min-height: 50vh;
     padding: 2em 1em;
-
-    h1{
+    h1 {
         font-size: 4em;
     }
-
     @media screen and(max-width: 992px) {
         padding: 1em;
     }
-
     dl {
         display: flex;
         flex-direction: column;
@@ -46,7 +41,6 @@
         position: relative;
         padding: 20px;
     }
-
     dt {
         text-align: center;
         font-size: 1em;
@@ -54,14 +48,13 @@
         font-weight: bold;
         margin-bottom: 2em;
     }
-
     .text {
         font-weight: 600;
         display: flex;
         align-items: center;
         height: 40px;
         width: 130px;
-        color: $blanco;
+        color: $color-accent;
         position: absolute;
         left: 0;
         justify-content: flex-end;
@@ -69,7 +62,6 @@
             width: 80px;
         }
     }
-
     .percentage {
         font-size: 0.8em;
         line-height: 1;
@@ -79,27 +71,17 @@
         @media screen and(max-width: 992px) {
             margin-left: 80px;
         }
-
         &:after {
             content: "";
             display: block;
             background-color: $blanco;
-            box-shadow: 1px 2px 2px #4a4a4a;
             width: 50px;
             margin-bottom: 10px;
             height: 90%;
             position: relative;
             top: 50%;
             transform: translateY(-50%);
-            transition: background-color 0.3s ease;
             cursor: pointer;
-        }
-
-        &:focus,
-        &:hover {
-            &:after {
-                background-color: #aaa;
-            }
         }
     }
     @for $i from 1 through 100 {

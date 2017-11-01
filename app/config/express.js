@@ -4,9 +4,11 @@ const path = require('path');
 const bodyparser = require('body-parser');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const compression = require('compression');
 const config =  require('./enviroment');
 
 module.exports = function(app) {
+    app.use(compression())
     app.use(bodyparser.json());
     app.use(helmet());
     app.use(morgan('dev'));

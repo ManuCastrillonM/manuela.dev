@@ -1,6 +1,6 @@
 function ContactService($http, $q) {
 
-    const route = "http://www.manucastrillonm.com/api/";
+    var route = "https://www.manucastrillonm.com/api/";
 
     return {
         enviarMensaje: function(mensaje) {
