@@ -1,0 +1,37 @@
+@mixin title-effect($bg-color, $border-color, $font-color, $shadow-color) {
+  color: $bg-color;
+  overflow: hidden;
+  position: relative;
+  text-shadow: -1px -1px 0 $border-color,
+    1px -1px 0 $border-color,
+    -1px 1px 0 $border-color,
+    1px 1px 0 $border-color;
+
+  &::after {
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-1px, 1px);
+    color: $font-color;
+    text-shadow: 3px 0 0 $shadow-color,
+    0 4px 0 $shadow-color,
+    4px 3px 0 $shadow-color;
+    mix-blend-mode:darken;
+  }
+}
+
+@mixin from($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @media (min-width: 375px) { @content; }
+  }
+  @else if $breakpoint == 'md' {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $breakpoint == 'lg' {
+    @media (min-width: 992px)  { @content; }
+  }
+  @else if $breakpoint == 'xl' {
+    @media (min-width: 1024px)  { @content; }
+  }
+}
