@@ -23,9 +23,10 @@ export default {
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
+@import '~styles/functions';
 
 .quote {
-  background: linear-gradient(rgba( $color-primary, 0.7),rgba($color-primary-dark, 0.7)),
+  background: linear-gradient(rgba(color('color-primary'), 0.7),rgba(color('color-primary-dark'), 0.7)),
               url('../assets/images/quote-photo.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -35,12 +36,12 @@ export default {
 
   &-text {
     font-size: 60px;
-    color: $white;
+    color: color('white');
   }
 
   &-author {
     font-style: italic;
-    color: $white;
+    color: color('white');
     font-size: $font-lg;
   }
 }

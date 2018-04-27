@@ -156,6 +156,7 @@ export default {
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
+@import '~styles/functions';
 
 .resume {
   &-timeline {
@@ -163,7 +164,7 @@ export default {
 
     &:before {
       content: '';
-      background: $color-secondary;
+      background: color('color-secondary');
       height: 100%;
       margin-left: 0;
       position: absolute;
@@ -181,9 +182,9 @@ export default {
     }
 
     &-year {
-      background-color: $color-secondary;
+      background-color: color('color-secondary');
       border-radius: 8px;
-      color: $white;
+      color: color('white');
       font-size: $font-xl;
       margin: 10px auto;
       padding: 5px 15px;
@@ -193,8 +194,8 @@ export default {
     }
 
     &-item {
-      background-color: $white;
-      border: 2px solid $color-accent;
+      background-color: color('white');
+      border: 2px solid color('color-accent');
       border-radius: 8px;
       margin: 20px;
       padding: 10px;
@@ -209,8 +210,8 @@ export default {
         width: 10px;
         height: 10px;
         transform: rotate(45deg);
-        border-color: $color-accent;
-        background-color: $white;
+        border-color: color('color-accent');
+        background-color: color('white');
         left: -7px;
         border-width: 0 0 2px 2px;
       }
@@ -240,7 +241,7 @@ export default {
       }
 
       &-title {
-        color: $color-accent;
+        color: color('color-accent');
         font-size: $font-lg;
         font-weight: 500;
         margin: 5px 0;

@@ -8,7 +8,7 @@
       >
         {{ title }}
       </h1>
-      <h2 class="color-secondary no-margin">I want to know more about you </h2>
+      <h2 class="no-margin">I want to know more about you </h2>
     </div>
     <div class="row">
       <div class="col-xs-offset-1 col-xs-10">
@@ -63,6 +63,7 @@ export default {
 
 <style lang="scss">
 @import '~styles/variables';
+@import '~styles/functions';
 
 .contact {
   &-icon {
@@ -74,7 +75,7 @@ export default {
 
     &-fa {
       path {
-        color: $color-accent;
+        color: color('color-accent');
       }
     }
   }

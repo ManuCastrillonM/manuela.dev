@@ -8,7 +8,7 @@ h1,
 h2,
 h3 {
   font-family: 'Shadows Into Light', cursive;
-  color: $color-primary;
+  color: color('color-secondary');
   text-align: center;
   width: 100%;
 }
@@ -35,7 +35,7 @@ section {
 
 a {
   text-decoration: none;
-  color: $color-secondary;
+  color: color('color-secondary');
 }
 
 .title-font {
@@ -46,20 +46,12 @@ a {
   margin: 0;
 }
 
-.white {
-  color: $white;
-}
-
-.color-secondary {
-  color: $color-secondary;
-}
-
 .no-margin {
   margin: 0;
 }
 
 .section-title {
-  @include title-effect($white, $color-primary-dark, $color-primary, $color-accent);
+  @include title-effect(color('white'), color('color-primary-dark'), color('color-primary'), color('color-accent'));
   font-size: 4rem;
   font-weight: 900;
   margin: 1rem auto;
@@ -69,12 +61,12 @@ a {
 
 .section {
   margin: 20px;
-  border: 2px solid $color-primary;
+  border: 2px solid color('color-primary');
   position: relative;
 
   &::after {
     content: '';
-    border: 1px solid $color-accent;
+    border: 1px solid color('color-accent');
     top: 0;
     left: 0;
     position: absolute;

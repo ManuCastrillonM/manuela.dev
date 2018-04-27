@@ -15,9 +15,10 @@
 
 <style lang="scss">
 @import '~styles/variables';
+@import '~styles/functions';
 
 .footer {
-  border-top: 4px solid $color-primary;
+  border-top: 4px solid color('color-primary');
   padding: 20px 0;
 }
 </style>

@@ -40,7 +40,11 @@
       </div>
 
       <div class="col-xs-12 col-sm-offset-1 col-sm-6 wow zoomIn">
-        <p>{{ bio }}</p>
+        <p class="about-bio">
+          I'm Software Engineering student at Universidad de Antioquia , Web Engineer at Huge, passionate coder & self proclaimed Emoji Expert. <i class="em em-sports_medal"></i><br>
+          I strongly believe we can build the world <i class="em em-earth_americas"></i> that we want and be the change that we want to see. <br>
+          <span class="about-span"><i class="em em-heartpulse"></i> My interests:</span> Diversity & Inclusion, Teaching & Learning, Pizza & Buñuelos.
+        </p>
       </div>
     </div>
   </section>
@@ -53,7 +57,6 @@ export default {
   data () {
     return {
       title: '<About me />',
-      bio: 'Quis Lorem sunt enim ipsum non. Irure fugiat qui excepteur culpa cillum tempor. Ipsum fugiat magna do laboris sunt laborum nulla exercitation consectetur officia voluptate. Ipsum ut ex magna sint qui laborum ea minim consequat non.'
     }
   },
   mounted () {
@@ -65,6 +68,7 @@ export default {
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
+@import '~styles/functions';
 
 .about-container {
   &-photo {
@@ -81,13 +85,30 @@ export default {
 
   &-info {
     .info-title {
-      color: $color-accent;
+      color: color('color-secondary');
       font-weight: bold;
     }
 
     .idented {
       word-break: break-word;
       margin-left: 20px;
+    }
+  }
+
+  .about {
+    &-bio {
+    line-height: 25px;
+    text-align: justify;
+
+      .em {
+        width: 1em;
+        height: 1em;
+      }
+    }
+
+    &-span {
+      color: color('color-secondary');
+      font-weight: 600;
     }
   }
 }

@@ -1,9 +1,11 @@
 // colors
-$color-primary: #FF575C;
-$color-primary-dark: #B01931;
-$color-secondary: #6F5CFF;
-$color-accent: #2777D3;
-$white: #FFFFFF;
+$colors: (
+  'color-primary': #FF575C,
+  'color-primary-dark': #B01931,
+  'color-secondary': #6F5CFF,
+  'color-accent': #2777D3,
+  'white': #FFFFFF
+);
 
 // font size
 $font-sm: 12px;

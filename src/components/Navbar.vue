@@ -20,6 +20,7 @@
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
+@import '~styles/functions';
 
 .nav {
   position: absolute;
@@ -47,7 +48,7 @@
     position: relative;
 
     a {
-      color: $white;
+      color: color('white');
       transition: color 0.2s;
     }
 
@@ -55,8 +56,8 @@
       content: '';
       width: 100%;
       height: 2px;
-      background: $color-primary;
-      border-bottom: 1px solid $color-accent;
+      background: color('color-primary');
+      border-bottom: 1px solid color('color-accent');
       position: absolute;
       bottom: 12px;
       left: 0;
@@ -66,11 +67,11 @@
 
     &:hover {
       a {
-        color: $color-primary;
+        color: color('color-primary');
       }
 
       &::after {
-        background: $white;
+        background: color('white');
         bottom: 40%;
         transform: rotate(0deg);
       }

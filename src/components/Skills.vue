@@ -18,7 +18,7 @@
             :key="index"
             :data-wow-delay="animationDelay(index)"
           >
-            <h3 class="skills-title color-secondary">{{ list.title }}</h3>
+            <h3 class="skills-title">{{ list.title }}</h3>
             <ul>
               <li
                 class="skills-item"

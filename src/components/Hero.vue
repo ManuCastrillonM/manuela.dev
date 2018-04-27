@@ -5,7 +5,7 @@
         <p class="header-container-text-content title-font"
           data-heading="Hello World! I'm Manuela Castrillón|"
         >
-          Hello World! I'm Manuela Castrillón<span class="header-blink">|</span>
+          Hello World! I'm Manuela Castrillón <span class="header-blink">|</span>
         </p>
       </div>
       <vue-particles
@@ -30,11 +30,12 @@
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
+@import '~styles/functions';
 
 .header {
 
   &-container {
-    background: linear-gradient($color-secondary, $color-accent);
+    background: linear-gradient(color('color-secondary'), color('color-accent'));
     height: 100vh;
     position: relative;
     padding: 50px;
@@ -43,7 +44,7 @@
       z-index: 100;
 
       &-content {
-        @include title-effect($white, $color-primary-dark, $white, $color-primary);
+        @include title-effect(color('white'), color('color-primary-dark'), color('white'), color('color-primary'));
         font-size: 2rem;
         font-weight: bold;
         overflow: hidden;
@@ -72,7 +73,7 @@
 
   &-blink {
     animation: blink 1s infinite;
-    color: $color-accent;
+    color: color('color-accent');
   }
 }
 
