@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav title-font">
     <ul class="row nav-list">
       <li class="nav-item">
         <a href="">About</a>
@@ -20,10 +20,8 @@
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
-@import '~styles/vendor';
 
 .nav {
-  @extend %title-font;
   position: absolute;
   z-index: 1000;
   width: 100%;

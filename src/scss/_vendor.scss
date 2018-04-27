@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #FFF;
   font-family: 'Muli', sans-serif;
   font-size: $font-md;
 }
@@ -7,7 +7,7 @@ body {
 h1,
 h2,
 h3 {
-  @extend %title-font;
+  font-family: 'Shadows Into Light', cursive;
   color: $color-primary;
   text-align: center;
   width: 100%;
@@ -38,7 +38,7 @@ a {
   color: $color-secondary;
 }
 
-%title-font {
+.title-font {
   font-family: 'Shadows Into Light', cursive;
 }
 

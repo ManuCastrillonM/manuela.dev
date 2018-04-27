@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section class="contact" aria-label="contact">
     <div class="row">
       <h1
         class="wow bounceInDown section-title"
@@ -19,11 +19,12 @@
             :key="index"
           >
           <a :href="item.link" target="_blank">
-            <font-awesome-icon
-              class="contact-icon-fa"
-              :icon="item.icon"
-              size="4x"
-            />
+            <i
+              class="fa fa-3x"
+              :class="item.icon"
+              aria-hidden="true"
+            >
+            </i>
           </a>
           </div>
         </div>
@@ -33,8 +34,6 @@
 </template>
 
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
-import { faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/fontawesome-free-brands'
 import WOW from 'wow.js/dist/wow.min'
 
 export default {
@@ -42,22 +41,19 @@ export default {
     return {
       title: '<Contact me />',
       social: [{
-        icon: faTwitter,
+        icon: 'fa-twitter',
         link: 'https://www.twitter.com/manucastrillonm'
       },{
-        icon: faInstagram,
+        icon: 'fa-instagram',
         link: 'https://www.instagram.com/manucastrillonm'
       },{
-        icon: faLinkedin,
+        icon: 'fa-linkedin',
         link: 'https://www.linkedin.com/in/manuelacastrillon'
       },{
-        icon: faGithub,
+        icon: 'fa-github',
         link: 'https://www.github.com/manucastrillonm'
       }]
     }
-  },
-  components: {
-    FontAwesomeIcon
   },
   mounted () {
     new WOW().init()

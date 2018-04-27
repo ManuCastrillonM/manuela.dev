@@ -1,5 +1,5 @@
 <template>
-  <section class="skills section">
+  <section class="skills section" aria-label="skills">
     <div class="row">
       <h1
         class="wow bounceInDown section-title"
@@ -18,7 +18,7 @@
             :key="index"
             :data-wow-delay="animationDelay(index)"
           >
-            <h3 class="skills-title">{{ list.title }}</h3>
+            <h3 class="skills-title color-secondary">{{ list.title }}</h3>
             <ul>
               <li
                 class="skills-item"
@@ -66,10 +66,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~styles/variables';
-@import '~styles/mixins';
-@import '~styles/vendor';
-
 .skills {
   &-item {
     font-size: 16px;

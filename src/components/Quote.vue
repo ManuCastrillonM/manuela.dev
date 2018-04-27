@@ -1,6 +1,6 @@
 <template>
-  <section class="quote row middle-xs center-xs">
-    <p class="no-margin quote-text col-xs-12">
+  <section class="quote row middle-xs center-xs" aria-label="quote">
+    <p class="no-margin quote-text title-font col-xs-12">
       {{ quote }}
     </p>
     <p class="quote-author col-xs-offset-8 col-xs-4">
@@ -23,7 +23,6 @@ export default {
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
-@import '~styles/vendor';
 
 .quote {
   background: linear-gradient(rgba( $color-primary, 0.7),rgba($color-primary-dark, 0.7)),
@@ -35,7 +34,6 @@ export default {
   padding: 30px 10px;
 
   &-text {
-    @extend %title-font;
     font-size: 60px;
     color: $white;
   }

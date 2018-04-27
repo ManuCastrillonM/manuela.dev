@@ -1,5 +1,5 @@
 <template>
-  <section class="about section">
+  <section class="about section" aria-label="about me">
     <div class="row wow bounceInDown">
       <h1
         class="section-title"
@@ -9,7 +9,7 @@
       </h1>
     </div>
     <div class="about-container row middle-xs">
-      <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-lg-offset-1 col-lg-3 about-container-group">
+      <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-lg-offset-1 col-lg-3 about-container-group wow zoomIn">
         <div class="row center-xs">
           <figure class="about-container-photo">
             <img src="../assets/images/about-photo.jpg" alt="profile photo">
@@ -39,8 +39,8 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-sm-offset-1 col-sm-6">
-        <p>Proident ullamco proident exercitation laborum adipisicing mollit adipisicing non et ea excepteur proident dolor. Tempor culpa ullamco adipisicing ex pariatur laborum et irure. Enim Lorem aliquip occaecat sunt enim et nulla cupidatat magna minim et pariatur id. Enim sint proident pariatur reprehenderit consequat qui consectetur est consectetur duis occaecat irure sunt. Enim consequat irure tempor irure ut anim exercitation est duis quis dolore. Consequat officia anim enim fugiat laboris veniam.</p>
+      <div class="col-xs-12 col-sm-offset-1 col-sm-6 wow zoomIn">
+        <p>{{ bio }}</p>
       </div>
     </div>
   </section>
@@ -52,7 +52,8 @@ import WOW from 'wow.js/dist/wow.min'
 export default {
   data () {
     return {
-      title: '<About me />'
+      title: '<About me />',
+      bio: 'Quis Lorem sunt enim ipsum non. Irure fugiat qui excepteur culpa cillum tempor. Ipsum fugiat magna do laboris sunt laborum nulla exercitation consectetur officia voluptate. Ipsum ut ex magna sint qui laborum ea minim consequat non.'
     }
   },
   mounted () {
@@ -66,7 +67,6 @@ export default {
 @import '~styles/mixins';
 
 .about-container {
-
   &-photo {
     width: 70%;
 

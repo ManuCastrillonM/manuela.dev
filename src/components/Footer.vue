@@ -5,31 +5,13 @@
     </div>
     <div class="col-xs-offset-2 col-xs-8 col-md-offset-0 col-md-4">
       You can find the source code of this page on
-      <font-awesome-icon
-        :icon="githubIcon"
-        size="1x"
-        class="contact-icon-fa"
-      />
-      <a href="https://www.github.com/manucastrillonm/manucastrillonm.co">GitHub</a>
+      <a href="https://www.github.com/manucastrillonm/manucastrillonm.co">
+      <i class="fa fa-github contact-icon-fa"></i>
+      GitHub
+      </a>
     </div>
   </footer>
 </template>
-
-<script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
-import { faGithub } from '@fortawesome/fontawesome-free-brands'
-
-export default {
-  components: {
-    FontAwesomeIcon
-  },
-  computed: {
-    githubIcon () {
-      return faGithub
-    }
-  }
-}
-</script>
 
 <style lang="scss">
 @import '~styles/variables';
@@ -37,6 +19,5 @@ export default {
 .footer {
   border-top: 4px solid $color-primary;
   padding: 20px 0;
-
 }
 </style>

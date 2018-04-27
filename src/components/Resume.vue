@@ -1,8 +1,8 @@
 <template>
-  <section class="resume">
+  <section class="resume" aria-label="resume">
     <div class="row wow bounceInDown">
       <h1
-        class="section-title"
+        class="section-title title-font"
         data-wow-duration="1s"
         :data-heading="title"
       >
@@ -17,7 +17,7 @@
           v-for="(listYear, index) in resume"
           :key="index"
         >
-          <h3 class="resume-timeline-year">{{ listYear.year }}</h3>
+          <h3 class="resume-timeline-year title-font">{{ listYear.year }}</h3>
           <ul class="row resume-timeline-list">
             <li
               class="resume-timeline-item wow zoomIn"
@@ -156,7 +156,6 @@ export default {
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
-@import '~styles/vendor';
 
 .resume {
   &-timeline {
@@ -182,7 +181,6 @@ export default {
     }
 
     &-year {
-      @extend %title-font;
       background-color: $color-secondary;
       border-radius: 8px;
       color: $white;
@@ -242,7 +240,6 @@ export default {
       }
 
       &-title {
-        @extend %title-font;
         color: $color-accent;
         font-size: $font-lg;
         font-weight: 500;

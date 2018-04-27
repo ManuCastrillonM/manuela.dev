@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header-container row center-xs middle-xs">
       <div class="header-container-text">
-        <p class="header-container-text-content"
+        <p class="header-container-text-content title-font"
           data-heading="Hello World! I'm Manuela Castrillón|"
         >
           Hello World! I'm Manuela Castrillón<span class="header-blink">|</span>
@@ -30,7 +30,6 @@
 <style lang="scss">
 @import '~styles/variables';
 @import '~styles/mixins';
-@import '~styles/vendor';
 
 .header {
 
@@ -45,7 +44,6 @@
 
       &-content {
         @include title-effect($white, $color-primary-dark, $white, $color-primary);
-        @extend %title-font;
         font-size: 2rem;
         font-weight: bold;
         overflow: hidden;
