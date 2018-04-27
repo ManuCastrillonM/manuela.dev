@@ -1,13 +1,25 @@
+@font-face {
+  font-family: shadows;
+  src: url('../assets/fonts/Shadows_Into_Light_Two/ShadowsIntoLightTwo-Regular.ttf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: muli;
+  src: url('../assets/fonts/Muli/Muli-Regular.ttf');
+  font-weight: regular;
+}
+
 body {
   background-color: #FFF;
-  font-family: 'Muli', sans-serif;
+  font-family: muli, sans-serif;
   font-size: $font-md;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: shadows, cursive;
   color: color('color-secondary');
   text-align: center;
   width: 100%;
@@ -39,7 +51,7 @@ a {
 }
 
 .title-font {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: shadows, cursive;
 }
 
 .row {
@@ -52,7 +64,7 @@ a {
 
 .section-title {
   @include title-effect(color('white'), color('color-primary-dark'), color('color-primary'), color('color-accent'));
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
   margin: 1rem auto;
   text-transform: uppercase;

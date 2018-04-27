@@ -43,7 +43,7 @@
         <p class="about-bio">
           I'm Software Engineering student at Universidad de Antioquia , Web Engineer at Huge, passionate coder & self proclaimed Emoji Expert. <i class="em em-sports_medal"></i><br>
           I strongly believe we can build the world <i class="em em-earth_americas"></i> that we want and be the change that we want to see. <br>
-          <span class="about-span"><i class="em em-heartpulse"></i> My interests:</span> Diversity & Inclusion, Teaching & Learning, Pizza & Buñuelos.
+          <span class="about-span"><i class="em em-heartpulse"></i> My interests:</span> Diversity & Inclusion, Teach & Learn, Pizza & Buñuelos.
         </p>
       </div>
     </div>
