@@ -1,17 +1,11 @@
 @font-face {
-  font-family: shadows;
-  src: url('../assets/fonts/Shadows_Into_Light_Two/ShadowsIntoLightTwo-Regular.ttf');
-  font-weight: regular;
-}
-
-@font-face {
   font-family: muli;
   src: url('../assets/fonts/Muli/Muli-Regular.ttf');
   font-weight: regular;
 }
 
 body {
-  background-color: #FFF;
+  background-color: color('white');
   font-family: muli, sans-serif;
   font-size: $font-md;
 }
@@ -19,7 +13,6 @@ body {
 h1,
 h2,
 h3 {
-  font-family: shadows, cursive;
   color: color('color-secondary');
   text-align: center;
   width: 100%;
@@ -50,10 +43,6 @@ a {
   color: color('color-secondary');
 }
 
-.title-font {
-  font-family: shadows, cursive;
-}
-
 .row {
   margin: 0;
 }
@@ -67,7 +56,6 @@ a {
   font-size: 3.5rem;
   font-weight: 900;
   margin: 1rem auto;
-  text-transform: uppercase;
   width: auto;
 }
 

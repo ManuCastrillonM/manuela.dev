@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav title-font">
+  <nav class="nav">
     <ul class="row nav-list">
       <li class="nav-item">
         <a href="">About</a>

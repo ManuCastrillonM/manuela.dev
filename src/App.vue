@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <navbar />
     <hero />
     <main>
       <about />
