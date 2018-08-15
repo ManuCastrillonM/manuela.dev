@@ -1,6 +1,6 @@
 <template>
   <section class="quote row middle-xs center-xs" aria-label="quote">
-    <p class="no-margin quote-text title-font col-xs-12">
+    <p class="no-margin quote-text col-xs-12">
       {{ quote }}
     </p>
     <p class="quote-author col-xs-offset-8 col-xs-4">

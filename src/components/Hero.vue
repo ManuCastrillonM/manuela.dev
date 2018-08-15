@@ -1,28 +1,14 @@
 <template>
   <header class="header">
     <div class="header-container row center-xs middle-xs">
-      <div class="header-container-text">
-        <p class="header-container-text-content title-font"
-          data-heading="Hello World! I'm Manuela Castrillón|"
-        >
-          Hello World! I'm Manuela Castrillón <span class="header-blink">|</span>
-        </p>
+      <div class="header-container-square">
+        <div class="header-container-text">
+          <p>
+            Manu <br/>
+            Castrillón
+          </p>
+        </div>
       </div>
-      <vue-particles
-        class="header-particles"
-        color="#dedede"
-        :particleOpacity="0.2"
-        :particlesNumber="90"
-        shapeType="circle"
-        :particleSize="30"
-        :lineLinked="false"
-        :moveSpeed="3"
-        :hoverEffect="true"
-        hoverMode="repulse"
-        :clickEffect="true"
-        clickMode="push"
-      >
-      </vue-particles>
     </div>
   </header>
 </template>
@@ -32,63 +18,44 @@
 @import '~styles/mixins';
 @import '~styles/functions';
 
-.header {
+.header-container {
+  background: linear-gradient(color('color-secondary'), color('color-accent'));
+  height: 100vh;
+  min-height: 400px;
 
-  &-container {
-    background: linear-gradient(color('color-secondary'), color('color-accent'));
-    height: 100vh;
+  &-square {
+    border: 8px solid color('white');
+    max-width: 300px;
+    min-width: 230px;
     position: relative;
-    padding: 50px;
+    width: 15vw;
 
-    &-text {
-      z-index: 100;
-
-      &-content {
-        @include title-effect(color('white'), color('color-primary-dark'), color('white'), color('color-primary'));
-        font-size: 2rem;
-        font-weight: bold;
-        overflow: hidden;
-        user-select: none;
-
-        @include from ('md') {
-          animation: type 3s ease-in forwards;
-          font-size: 3rem;
-          white-space: nowrap;
-          width: 0;
-        }
-
-        @include from ('lg') {
-          font-size: 5rem;
-        }
-      }
+    &::after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
     }
   }
 
-  &-particles {
-    position: absolute;
+  &-text {
+    align-items: center;
+    color: color('white');
+    display: flex;
+    font-size: 40px;
     height: 100%;
+    justify-content: center;
+    position: absolute;
     width: 100%;
-    z-index: 50;
-  }
 
-  &-blink {
-    animation: blink 1s infinite;
-    color: color('color-accent');
-  }
-}
-
-@keyframes blink {
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes type {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
+    &::after {
+      content: '';
+      border: 3px solid color('white');
+      height: 100%;
+      left: 12px;
+      position: absolute;
+      top: 12px;
+      width: 100%;
+    }
   }
 }
 </style>

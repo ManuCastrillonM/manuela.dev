@@ -2,7 +2,7 @@
   <section class="resume" aria-label="resume">
     <div class="row wow bounceInDown">
       <h1
-        class="section-title title-font"
+        class="section-title"
         data-wow-duration="1s"
         :data-heading="title"
       >
@@ -17,20 +17,20 @@
           v-for="(listYear, index) in resume"
           :key="index"
         >
-          <h3 class="resume-timeline-year title-font">{{ listYear.year }}</h3>
+          <h3 class="resume-timeline-year">{{ listYear.year }}</h3>
           <ul class="row resume-timeline-list">
             <li
               class="resume-timeline-item wow zoomIn"
               v-for="(item, index) in listYear.content"
               :key="index"
             >
-              <p class="resume-timeline-item-title">
+              <a :href="item.link" class="resume-timeline-item-title">
                 <i
                   class="em"
                   :class="item.icon"
                 ></i>
                 {{ item.title }}
-              </p>
+              </a>
               <p class="resume-timeline-item-description">{{ item.description }}</p>
               <p class="resume-timeline-item-date">{{ item.date }}</p>
             </li>
@@ -51,6 +51,18 @@ export default {
       resume: [ {
         year: '2018',
         content: [{
+          date: 'September',
+          description: 'Co-organizer',
+          icon: 'em-woman-raising-hand',
+          link: 'https://www.ngcolombia.com/ng-girls',
+          title: 'NgGirls'
+        },{
+          date: 'September',
+          description: 'Academic Comittee',
+          icon: 'em-woman-raising-hand',
+          link: 'http://www.ngcolombia.com',
+          title: 'NgColombia'
+        },{
           date: 'January - currently',
           description: 'Huge',
           icon: 'em-female-technologist',
