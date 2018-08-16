@@ -2,7 +2,7 @@
   <section class="skills section" aria-label="skills">
     <div class="row">
       <h1
-        class="wow bounceInDown section-title"
+        class="wow fadeIn section-title"
         data-wow-duration="1s"
         :data-heading="title"
       >
@@ -70,6 +70,10 @@ export default {
   &-item {
     font-size: 16px;
     line-height: 35px;
+
+    .em {
+      max-width: 16px;
+    }
   }
 }
 </style>

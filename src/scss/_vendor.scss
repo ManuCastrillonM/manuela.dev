@@ -52,7 +52,10 @@ a {
 }
 
 .section-title {
-  @include title-effect(color('white'), color('color-primary-dark'), color('color-primary'), color('color-accent'));
+  @include title-effect(color('white'),
+                        color('color-secondary'),
+                        color('color-primary'),
+                        color('color-accent'));
   font-size: 3.5rem;
   font-weight: 900;
   margin: 1rem auto;
