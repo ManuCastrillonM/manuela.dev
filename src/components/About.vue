@@ -1,8 +1,9 @@
 <template>
   <section class="about section" aria-label="about me">
-    <div class="row wow bounceInDown">
+    <div class="row">
       <h1
-        class="section-title"
+        class="section-title wow fadeIn"
+        data-wow-duration="1s"
         :data-heading="title"
       >
         {{ title }}
@@ -41,7 +42,7 @@
 
       <div class="col-xs-12 col-sm-offset-1 col-sm-6 wow zoomIn">
         <p class="about-bio">
-          I'm Software Engineering student at Universidad de Antioquia , Web Engineer at Huge, passionate coder & self proclaimed Emoji Expert. <i class="em em-sports_medal"></i><br>
+          I'm Software Engineering student at Universidad de Antioquia, co-organizer of Pioneras Developers, Web Engineer at Huge & self proclaimed Emoji Expert. <i class="em em-sports_medal"></i><br>
           I strongly believe we can build the world <i class="em em-earth_americas"></i> that we want and be the change that we want to see. <br>
           <span class="about-span"><i class="em em-heartpulse"></i> My interests:</span> Diversity & Inclusion, Teach & Learn, Pizza & Buñuelos.
         </p>

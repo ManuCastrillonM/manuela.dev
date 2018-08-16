@@ -2,7 +2,7 @@
   <section class="contact" aria-label="contact">
     <div class="row">
       <h1
-        class="wow bounceInDown section-title"
+        class="wow fadeIn section-title"
         data-wow-duration="1s"
         :data-heading="title"
       >
@@ -52,6 +52,9 @@ export default {
       },{
         icon: 'fa-github',
         link: 'https://www.github.com/manucastrillonm'
+      },{
+        icon: 'fa-medium',
+        link: 'https://medium.com/@ManuCastrillonM'
       }]
     }
   },
@@ -68,6 +71,16 @@ export default {
 .contact {
   &-icon {
     margin: 20px;
+
+    .fa {
+      transition: color 0.4s ease-in;
+    }
+
+    &:hover {
+      .fa {
+        color: color('color-primary');
+      }
+    }
 
     &-container {
       padding: 50px 0;

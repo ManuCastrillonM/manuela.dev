@@ -1,8 +1,8 @@
 <template>
   <section class="resume" aria-label="resume">
-    <div class="row wow bounceInDown">
+    <div class="row">
       <h1
-        class="section-title"
+        class="section-title wow fadeIn"
         data-wow-duration="1s"
         :data-heading="title"
       >
@@ -95,6 +95,12 @@ export default {
           icon: 'em-woman-raising-hand',
           link: 'http://medellinup.co/women-edition/',
           title: 'Startup Weekend Women Edition'
+        },{
+          date: 'March - Currently',
+          description: 'Co-organizer',
+          icon: 'em-woman-raising-hand',
+          link: 'https://github.com/CodexUdeA/Encuentros',
+          title: 'Codex UdeA'
         }]
       },{
         year: '2016',
@@ -197,7 +203,7 @@ export default {
       background-color: color('color-secondary');
       border-radius: 8px;
       color: color('white');
-      font-size: $font-xl;
+      font-size: $font-lg;
       margin: 10px auto;
       padding: 5px 15px;
       text-align: center;
@@ -209,7 +215,7 @@ export default {
       background-color: color('white');
       border: 2px solid color('color-accent');
       border-radius: 8px;
-      margin: 20px;
+      margin: 15px;
       padding: 10px;
       position: relative;
       width: 80%;
@@ -229,8 +235,15 @@ export default {
       }
 
       @include from('md') {
-        margin: 0;
         width: 40%;
+
+        &:not(:first-child) {
+          margin-top: -30px;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
 
         &:nth-child(even) {
           align-self: flex-end;
@@ -254,12 +267,12 @@ export default {
 
       &-title {
         color: color('color-accent');
-        font-size: $font-lg;
-        font-weight: 500;
+        font-size: $font-md;
+        font-weight: bold;
         margin: 5px 0;
 
         .em {
-          max-width: 20px;
+          max-width: 15px;
         }
       }
 

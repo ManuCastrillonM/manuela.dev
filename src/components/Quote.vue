@@ -26,7 +26,8 @@ export default {
 @import '~styles/functions';
 
 .quote {
-  background: linear-gradient(rgba(color('color-primary'), 0.7),rgba(color('color-primary-dark'), 0.7)),
+  background: linear-gradient(rgba(color('color-primary'), 0.7),
+                              rgba(color('color-secondary'), 0.7)),
               url('../assets/images/quote-photo.jpg');
   background-size: cover;
   background-attachment: fixed;
