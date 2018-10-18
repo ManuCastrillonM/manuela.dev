@@ -78,7 +78,7 @@ export default {
 
     &:hover {
       .fa {
-        color: color('color-primary');
+        color: color('camelot');
       }
     }
 
@@ -88,7 +88,7 @@ export default {
 
     &-fa {
       path {
-        color: color('color-accent');
+        color: color('jon');
       }
     }
   }

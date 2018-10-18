@@ -86,7 +86,7 @@ export default {
 
   &-info {
     .info-title {
-      color: color('color-secondary');
+      color: color('wine-berry');
       font-weight: bold;
     }
 
@@ -108,7 +108,7 @@ export default {
     }
 
     &-span {
-      color: color('color-secondary');
+      color: color('wine-berry');
       font-weight: 600;
     }
   }
