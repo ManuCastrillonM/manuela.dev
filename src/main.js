@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Styles from './scss/main.scss'
-import VueParticles from '../node_modules/vue-particles/vue-particles/vue-particles'
-
-Vue.use(VueParticles)
+import router from './router'
+import './scss/main.scss'
 
 new Vue({
   el: '#app',
+  router,
   render: h => h(App)
 })

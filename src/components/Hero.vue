@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header-container row center-xs middle-xs">
-      <div class="header-container-square">
+      <div class="wow fadeIn header-container-square">
         <div class="header-container-text">
           <p>
             Manu <br/>
@@ -12,6 +12,18 @@
     </div>
   </header>
 </template>
+
+<script>
+import WOW from 'wow.js/dist/wow.min'
+
+export default {
+  name: 'hero',
+  mounted () {
+    new WOW().init()
+  }
+}
+</script>
+
 
 <style lang="scss">
 @import '~styles/variables';

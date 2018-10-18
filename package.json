@@ -14,8 +14,9 @@
     "flexboxgrid": "^6.3.1",
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.0",
+    "uglifyjs-webpack-plugin": "1",
     "vue": "^2.5.11",
-    "vue-particles": "^1.0.9",
+    "vue-router": "^3.0.1",
     "wow.js": "^1.2.2"
   },
   "browserslist": [
