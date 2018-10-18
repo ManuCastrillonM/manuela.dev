@@ -1,48 +1,52 @@
 <template>
-  <section class="resume" aria-label="resume">
-    <div class="row">
-      <h1
-        class="section-title wow fadeIn"
-        data-wow-duration="1s"
-        :data-heading="title"
-      >
-        {{ title }}
-      </h1>
-    </div>
-
-    <div class="row">
-      <div class="resume-timeline col-xs-offset-2 col-xs-8">
-        <div
-          class="resume-timeline-section"
-          v-for="(listYear, index) in resume"
-          :key="index"
+  <div>
+    <navbar theme="dark" />
+    <section class="resume" aria-label="resume">
+      <div class="row">
+        <h1
+          class="section-title wow fadeIn"
+          data-wow-duration="1s"
+          :data-heading="title"
         >
-          <h3 class="resume-timeline-year">{{ listYear.year }}</h3>
-          <ul class="row resume-timeline-list">
-            <li
-              class="resume-timeline-item wow zoomIn"
-              v-for="(item, index) in listYear.content"
-              :key="index"
-            >
-              <a :href="item.link" class="resume-timeline-item-title">
-                <i
-                  class="em"
-                  :class="item.icon"
-                ></i>
-                {{ item.title }}
-              </a>
-              <p class="resume-timeline-item-description">{{ item.description }}</p>
-              <p class="resume-timeline-item-date">{{ item.date }}</p>
-            </li>
-          </ul>
+          {{ title }}
+        </h1>
+      </div>
+
+      <div class="row">
+        <div class="resume-timeline col-xs-offset-2 col-xs-8">
+          <div
+            class="resume-timeline-section"
+            v-for="(listYear, index) in resume"
+            :key="index"
+          >
+            <h3 class="resume-timeline-year">{{ listYear.year }}</h3>
+            <ul class="row resume-timeline-list">
+              <li
+                class="resume-timeline-item wow zoomIn"
+                v-for="(item, index) in listYear.content"
+                :key="index"
+              >
+                <a :href="item.link" class="resume-timeline-item-title">
+                  <i
+                    class="em"
+                    :class="item.icon"
+                  ></i>
+                  {{ item.title }}
+                </a>
+                <p class="resume-timeline-item-description">{{ item.description }}</p>
+                <p class="resume-timeline-item-date">{{ item.date }}</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
 import WOW from 'wow.js/dist/wow.min'
+import Navbar from '../components/Navbar'
 
 export default {
   data () {
@@ -167,6 +171,9 @@ export default {
   },
   mounted () {
     new WOW().init()
+  },
+  components: {
+    Navbar
   }
 }
 </script>
@@ -182,7 +189,7 @@ export default {
 
     &:before {
       content: '';
-      background: color('color-secondary');
+      background: color('wine-berry');
       height: 100%;
       margin-left: 0;
       position: absolute;
@@ -200,9 +207,9 @@ export default {
     }
 
     &-year {
-      background-color: color('color-secondary');
+      background-color: color('wine-berry');
       border-radius: 8px;
-      color: color('white');
+      color: color('gin');
       font-size: $font-lg;
       margin: 10px auto;
       padding: 5px 15px;
@@ -212,8 +219,8 @@ export default {
     }
 
     &-item {
-      background-color: color('white');
-      border: 2px solid color('color-accent');
+      background-color: color('gin');
+      border: 2px solid color('jon');
       border-radius: 8px;
       margin: 15px;
       padding: 10px;
@@ -228,8 +235,8 @@ export default {
         width: 10px;
         height: 10px;
         transform: rotate(45deg);
-        border-color: color('color-accent');
-        background-color: color('white');
+        border-color: color('jon');
+        background-color: color('gin');
         left: -7px;
         border-width: 0 0 2px 2px;
       }
@@ -266,7 +273,7 @@ export default {
       }
 
       &-title {
-        color: color('color-accent');
+        color: color('jon');
         font-size: $font-md;
         font-weight: bold;
         margin: 5px 0;

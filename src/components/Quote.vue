@@ -26,8 +26,8 @@ export default {
 @import '~styles/functions';
 
 .quote {
-  background: linear-gradient(rgba(color('color-primary'), 0.7),
-                              rgba(color('color-secondary'), 0.7)),
+  background: linear-gradient(rgba(color('camelot'), 0.7),
+                              rgba(color('wine-berry'), 0.7)),
               url('../assets/images/quote-photo.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -37,12 +37,12 @@ export default {
 
   &-text {
     font-size: 60px;
-    color: color('white');
+    color: color('gin');
   }
 
   &-author {
     font-style: italic;
-    color: color('white');
+    color: color('gin');
     font-size: $font-lg;
   }
 }

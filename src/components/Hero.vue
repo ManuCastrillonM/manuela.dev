@@ -31,12 +31,12 @@ export default {
 @import '~styles/functions';
 
 .header-container {
-  background: linear-gradient(color('color-secondary'), color('color-accent'));
+  background: linear-gradient(color('wine-berry'), color('jon'));
   height: 100vh;
   min-height: 400px;
 
   &-square {
-    border: 8px solid color('white');
+    border: 8px solid color('gin');
     max-width: 300px;
     min-width: 230px;
     position: relative;
@@ -51,7 +51,7 @@ export default {
 
   &-text {
     align-items: center;
-    color: color('white');
+    color: color('gin');
     display: flex;
     font-size: 40px;
     height: 100%;
@@ -61,7 +61,7 @@ export default {
 
     &::after {
       content: '';
-      border: 3px solid color('white');
+      border: 3px solid color('gin');
       height: 100%;
       left: 12px;
       position: absolute;

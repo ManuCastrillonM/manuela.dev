@@ -18,7 +18,7 @@
 @import '~styles/functions';
 
 .footer {
-  border-top: 4px solid color('color-primary');
+  border-top: 4px solid color('camelot');
   padding: 20px 0;
 }
 </style>
