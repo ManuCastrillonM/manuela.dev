@@ -37,12 +37,12 @@ export default {
 
   &-text {
     font-size: 60px;
-    color: color('gin');
+    color: color('white');
   }
 
   &-author {
     font-style: italic;
-    color: color('gin');
+    color: color('white');
     font-size: $font-lg;
   }
 }

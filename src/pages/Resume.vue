@@ -60,26 +60,26 @@ export default {
           icon: 'em-woman-raising-hand',
           link: 'https://www.ngcolombia.com/ng-girls',
           title: 'NgGirls'
-        },{
+        }, {
           date: 'September',
           description: 'Academic Comittee',
           icon: 'em-woman-raising-hand',
           link: 'http://www.ngcolombia.com',
           title: 'NgColombia'
-        },{
+        }, {
           date: 'January - currently',
           description: 'Huge',
           icon: 'em-female-technologist',
           link: 'https://www.hugeinc.com/',
           title: 'Web Engineer'
-        },{
+        }, {
           date: 'January - currently',
           description: 'Co-organizer',
           icon: 'em-sparkling_heart',
           link: 'http:///www.pionerasdev.co',
           title: 'Pioneras Developers'
         }]
-      },{
+      }, {
         year: '2017',
         content: [{
           date: 'November',
@@ -87,26 +87,26 @@ export default {
           icon: 'em-woman-raising-hand',
           link: 'https://www.ngcolombia.com/',
           title: 'NgColombia'
-        },{
+        }, {
           date: 'November',
           description: 'Mentor',
           icon: 'em-woman-raising-hand',
           link: 'http://ng-girls.org/NgColombia/',
           title: 'NgGirls'
-        },{
+        }, {
           date: 'August',
           description: 'Volunteer',
           icon: 'em-woman-raising-hand',
           link: 'http://medellinup.co/women-edition/',
           title: 'Startup Weekend Women Edition'
-        },{
+        }, {
           date: 'March - Currently',
           description: 'Co-organizer',
           icon: 'em-woman-raising-hand',
           link: 'https://github.com/CodexUdeA/Encuentros',
           title: 'Codex UdeA'
         }]
-      },{
+      }, {
         year: '2016',
         content: [{
           date: 'September',
@@ -114,14 +114,14 @@ export default {
           icon: 'em-female-technologist',
           link: 'http://communities.techstars.com/colombia/medellin/startup-weekend/9735',
           title: 'Startup Weekend'
-        },{
+        }, {
           date: 'January',
           description: 'Competitor',
           icon: 'em-female-technologist',
           link: 'https://globalgamejam.org/2016/games/elements-souls',
           title: 'Global Game Jam'
         }]
-      },{
+      }, {
         year: '2015',
         content: [{
           date: 'August',
@@ -129,20 +129,20 @@ export default {
           icon: 'em-female-student',
           link: '#',
           title: 'Media Content Design and Production'
-        },{
+        }, {
           date: 'February - November',
           description: 'Competitor',
           icon: 'em-female-technologist',
           link: '#',
           title: 'Colombian Collegiate Programming League'
-        },{
+        }, {
           date: 'February - December 2017',
           description: 'Universidad de Antioquia',
           icon: 'em-blue_book',
           link: '#',
           title: 'Administrative Manager'
         }]
-      },{
+      }, {
         year: '2014',
         content: [{
           date: 'September - December',
@@ -150,14 +150,14 @@ export default {
           icon: 'em-female-student',
           link: '#',
           title: 'Visual Communication using Adobe Photoshop® CS6'
-        },{
+        }, {
           date: 'July - July 2015',
           description: 'Universidad de Antioquia',
           icon: 'em-blue_book',
           link: '#',
           title: 'Teaching Assistant - Subject: Discrete Mathematics'
         }]
-      },{
+      }, {
         year: '2013',
         content: [{
           date: 'March - Currently',
@@ -209,7 +209,7 @@ export default {
     &-year {
       background-color: color('wine-berry');
       border-radius: 8px;
-      color: color('gin');
+      color: color('white');
       font-size: $font-lg;
       margin: 10px auto;
       padding: 5px 15px;
@@ -219,7 +219,7 @@ export default {
     }
 
     &-item {
-      background-color: color('gin');
+      background-color: color('white');
       border: 2px solid color('jon');
       border-radius: 8px;
       margin: 15px;
@@ -236,7 +236,7 @@ export default {
         height: 10px;
         transform: rotate(45deg);
         border-color: color('jon');
-        background-color: color('gin');
+        background-color: color('white');
         left: -7px;
         border-width: 0 0 2px 2px;
       }

@@ -57,7 +57,7 @@ import WOW from 'wow.js/dist/wow.min'
 export default {
   data () {
     return {
-      title: '<About me />',
+      title: '<About me />'
     }
   },
   mounted () {
