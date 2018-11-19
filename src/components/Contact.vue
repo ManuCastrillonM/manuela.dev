@@ -43,16 +43,16 @@ export default {
       social: [{
         icon: 'fa-twitter',
         link: 'https://www.twitter.com/manucastrillonm'
-      },{
+      }, {
         icon: 'fa-instagram',
         link: 'https://www.instagram.com/manucastrillonm'
-      },{
+      }, {
         icon: 'fa-linkedin',
         link: 'https://www.linkedin.com/in/manuelacastrillon'
-      },{
+      }, {
         icon: 'fa-github',
         link: 'https://www.github.com/manucastrillonm'
-      },{
+      }, {
         icon: 'fa-medium',
         link: 'https://medium.com/@ManuCastrillonM'
       }]

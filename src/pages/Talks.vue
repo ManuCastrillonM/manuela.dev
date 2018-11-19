@@ -33,7 +33,7 @@ import talks from '../assets/data/talks'
 
 export default {
   name: 'talks-page',
-  data() {
+  data () {
     return {
       title: 'Talks',
       talks

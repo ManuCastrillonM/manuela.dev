@@ -24,6 +24,6 @@ export default new Router({
       path: '/resume',
       name: 'Resume',
       component: Resume
-    },
+    }
   ]
 })
