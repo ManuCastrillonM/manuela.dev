@@ -45,7 +45,7 @@ export default {
   &.light {
     .nav-item {
       a {
-        color: color('gin');
+        color: color('white');
       }
 
       &::after {
@@ -59,7 +59,7 @@ export default {
         }
 
         &::after {
-          background: color('gin');
+          background: color('white');
         }
       }
     }
@@ -82,7 +82,7 @@ export default {
         }
 
         &::after {
-          background: color('gin');
+          background: color('white');
         }
       }
     }

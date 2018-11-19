@@ -209,7 +209,7 @@ export default {
     &-year {
       background-color: color('wine-berry');
       border-radius: 8px;
-      color: color('gin');
+      color: color('white');
       font-size: $font-lg;
       margin: 10px auto;
       padding: 5px 15px;
@@ -219,7 +219,7 @@ export default {
     }
 
     &-item {
-      background-color: color('gin');
+      background-color: color('white');
       border: 2px solid color('jon');
       border-radius: 8px;
       margin: 15px;
@@ -236,7 +236,7 @@ export default {
         height: 10px;
         transform: rotate(45deg);
         border-color: color('jon');
-        background-color: color('gin');
+        background-color: color('white');
         left: -7px;
         border-width: 0 0 2px 2px;
       }

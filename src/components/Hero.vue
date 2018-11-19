@@ -36,7 +36,7 @@ export default {
   min-height: 400px;
 
   &-square {
-    border: 8px solid color('gin');
+    border: 8px solid color('white');
     max-width: 300px;
     min-width: 230px;
     position: relative;
@@ -51,7 +51,7 @@ export default {
 
   &-text {
     align-items: center;
-    color: color('gin');
+    color: color('white');
     display: flex;
     font-size: 40px;
     height: 100%;
@@ -61,7 +61,7 @@ export default {
 
     &::after {
       content: '';
-      border: 3px solid color('gin');
+      border: 3px solid color('white');
       height: 100%;
       left: 12px;
       position: absolute;

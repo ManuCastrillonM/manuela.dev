@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: color('gin');
+  background-color: color('white');
   font-family: muli, sans-serif;
   font-size: $font-md;
 }
@@ -52,7 +52,7 @@ a {
 }
 
 .section-title {
-  @include title-effect(color('gin'),
+  @include title-effect(color('white'),
                         color('wine-berry'),
                         color('camelot'),
                         color('jon'));
