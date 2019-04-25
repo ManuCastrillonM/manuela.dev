@@ -43,5 +43,15 @@ module.exports = {
     title: 'What The Ho*k? - React Hooks',
     link: 'https://slides.com/manucastrillonm/react-hooks#/',
     description: 'React Medellin'
+  },
+  9: {
+    title: 'Big Data from scratch',
+    link: 'https://docs.google.com/presentation/d/1-5ivAD8G4GYElUehyzHuMyEhLEBdcePT63mi_ipK2qE/edit?usp=sharing',
+    description: 'Universidad de Antioquia'
+  },
+  10: {
+    title: 'One day, one app, prototyping project using Google Vision API',
+    link: 'https://drive.google.com/file/d/1Oh96X3bgwyiE8bhVVIu_pyFxp1xOJVhX/view?usp=sharing',
+    description: 'Women in DataScience 2019'
   }
 }
