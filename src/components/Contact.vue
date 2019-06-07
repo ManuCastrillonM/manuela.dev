@@ -55,6 +55,9 @@ export default {
       }, {
         icon: 'fa-medium',
         link: 'https://medium.com/@ManuCastrillonM'
+      }, {
+        icon: 'fa-youtube',
+        link: 'https://www.youtube.com/channel/UC4LjWxfLOQlx2ciIu0KFtWQ'
       }]
     }
   },

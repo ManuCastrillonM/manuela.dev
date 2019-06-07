@@ -25,7 +25,7 @@
               <span class="info-title">name:</span> "Manuela Castrillón",
             </li>
             <li class="idented">
-              <span class="info-title">age:</span> 22,
+              <span class="info-title">age:</span> 23,
             </li>
             <li class="idented">
               <span class="info-title">country:</span> "Colombia",

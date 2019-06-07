@@ -11,7 +11,10 @@
         <router-link to="/talks">Talks</router-link>
       </li>
       <li class="nav-item">
-        <a href="https://medium.com/@ManuCastrillonM">Blog</a>
+        <a href="https://medium.com/@ManuCastrillonM" target="_blank">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.youtube.com/channel/UC4LjWxfLOQlx2ciIu0KFtWQ" target="_blank">Vlog</a>
       </li>
     </ul>
   </nav>
