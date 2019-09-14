@@ -1,8 +1,8 @@
 <template>
-  <header class="header">
-    <div class="header-container row center-xs middle-xs">
-      <div class="wow fadeIn header-container-square">
-        <div class="header-container-text">
+  <header class="hero">
+    <div class="hero-container row center-xs middle-xs">
+      <div class="wow fadeIn hero-container-square">
+        <div class="hero-container-text">
           <p>
             Manu <br/>
             Castrillón
@@ -29,8 +29,13 @@ export default {
 @import '~styles/mixins';
 @import '~styles/functions';
 
-.header-container {
-  background: linear-gradient(color('wine-berry'), color('jon'));
+.hero-container {
+  background-image: linear-gradient(rgba(color('wine-berry'), 0.95),
+                                    rgba(color('jon'), 0.95)),
+                    url('../assets/images/hero-image.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   min-height: 400px;
 

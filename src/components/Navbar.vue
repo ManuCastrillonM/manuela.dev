@@ -38,11 +38,6 @@ export default {
   position: absolute;
   z-index: 1000;
   width: 100%;
-  display: none;
-
-  @include from ('md') {
-    display: inline;
-  }
 
   &.light {
     .nav-item {
@@ -92,8 +87,8 @@ export default {
 
   &-item {
     font-size: 18px;
-    margin: 0 20px;
-    padding: 10px;
+    margin: 0 5px;
+    padding: 5px;
     position: relative;
 
     a {
@@ -118,14 +113,21 @@ export default {
         transform: rotate(0deg);
       }
     }
+
+    @include from('md') {
+      margin: 0 20px;
+      padding: 10px;
+    }
   }
 
   &-list {
     display: flex;
     justify-content: flex-end;
 
-    &.row {
-      margin: 20px 50px;
+    @include from('md') {
+      &.row {
+        margin: 20px 50px;
+      }
     }
   }
 }

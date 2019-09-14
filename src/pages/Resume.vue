@@ -52,7 +52,16 @@ export default {
   data () {
     return {
       title: '<Resume />',
-      resume: [ {
+      resume: [{
+        year: '2019',
+        content: [{
+          date: 'February - currently',
+          description: 'GitHub Campus Expert',
+          icon: 'em-woman-raising-hand',
+          link: 'https://githubcampus.expert/manucastrillonm/',
+          title: 'GitHub Education'
+        }]
+      }, {
         year: '2018',
         content: [{
           date: 'September',
