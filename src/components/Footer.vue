@@ -6,7 +6,7 @@
     <div class="col-xs-offset-2 col-xs-8 col-md-offset-0 col-md-4">
       You can find the source code of this page on
       <a href="https://www.github.com/manucastrillonm/manucastrillonm.co">
-      <i class="fa fa-github contact-icon-fa"></i>
+      <i class="fab fa-github contact-icon-fa"></i>
       GitHub
       </a>
     </div>

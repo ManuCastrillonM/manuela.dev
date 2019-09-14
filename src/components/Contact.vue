@@ -20,7 +20,7 @@
           >
           <a :href="item.link" target="_blank">
             <i
-              class="fa fa-3x"
+              class="fab fa-3x"
               :class="item.icon"
               aria-hidden="true"
             >

@@ -16,7 +16,7 @@ export default new Router({
       component: Home
     },
     {
-      path: `${process.env.PUBLIC_URL}/talks`,
+      path: `/talks`,
       name: 'Talks',
       component: Talks
     },

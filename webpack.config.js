@@ -40,13 +40,13 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/,
+        exclude: /node_modules/
       },
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.(js|vue)$/,
         exclude: /node_modules/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         options: {
           formatter: require('eslint-friendly-formatter')
         }
@@ -76,7 +76,7 @@ module.exports = {
     hints: false
   },
   devtool: '#eval-source-map'
-};
+}
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
