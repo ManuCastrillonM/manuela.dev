@@ -46,10 +46,11 @@ a {
 }
 
 .section-title {
-  @include title-effect(color('white'),
-                        color('wine-berry'),
-                        color('camelot'),
-                        color('jon'));
+  color: color('camelot');
+  text-shadow:  3px 0 0 color('jon'),
+                0 4px 0 color('jon'),
+                4px 3px 0 color('jon');
+
   font-size: 3.5rem;
   font-weight: 900;
   margin: 1rem auto;
