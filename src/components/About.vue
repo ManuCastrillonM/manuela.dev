@@ -1,51 +1,53 @@
 <template>
   <section class="about section" aria-label="about me">
-    <div class="row">
-      <h1
-        class="section-title wow fadeIn"
-        data-wow-duration="1s"
-        :data-heading="title"
-      >
-        {{ title }}
-      </h1>
-    </div>
-    <div class="about-container row middle-xs">
-      <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-lg-offset-1 col-lg-3 about-container-group wow zoomIn">
-        <div class="row center-xs">
-          <figure class="about-container-photo">
-            <img src="../assets/images/about-photo.jpg" alt="profile photo">
-          </figure>
-        </div>
-        <div class="about-container-info">
-          <ul>
-            <li>
-              <span class="info-title">basic-info {</span>
-            </li>
-            <li class="idented">
-              <span class="info-title">name:</span> "Manuela Castrillón",
-            </li>
-            <li class="idented">
-              <span class="info-title">age:</span> 23,
-            </li>
-            <li class="idented">
-              <span class="info-title">country:</span> "Colombia",
-            </li>
-            <li class="idented">
-              <span class="info-title">e-mail:</span> "soymanuela.castrillon@gmail.com"
-            </li>
-            <li>
-              <span class="info-title">}</span>
-            </li>
-          </ul>
-        </div>
+    <div class="container">
+      <div class="row">
+        <h1
+          class="section-title wow fadeIn"
+          data-wow-duration="1s"
+          :data-heading="title"
+        >
+          {{ title }}
+        </h1>
       </div>
+      <div class="row middle-xs">
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-lg-offset-1 col-lg-3 wow zoomIn">
+          <div class="row center-xs">
+            <figure class="about__photo">
+              <img src="../assets/images/about-photo.jpg" alt="profile photo">
+            </figure>
+          </div>
+          <div class="about__info">
+            <ul>
+              <li>
+                <span class="about__info-title">basic-info: {</span>
+              </li>
+              <li class="idented">
+                <span class="about__info-title">name:</span> "Manuela Castrillón",
+              </li>
+              <li class="idented">
+                <span class="about__info-title">age:</span> 23,
+              </li>
+              <li class="idented">
+                <span class="about__info-title">country:</span> "Colombia",
+              </li>
+              <li class="idented">
+                <span class="about__info-title">e-mail:</span> "soymanuela.castrillon@gmail.com"
+              </li>
+              <li>
+                <span class="about__info-title">}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="col-xs-12 col-sm-offset-1 col-sm-6 wow zoomIn">
-        <p class="about-bio">
-          I'm Software Engineering student at Universidad de Antioquia, co-organizer of Pioneras Developers, Web Engineer at Huge & self proclaimed Emoji Expert. <i class="em em-sports_medal"></i><br>
-          I strongly believe we can build the world <i class="em em-earth_americas"></i> that we want and be the change that we want to see. <br>
-          <span class="about-span"><i class="em em-heartpulse"></i> My interests:</span> Diversity & Inclusion, Teach & Learn, Pizza & Buñuelos.
-        </p>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 wow zoomIn">
+          <p class="about__bio">
+            I'm a Software Engineering student at Universidad de Antioquia, co-organizer of Pioneras Developers & Codex UdeA, Vue Vixens Chapter Leader, Web Engineer at Huge & self-proclaimed Emoji Expert. <i class="em em-sports_medal"></i><br>
+            I strongly believe we can build the world <i class="em em-earth_americas"></i> that we want and be the change that we want to see. <br>
+            <span class="about__bio-span"><i class="em em-heartpulse"></i> My interests:</span> Diversity & Inclusion, Teach & Learn, Pizza & Buñuelos.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -71,8 +73,8 @@ export default {
 @import '~styles/mixins';
 @import '~styles/functions';
 
-.about-container {
-  &-photo {
+.about {
+  &__photo {
     width: 70%;
 
     @include from ('md') {
@@ -84,9 +86,9 @@ export default {
     }
   }
 
-  &-info {
-    .info-title {
-      color: color('wine-berry');
+  &__info {
+    &-title {
+      color: color('egg-blue');
       font-weight: bold;
     }
 
@@ -96,19 +98,17 @@ export default {
     }
   }
 
-  .about {
-    &-bio {
+  &__bio {
     line-height: 25px;
     text-align: justify;
 
-      .em {
-        width: 1em;
-        height: 1em;
-      }
+    .em {
+      width: 1em;
+      height: 1em;
     }
 
     &-span {
-      color: color('wine-berry');
+      color: color('egg-blue');
       font-weight: 600;
     }
   }

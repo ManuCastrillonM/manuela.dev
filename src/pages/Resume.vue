@@ -2,41 +2,43 @@
   <div>
     <navbar theme="dark" />
     <section class="resume" aria-label="resume">
-      <div class="row">
-        <h1
-          class="section-title wow fadeIn"
-          data-wow-duration="1s"
-          :data-heading="title"
-        >
-          {{ title }}
-        </h1>
-      </div>
-
-      <div class="row">
-        <div class="resume-timeline col-xs-offset-2 col-xs-8">
-          <div
-            class="resume-timeline-section"
-            v-for="(listYear, index) in resume"
-            :key="index"
+      <div class="container">
+        <div class="row">
+          <h1
+            class="section-title wow fadeIn"
+            data-wow-duration="1s"
+            :data-heading="title"
           >
-            <h3 class="resume-timeline-year">{{ listYear.year }}</h3>
-            <ul class="row resume-timeline-list">
-              <li
-                class="resume-timeline-item wow zoomIn"
-                v-for="(item, index) in listYear.content"
-                :key="index"
-              >
-                <a :href="item.link" class="resume-timeline-item-title">
-                  <i
-                    class="em"
-                    :class="item.icon"
-                  ></i>
-                  {{ item.title }}
-                </a>
-                <p class="resume-timeline-item-description">{{ item.description }}</p>
-                <p class="resume-timeline-item-date">{{ item.date }}</p>
-              </li>
-            </ul>
+            {{ title }}
+          </h1>
+        </div>
+
+        <div class="row">
+          <div class="resume__timeline col-xs-offset-2 col-xs-8">
+            <div
+              class="resume__timeline-section"
+              v-for="(listYear, index) in resume"
+              :key="index"
+            >
+              <h3 class="resume__timeline-year">{{ listYear.year }}</h3>
+              <ul class="row resume__timeline-list">
+                <li
+                  class="resume__timeline-item wow zoomIn"
+                  v-for="(item, index) in listYear.content"
+                  :key="index"
+                >
+                  <a :href="item.link" class="resume-timeline-item-title">
+                    <i
+                      class="em"
+                      :class="item.icon"
+                    ></i>
+                    {{ item.title }}
+                  </a>
+                  <p class="resume__timeline-item-description">{{ item.description }}</p>
+                  <p class="resume__timeline-item-date">{{ item.date }}</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -55,6 +57,12 @@ export default {
       resume: [{
         year: '2019',
         content: [{
+          date: 'March - currently',
+          description: 'Chapter Leader',
+          icon: 'em-woman-raising-hand',
+          link: 'https://www.vuevixens.org/team',
+          title: 'Vue Vixens'
+        }, {
           date: 'February - currently',
           description: 'GitHub Campus Expert',
           icon: 'em-woman-raising-hand',
@@ -193,12 +201,14 @@ export default {
 @import '~styles/functions';
 
 .resume {
-  &-timeline {
+
+  &__timeline {
+    margin-top: 50px;
     position: relative;
 
     &:before {
       content: '';
-      background: color('wine-berry');
+      background: color('nevada');
       height: 100%;
       margin-left: 0;
       position: absolute;
@@ -216,7 +226,7 @@ export default {
     }
 
     &-year {
-      background-color: color('wine-berry');
+      background-color: color('nevada');
       border-radius: 8px;
       color: color('white');
       font-size: $font-lg;
@@ -229,7 +239,7 @@ export default {
 
     &-item {
       background-color: color('white');
-      border: 2px solid color('jon');
+      border: 2px solid color('nevada');
       border-radius: 8px;
       margin: 15px;
       padding: 10px;
@@ -244,7 +254,7 @@ export default {
         width: 10px;
         height: 10px;
         transform: rotate(45deg);
-        border-color: color('jon');
+        border-color: color('nevada');
         background-color: color('white');
         left: -7px;
         border-width: 0 0 2px 2px;
@@ -282,7 +292,6 @@ export default {
       }
 
       &-title {
-        color: color('jon');
         font-size: $font-md;
         font-weight: bold;
         margin: 5px 0;

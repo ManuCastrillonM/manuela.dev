@@ -53,5 +53,15 @@ module.exports = {
     title: 'One day, one app, prototyping project using Google Vision API',
     link: 'https://drive.google.com/file/d/1Oh96X3bgwyiE8bhVVIu_pyFxp1xOJVhX/view?usp=sharing',
     description: 'Women in DataScience 2019'
+  },
+  11: {
+    title: 'A JavaScript Nightmare',
+    link: 'https://slides.com/manucastrillonm/js-coercion#/',
+    description: 'GitHub Campus Experts Meetup at GitHub Satellite'
+  },
+  12: {
+    title: 'CNN in the browser using TensorFlow.js',
+    link: 'https://docs.google.com/presentation/d/1kpdVAoX3kGjTzFBKdy1OVvx3qRr7oSwJfHo2prQApE4/edit?usp=sharing',
+    description: 'Campus Party CO #CPCo2019'
   }
 }

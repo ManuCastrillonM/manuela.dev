@@ -1,19 +1,19 @@
 <template>
   <nav class="nav" v-bind:class="[theme]">
-    <ul class="row nav-list">
-      <li class="nav-item">
+    <ul class="row nav__list">
+      <li class="nav__item">
         <router-link to="/">Home</router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav__item">
         <router-link to="/resume">Resume</router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav__item">
         <router-link to="/talks">Talks</router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav__item">
         <a href="https://medium.com/@ManuCastrillonM" target="_blank">Blog</a>
       </li>
-      <li class="nav-item">
+      <li class="nav__item">
         <a href="https://www.youtube.com/channel/UC4LjWxfLOQlx2ciIu0KFtWQ" target="_blank">Vlog</a>
       </li>
     </ul>
@@ -35,24 +35,24 @@ export default {
 @import '~styles/functions';
 
 .nav {
-  position: absolute;
   z-index: 1000;
   width: 100%;
 
   &.light {
-    .nav-item {
+    position: absolute;
+
+    .nav__item {
       a {
         color: color('white');
       }
 
       &::after {
-        background: color('camelot');
-        border-bottom: 1px solid color('jon');
+        background: color('nevada');
       }
 
       &:hover {
         a {
-          color: color('camelot');
+          color: color('nevada');
         }
 
         &::after {
@@ -63,47 +63,46 @@ export default {
   }
 
   &.dark {
-    .nav-item {
+    .nav__item {
       a {
-        color: color('camelot');
+        color: color('nevada');
       }
 
       &::after {
-        background: color('camelot');
-        border-bottom: 1px solid color('jon');
+        background: color('pink');
       }
 
       &:hover {
         a {
-          color: color('camelot');
+          color: color('pink');
         }
 
         &::after {
-          background: color('white');
+          background: color('nevada');
         }
       }
     }
   }
 
-  &-item {
-    font-size: 18px;
+  &__item {
+    font-size: 20px;
     margin: 0 5px;
-    padding: 5px;
     position: relative;
 
     a {
+      padding: 5px;
       transition: color 0.2s;
     }
 
     &::after {
       content: '';
       border-radius: 5px;
-      bottom: 8px;
+      bottom: 0;
       height: 2px;
       left: 0;
       position: absolute;
       transform: rotate(5deg);
-      transition: transform 0.2s, background 0.2s;
+      transition: bottom 0.1s, transform 0.1s, background 0.1s;
       width: 100%;
     }
 
@@ -116,11 +115,14 @@ export default {
 
     @include from('md') {
       margin: 0 20px;
-      padding: 10px;
+
+      a {
+        padding: 10px;
+      }
     }
   }
 
-  &-list {
+  &__list {
     display: flex;
     justify-content: flex-end;
 

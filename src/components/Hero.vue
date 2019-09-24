@@ -1,13 +1,12 @@
 <template>
   <header class="hero">
-    <div class="hero-container row center-xs middle-xs">
-      <div class="wow fadeIn hero-container-square">
-        <div class="hero-container-text">
-          <p>
-            Manu <br/>
-            Castrillón
-          </p>
-        </div>
+    <div class="row center-xs middle-xs">
+      <div class="wow fadeIn hero__square">
+        <p class="hero__text">
+          Manu <br/>
+          Castrillón
+        </p>
+        <span class="hero__tag">#WomenInTech</span>
       </div>
     </div>
   </header>
@@ -29,49 +28,40 @@ export default {
 @import '~styles/mixins';
 @import '~styles/functions';
 
-.hero-container {
-  background-image: linear-gradient(rgba(color('wine-berry'), 0.95),
-                                    rgba(color('jon'), 0.95)),
-                    url('../assets/images/hero-image.png');
+.hero {
+  background-image: linear-gradient(rgba(color('pink'), 0.2),
+                                    rgba(color('nevada'), 0.2)),
+                    url('../assets/images/hero-bg.svg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 400px;
 
-  &-square {
-    border: 8px solid color('white');
+  &__square {
+    align-items: center;
+    background: color('white');
+    color: color('nevada');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 300px;
     min-width: 230px;
+    padding: 20px;
     position: relative;
-    width: 15vw;
-
-    &::after {
-      content: '';
-      display: block;
-      padding-bottom: 100%;
-    }
+    width: 30vw;
   }
 
-  &-text {
-    align-items: center;
-    color: color('white');
-    display: flex;
-    font-size: 40px;
-    height: 100%;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
+  &__tag {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+  }
 
-    &::after {
-      content: '';
-      border: 3px solid color('white');
-      height: 100%;
-      left: 12px;
-      position: absolute;
-      top: 12px;
-      width: 100%;
-    }
+  &__text {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
   }
 }
 </style>
