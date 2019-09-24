@@ -7,7 +7,7 @@ body {
 h1,
 h2,
 h3 {
-  color: color('wine-berry');
+  color: color('nevada');
   text-align: center;
   width: 100%;
 }
@@ -34,10 +34,11 @@ section {
 
 a {
   text-decoration: none;
-  color: color('wine-berry');
+  color: color('egg-blue');
 }
 
 .row {
+  height: 100%;
   margin: 0;
 }
 
@@ -46,10 +47,10 @@ a {
 }
 
 .section-title {
-  color: color('camelot');
-  text-shadow:  3px 0 0 color('jon'),
-                0 4px 0 color('jon'),
-                4px 3px 0 color('jon');
+  color: color('egg-blue');
+  text-shadow:  3px 0 0 color('pink'),
+                0 4px 0 color('pink'),
+                4px 3px 0 color('pink');
 
   font-size: 3.5rem;
   font-weight: 900;
@@ -59,12 +60,12 @@ a {
 
 .section {
   margin: 20px;
-  border: 2px solid color('camelot');
+  border: 2px solid color('egg-blue');
   position: relative;
 
   &::after {
     content: '';
-    border: 1px solid color('jon');
+    border: 1px solid color('salomie');
     top: 0;
     left: 0;
     position: absolute;

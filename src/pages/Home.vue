@@ -4,7 +4,7 @@
     <hero />
     <main>
       <about />
-      <quote />
+      <!-- <quote /> -->
       <contact />
     </main>
   </div>
@@ -15,7 +15,7 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
-import Quote from '../components/Quote'
+// import Quote from '../components/Quote'
 
 export default {
   name: 'home-page',
@@ -23,8 +23,8 @@ export default {
     About,
     Contact,
     Hero,
-    Navbar,
-    Quote
+    Navbar
+    // Quote
   }
 }
 </script>

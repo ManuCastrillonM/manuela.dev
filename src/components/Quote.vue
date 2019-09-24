@@ -26,9 +26,9 @@ export default {
 @import '~styles/functions';
 
 .quote {
-  background: linear-gradient(rgba(color('wine-berry'), 0.95),
-                              rgba(color('jon'), 0.95)),
-              url('../assets/images/quote-image.png');
+  background-image: linear-gradient(rgba(color('pink'), 0.2),
+                                  rgba(color('nevada'), 0.2)),
+                  url('../assets/images/hero-bg.svg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
