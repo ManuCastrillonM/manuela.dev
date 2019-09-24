@@ -12,9 +12,9 @@
       </div>
       <div class="row middle-xs">
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-5 col-lg-offset-1 col-lg-3 wow zoomIn">
-          <div class="row center-xs">
+          <div class="row">
             <figure class="about__photo">
-              <img src="../assets/images/about-photo.jpg" alt="profile photo">
+              <img src="../assets/images/about-photo.png" alt="profile photo">
             </figure>
           </div>
           <div class="about__info">
@@ -75,14 +75,21 @@ export default {
 
 .about {
   &__photo {
-    width: 70%;
-
-    @include from ('md') {
-      width: 50%;
-    }
+    position: relative;
+    width: 100%;
 
     img {
       border-radius: 50%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
     }
   }
 
