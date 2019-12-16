@@ -1,33 +1,30 @@
 <template>
   <section class="contact" aria-label="contact">
-    <div class="container">
-      <div class="row">
-        <h1
-          class="wow fadeIn section-title"
-          data-wow-duration="1s"
-          :data-heading="title"
-        >
-          {{ title }}
-        </h1>
-        <h2 class="no-margin">I want to know more about you </h2>
-      </div>
-      <div class="row">
-        <div class="col-xs-offset-1 col-xs-10">
-          <div class="contact__icons row center-xs">
-            <div
-              class="contact__icons-el col wow zoomIn"
-              v-for="(item, index) in social"
-              :key="index"
+    <div class="row">
+      <h1
+        class="wow fadeIn section-title"
+        data-wow-duration="1s"
+        :data-heading="title"
+      >
+        {{ title }}
+      </h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10">
+        <div class="contact__icons row center-xs">
+          <div
+            class="contact__icons-el col wow zoomIn"
+            v-for="(item, index) in social"
+            :key="index"
+          >
+          <a :href="item.link" target="_blank" class="contact__icons-link">
+            <i
+              class="fab fa-3x"
+              :class="item.icon"
+              aria-hidden="true"
             >
-            <a :href="item.link" target="_blank" class="contact__icons-link">
-              <i
-                class="fab fa-3x"
-                :class="item.icon"
-                aria-hidden="true"
-              >
-              </i>
-            </a>
-            </div>
+            </i>
+          </a>
           </div>
         </div>
       </div>
@@ -41,7 +38,7 @@ import WOW from 'wow.js/dist/wow.min'
 export default {
   data () {
     return {
-      title: '<Contact me />',
+      title: '<Contact />',
       social: [{
         icon: 'fa-twitter',
         link: 'https://www.twitter.com/manucastrillonm'

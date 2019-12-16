@@ -2,43 +2,41 @@
   <div>
     <navbar theme="dark" />
     <section class="resume" aria-label="resume">
-      <div class="container">
-        <div class="row">
-          <h1
-            class="section-title wow fadeIn"
-            data-wow-duration="1s"
-            :data-heading="title"
-          >
-            {{ title }}
-          </h1>
-        </div>
+      <div class="row">
+        <h1
+          class="section-title wow fadeIn"
+          data-wow-duration="1s"
+          :data-heading="title"
+        >
+          {{ title }}
+        </h1>
+      </div>
 
-        <div class="row">
-          <div class="resume__timeline col-xs-offset-2 col-xs-8">
-            <div
-              class="resume__timeline-section"
-              v-for="(listYear, index) in resume"
-              :key="index"
-            >
-              <h3 class="resume__timeline-year">{{ listYear.year }}</h3>
-              <ul class="row resume__timeline-list">
-                <li
-                  class="resume__timeline-item wow zoomIn"
-                  v-for="(item, index) in listYear.content"
-                  :key="index"
-                >
-                  <a :href="item.link" class="resume-timeline-item-title">
-                    <i
-                      class="em"
-                      :class="item.icon"
-                    ></i>
-                    {{ item.title }}
-                  </a>
-                  <p class="resume__timeline-item-description">{{ item.description }}</p>
-                  <p class="resume__timeline-item-date">{{ item.date }}</p>
-                </li>
-              </ul>
-            </div>
+      <div class="row">
+        <div class="resume__timeline col-xs-offset-2 col-xs-8">
+          <div
+            class="resume__timeline-section"
+            v-for="(listYear, index) in resume"
+            :key="index"
+          >
+            <h3 class="resume__timeline-year">{{ listYear.year }}</h3>
+            <ul class="row resume__timeline-list">
+              <li
+                class="resume__timeline-item wow zoomIn"
+                v-for="(item, index) in listYear.content"
+                :key="index"
+              >
+                <a :href="item.link" class="resume-timeline-item-title">
+                  <i
+                    class="em"
+                    :class="item.icon"
+                  ></i>
+                  {{ item.title }}
+                </a>
+                <p class="resume__timeline-item-description">{{ item.description }}</p>
+                <p class="resume__timeline-item-date">{{ item.date }}</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

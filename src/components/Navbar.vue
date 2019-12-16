@@ -5,9 +5,6 @@
         <router-link to="/">Home</router-link>
       </li>
       <li class="nav__item">
-        <router-link to="/resume">Resume</router-link>
-      </li>
-      <li class="nav__item">
         <router-link to="/talks">Talks</router-link>
       </li>
       <li class="nav__item">
@@ -125,11 +122,10 @@ export default {
   &__list {
     display: flex;
     justify-content: flex-end;
+    padding: 20px 0;
 
     @include from('md') {
-      &.row {
-        margin: 20px 50px;
-      }
+      padding: 20px 50px;
     }
   }
 }

@@ -6,7 +6,6 @@
           Manu <br/>
           Castrillón
         </p>
-        <span class="hero__tag">#WomenInTech</span>
       </div>
     </div>
   </header>
@@ -29,9 +28,9 @@ export default {
 @import '~styles/functions';
 
 .hero {
-  background-image: linear-gradient(rgba(color('pink'), 0.2),
-                                    rgba(color('nevada'), 0.2)),
-                    url('../assets/images/hero-bg.svg');
+  background-image: linear-gradient(rgba(color('pink'), 0.7),
+                                    rgba(color('nevada'), 0.4)),
+                    url('../assets/images/hero-bg.jpeg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,12 +49,6 @@ export default {
     padding: 20px;
     position: relative;
     width: 30vw;
-  }
-
-  &__tag {
-    font-size: 16px;
-    letter-spacing: 1.5px;
-    margin-top: 10px;
   }
 
   &__text {
