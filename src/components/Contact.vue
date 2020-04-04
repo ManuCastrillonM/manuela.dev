@@ -1,10 +1,10 @@
 <template>
   <section class="contact" id="contact">
-    <h2 class="contact__title">Contact</h2>
+    <h2 class="contact__title wow fadeIn">Contact</h2>
     <ul class="contact__list">
       <li v-for="item in social"
         :key="item.url"
-        class="contact__item">
+        class="contact__item wow fadeIn">
         <a :href="item.url"><i :class="cssSocialClass(item.name)"></i></a>
       </li>
     </ul>
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import WOW from 'wow.js/dist/wow.min'
+
 export default {
   data () {
     return {
@@ -40,6 +42,9 @@ export default {
     cssSocialClass (item) {
       return `contact__icon fab fa-${item}`
     }
+  },
+  mounted () {
+    new WOW().init()
   }
 }
 </script>

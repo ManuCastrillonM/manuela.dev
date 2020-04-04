@@ -1,10 +1,10 @@
 <template>
   <section class="talks" id="talks">
-    <h2 class="talks__title">Talks</h2>
+    <h2 class="talks__title wow fadeIn">Talks</h2>
     <ul class="talks__list">
       <li v-for="talk in filteredBlogs"
         :key="talk.title"
-        class="talks__item">
+        class="talks__item wow fadeIn">
         <h3>{{ talk.title }}</h3>
         <div>
           <a v-for="resource in talk.resources"
@@ -24,6 +24,7 @@
 
 <script>
 import talks from '@/assets/data/talks.js'
+import WOW from 'wow.js/dist/wow.min'
 
 export default {
   data () {
@@ -40,6 +41,9 @@ export default {
         return this.talks.slice(0, 4)
       }
     }
+  },
+  mounted () {
+    new WOW().init()
   }
 }
 </script>

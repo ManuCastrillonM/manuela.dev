@@ -1,14 +1,24 @@
 <template>
 <div class="hero" id="hero">
-  <h1 class="hero__text">
+  <h1 class="hero__text wow fadeIn">
     Hello <br>
     I'm <span class="hero__text-name">Manu <br> Castrillon</span>
   </h1>
-  <div class="hero__image-wp">
+  <div class="hero__image-wp wow fadeIn">
     <img class="hero__image" src="../assets/images/hero.png" aria-hidden="true">
   </div>
 </div>
 </template>
+
+<script>
+import WOW from 'wow.js/dist/wow.min'
+
+export default {
+  mounted () {
+    new WOW().init()
+  }
+}
+</script>
 
 <style lang="scss">
 @import '../scss/variables';

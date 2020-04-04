@@ -1,10 +1,10 @@
 <template>
   <section class="blog" id="blog">
-    <h2 class="blog__title">Blog</h2>
+    <h2 class="blog__title wow fadeIn">Blog</h2>
     <ul class="blog__list">
       <li v-for="blog in blogs"
         :key="blog.title"
-        class="blog__item">
+        class="blog__item wow fadeIn">
         <span class="blog__date">{{ blog.date }}</span>
         <h3 class="blog__name">
           <a :href="blog.url" target="blank">{{ blog.title }}</a>
@@ -17,12 +17,16 @@
 
 <script>
 import blogs from '@/assets/data/blogs.js'
+import WOW from 'wow.js/dist/wow.min'
 
 export default {
   data () {
     return {
       blogs
     }
+  },
+  mounted () {
+    new WOW().init()
   }
 }
 </script>

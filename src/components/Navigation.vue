@@ -4,7 +4,7 @@
     <div class="nav__toggle" v-on:click="toggleNav()">
       <div class="nav__toggle-line"></div>
     </div>
-    <nav class="nav__menu">
+    <nav class="nav__menu wow fadeIn">
       <ul class="nav__menu-list">
         <li class="nav__name">
           <a class="nav__item-cta" href="#hero">Manu Castrillon</a>
@@ -30,6 +30,8 @@
 </template>
 
 <script>
+import WOW from 'wow.js/dist/wow.min'
+
 export default {
   data () {
     return {
@@ -46,6 +48,9 @@ export default {
         document.documentElement.style.overflow = 'auto'
       }
     }
+  },
+  mounted () {
+    new WOW().init()
   }
 }
 </script>

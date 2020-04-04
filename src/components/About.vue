@@ -1,7 +1,7 @@
 <template>
   <section class="about" id="about">
-    <h2 class="about__title">About</h2>
-    <div class="about__container">
+    <h2 class="about__title wow fadeIn">About</h2>
+    <div class="about__container wow fadeIn">
       <p class="about__description">
         I'm a Web Engineer focused on building cool stuff using JavaScript.
         I'm part of the GitHub Campus Experts program, where I help my classmates
@@ -27,6 +27,16 @@
     </div>
   </section>
 </template>
+
+<script>
+import WOW from 'wow.js/dist/wow.min'
+
+export default {
+  mounted () {
+    new WOW().init()
+  }
+}
+</script>
 
 <style lang="scss">
 @import '../scss/variables';

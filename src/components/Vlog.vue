@@ -1,7 +1,7 @@
 <template>
   <section class="vlog" id="vlog">
-    <h1 class="vlog__title">Vlog</h1>
-    <div class="vlog__video-container">
+    <h2 class="vlog__title wow fadeIn">Vlog</h2>
+    <div class="vlog__video-container wow fadeIn">
       <div class="vlog__video">
         <iframe class="vlog__video-frame"
         src="https://www.youtube.com/embed/TuBEj31oEEw?controls=0"
@@ -13,6 +13,16 @@
     <a class="vlog__see-more" href="https://www.youtube.com/channel/UC4LjWxfLOQlx2ciIu0KFtWQ">See more</a>
   </section>
 </template>
+
+<script>
+import WOW from 'wow.js/dist/wow.min'
+
+export default {
+  mounted () {
+    new WOW().init()
+  }
+}
+</script>
 
 <style lang="scss">
 @import '../scss/variables';
