@@ -1,23 +1,21 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
 
-import Home from '../pages/home.vue'
-import Talks from '../pages/Talks.vue'
+Vue.use(VueRouter)
 
-Vue.use(Router)
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  }
+]
 
-export default new Router({
+const router = new VueRouter({
   mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: `/talks`,
-      name: 'Talks',
-      component: Talks
-    }
-  ]
+  base: process.env.BASE_URL,
+  routes
 })
+
+export default router

@@ -1,60 +1,68 @@
 <template>
-  <header class="hero">
-    <div class="row center-xs middle-xs">
-      <div class="wow fadeIn hero__square">
-        <p class="hero__text">
-          Manu <br/>
-          Castrillón
-        </p>
-      </div>
-    </div>
-  </header>
+<div class="hero" id="hero">
+  <h1 class="hero__text">
+    Hello <br>
+    I'm <span class="hero__text-name">Manu <br> Castrillon</span>
+  </h1>
+  <div class="hero__image-wp">
+    <img class="hero__image" src="../assets/images/hero.png" aria-hidden="true">
+  </div>
+</div>
 </template>
 
-<script>
-import WOW from 'wow.js/dist/wow.min'
-
-export default {
-  name: 'hero',
-  mounted () {
-    new WOW().init()
-  }
-}
-</script>
-
 <style lang="scss">
-@import '~styles/variables';
-@import '~styles/mixins';
-@import '~styles/functions';
+@import '../scss/variables';
+@import '../scss/mixins';
 
 .hero {
-  background-image: linear-gradient(rgba(color('pink'), 0.7),
-                                    rgba(color('nevada'), 0.4)),
-                    url('../assets/images/hero-bg.jpeg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  align-items: center;
+  display: flex;
   height: 100vh;
-  min-height: 400px;
+  justify-content: flex-end;
+  max-height: 600px;
+  padding-top: 60px;
+  position: relative;
 
-  &__square {
-    align-items: center;
-    background: color('white');
-    color: color('nevada');
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 300px;
-    min-width: 230px;
-    padding: 20px;
-    position: relative;
-    width: 30vw;
+  @include from('md') {
+    max-height: 800px;
+  }
+
+  @include from('lg') {
+    max-height: unset;
+  }
+
+  &__image-wp {
+    width: 290px;
+
+    @include from('md') {
+      width: 420px;
+    }
+
+    @include from('lg') {
+      transform: translateX(80px);
+      width: 500px;
+    }
   }
 
   &__text {
-    font-size: 40px;
-    font-weight: 600;
-    margin: 0;
+    color: $alizarin-crimson;
+    font-size: 60px;
+    font-weight: 800;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+
+    @include from('md') {
+      font-size: 100px;
+    }
+
+    @include from('lg') {
+      font-size: 120px;
+    }
+  }
+
+  &__text-name {
+    text-decoration: underline;
   }
 }
 </style>

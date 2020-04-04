@@ -1,16 +1,13 @@
+// breakpoints
+$small-bp: 375px;
+$medium-bp: 768px;
+$large-bp: 1024px;
+$xlarge-bp: 10240px;
+
 // colors
-$colors: (
-  'white': #FFF,
-  'pink': #FFCACD,
-  'egg-blue': #00BAB4,
-  'magic-mint': #A4EEDE,
-  'salomie': #FFDA94,
-  'nevada': #5B717C,
-);
+$black: #000;
+$white: #fff;
 
-// font size
-$font-sm: 12px;
-$font-md: 15px;
-$font-lg: 20px;
-$font-xl: 24px;
-
+$alizarin-crimson: #ee2737;
+$pot-pourri: #f7e6e3;
+$silver: #b8b8b8;
