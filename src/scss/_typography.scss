@@ -1,0 +1,28 @@
+%section-title {
+  display: inline-block;
+  font-size: 24px;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    background: $black;
+    bottom: -3px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 80%;
+  }
+}
+
+%cta {
+  color: $alizarin-crimson;
+  display: block;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: underline;
+}

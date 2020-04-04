@@ -1,0 +1,14 @@
+@mixin from($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @media (min-width: $small-bp) { @content; }
+  }
+  @else if $breakpoint == 'md' {
+    @media (min-width: $medium-bp) { @content; }
+  }
+  @else if $breakpoint == 'lg' {
+    @media (min-width: $large-bp)  { @content; }
+  }
+  @else if $breakpoint == 'xl' {
+    @media (min-width: $xlarge-bp)  { @content; }
+  }
+}
