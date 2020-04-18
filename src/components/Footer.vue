@@ -14,7 +14,7 @@
   padding: 30px 0;
 
   &__user {
-    color: $alizarin-crimson;
+    color: $mandy;
     font-weight: 700;
   }
 }

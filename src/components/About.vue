@@ -65,7 +65,7 @@ export default {
   }
 
   &__info {
-    background: $alizarin-crimson;
+    background: $mandy;
     color: $white;
     margin: 0;
     padding: 30px 20px;

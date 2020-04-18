@@ -1,11 +1,29 @@
 <template>
 <div class="hero" id="hero">
-  <h1 class="hero__text wow fadeIn">
-    Hello <br>
-    I'm <span class="hero__text-name">Manu <br> Castrillon</span>
-  </h1>
-  <div class="hero__image-wp wow fadeIn">
-    <img class="hero__image" src="../assets/images/hero.png" aria-hidden="true">
+  <div class="hero__content">
+    <div class="hero__text">
+      <p class="wow zoomIn">Hello I'm</p>
+      <h1 class="hero__title wow fadeIn">
+        <span class="wow flipInY" data-wow-delay="0.15s">M</span>
+        <span class="wow flipInY" data-wow-delay="0.30s">a</span>
+        <span class="wow flipInY" data-wow-delay="0.45s">n</span>
+        <span class="wow flipInY" data-wow-delay="0.60s">u</span>
+        <br>
+        <span class="wow flipInY" data-wow-delay="0.75s">C</span>
+        <span class="wow flipInY" data-wow-delay="1s">a</span>
+        <span class="wow flipInY" data-wow-delay="1.15s">s</span>
+        <span class="wow flipInY" data-wow-delay="1.30s">t</span>
+        <span class="wow flipInY" data-wow-delay="1.45s">r</span>
+        <span class="wow flipInY" data-wow-delay="1.60s">i</span>
+        <span class="wow flipInY" data-wow-delay="1.75s">l</span>
+        <span class="wow flipInY" data-wow-delay="2s">l</span>
+        <span class="wow flipInY" data-wow-delay="2.15s">o</span>
+        <span class="wow flipInY" data-wow-delay="2.30s">n</span>
+      </h1>
+    </div>
+    <div class="hero__image-wp wow zoomIn">
+      <img class="hero__image" src="../assets/images/hero.png" aria-hidden="true">
+    </div>
   </div>
 </div>
 </template>
@@ -39,13 +57,26 @@ export default {
 
   @include from('lg') {
     max-height: unset;
+    min-height: 740px;
+  }
+
+  &__content {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+
+    @include from('md') {
+      justify-content: space-between;
+    }
   }
 
   &__image-wp {
-    width: 290px;
+    width: 250px;
 
     @include from('md') {
-      width: 420px;
+      width: 300px;
     }
 
     @include from('lg') {
@@ -55,24 +86,32 @@ export default {
   }
 
   &__text {
-    color: $alizarin-crimson;
-    font-size: 60px;
-    font-weight: 800;
+    color: $mandy;
+    font-weight: 700;
     left: 0;
     position: absolute;
-    z-index: 1;
 
     @include from('md') {
-      font-size: 100px;
+      position: initial;
     }
 
     @include from('lg') {
-      font-size: 120px;
+      margin-right: -60px;
+    }
+
+    p {
+      font-size: 30px;
+      margin: 0;
+      text-decoration: underline;
     }
   }
 
-  &__text-name {
-    text-decoration: underline;
+  &__title {
+    font-size: 60px;
+
+    @include from('md') {
+      font-size: 5em;
+    }
   }
 }
 </style>

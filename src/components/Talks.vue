@@ -92,7 +92,7 @@ export default {
     }
 
     &::after {
-      background: $alizarin-crimson;
+      background: $mandy;
       content: '';
       display: block;
       height: 100%;
@@ -107,7 +107,7 @@ export default {
   }
 
   &__resource {
-    color: $alizarin-crimson;
+    color: $mandy;
     display: inline-block;
     font-size: 12px;
     padding-top: 5px;

@@ -44,7 +44,7 @@ export default {
   }
 
   &__video-container {
-    background: $alizarin-crimson;
+    background: $mandy;
     margin-bottom: 15px;
     padding: 20px;
 

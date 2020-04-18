@@ -101,7 +101,7 @@ export default {
 
     &:hover {
       .nav__item-cta {
-        color: $alizarin-crimson;
+        color: $mandy;
       }
     }
   }

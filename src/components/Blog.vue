@@ -38,7 +38,7 @@ export default {
 
 .blog {
   &__date {
-    color: $alizarin-crimson;
+    color: $mandy;
     display: block;
     font-size: 12px;
     margin-bottom: 5px;
@@ -84,7 +84,7 @@ export default {
     }
 
     &::after {
-      background: $alizarin-crimson;
+      background: $mandy;
       content: '';
       display: block;
       height: 100%;

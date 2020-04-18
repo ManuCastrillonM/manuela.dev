@@ -55,7 +55,7 @@ export default {
 
 .contact {
   &__icon {
-    color: $alizarin-crimson;
+    color: $mandy;
     font-size: 22px;
   }
 
