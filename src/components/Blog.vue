@@ -2,31 +2,49 @@
   <section class="blog" id="blog">
     <h2 class="blog__title wow fadeIn">Blog</h2>
     <ul class="blog__list">
-      <li v-for="blog in blogs"
-        :key="blog.title"
+      <li v-for="article in articlesFormatted"
+        :key="article.title"
         class="blog__item wow fadeIn">
-        <span class="blog__date">{{ blog.date }}</span>
+        <span class="blog__date">{{ article.date }}</span>
         <h3 class="blog__name">
-          <a :href="blog.url" target="blank">{{ blog.title }}</a>
+          <a :href="article.url" target="blank">{{ article.title }}</a>
         </h3>
       </li>
     </ul>
-    <a class="blog__read-more" href="https://medium.com/@ManuCastrillonM">Read more</a>
+    <a class="blog__read-more" href="https://dev.to/manucastrillonm">Read more</a>
   </section>
 </template>
 
 <script>
-import blogs from '@/assets/data/blogs.js'
-import WOW from 'wow.js/dist/wow.min'
+// import blogs from '@/assets/data/blogs.js'
 
 export default {
   data () {
     return {
-      blogs
+      articles: []
     }
   },
-  mounted () {
-    new WOW().init()
+  async mounted () {
+    const devUrl = 'https://dev.to/api/articles?username=manucastrillonm'
+
+    const response = await fetch(devUrl)
+
+    if (response.ok) {
+      this.articles = await response.json()
+    }
+  },
+  computed: {
+    articlesFormatted () {
+      return this.articles.slice(0, 3).map(item => {
+        const date = new Date(item.created_at)
+
+        return {
+          title: item.title,
+          date: date.toDateString(),
+          url: item.url
+        }
+      })
+    }
   }
 }
 </script>

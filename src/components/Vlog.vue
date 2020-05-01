@@ -14,16 +14,6 @@
   </section>
 </template>
 
-<script>
-import WOW from 'wow.js/dist/wow.min'
-
-export default {
-  mounted () {
-    new WOW().init()
-  }
-}
-</script>
-
 <style lang="scss">
 @import '../scss/variables';
 @import '../scss/mixins';

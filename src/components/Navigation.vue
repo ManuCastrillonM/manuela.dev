@@ -30,8 +30,6 @@
 </template>
 
 <script>
-import WOW from 'wow.js/dist/wow.min'
-
 export default {
   data () {
     return {
@@ -48,9 +46,6 @@ export default {
         document.documentElement.style.overflow = 'auto'
       }
     }
-  },
-  mounted () {
-    new WOW().init()
   }
 }
 </script>

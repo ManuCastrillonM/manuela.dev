@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import WOW from 'wow.js/dist/wow.min'
-
 export default {
   data () {
     return {
@@ -30,8 +28,8 @@ export default {
         name: 'linkedin',
         url: 'https://www.linkedin.com/in/manuelacastrillon'
       }, {
-        name: 'medium',
-        url: 'https://www.medium.com/@manucastrillonm'
+        name: 'dev',
+        url: 'https://dev.to/manucastrillonm'
       }, {
         name: 'youtube',
         url: 'https://www.youtube.com/channel/UC4LjWxfLOQlx2ciIu0KFtWQ'
@@ -42,9 +40,6 @@ export default {
     cssSocialClass (item) {
       return `contact__icon fab fa-${item}`
     }
-  },
-  mounted () {
-    new WOW().init()
   }
 }
 </script>

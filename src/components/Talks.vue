@@ -24,7 +24,6 @@
 
 <script>
 import talks from '@/assets/data/talks.js'
-import WOW from 'wow.js/dist/wow.min'
 
 export default {
   data () {
@@ -41,9 +40,6 @@ export default {
         return this.talks.slice(0, 4)
       }
     }
-  },
-  mounted () {
-    new WOW().init()
   }
 }
 </script>
