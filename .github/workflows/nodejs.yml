@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -34,7 +34,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Update build files"
-        git push origin master
+        git push origin main
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
