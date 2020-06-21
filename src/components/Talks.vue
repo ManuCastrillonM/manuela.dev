@@ -10,6 +10,7 @@
           <a v-for="resource in talk.resources"
             :key="resource.name"
             :href="resource.url"
+            target="blank"
             class="talks__resource"
           >{{ resource.name }}</a>
         </div>

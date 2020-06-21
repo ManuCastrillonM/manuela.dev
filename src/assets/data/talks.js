@@ -1,5 +1,14 @@
 module.exports = [
   {
+    title: 'Construyendo web apps con Gatsby.js',
+    resources: [{
+      name: 'Slides [ES]',
+      url: 'https://docs.google.com/presentation/d/1FUTkUmHMUB8ETiWxci__VKfrGXc-tF2DVk4FbZJ7jvk/edit'
+    }, {
+      name: 'Video [ES]',
+      url: 'https://www.youtube.com/watch?v=vGPuuzPxIeA'
+    }]
+  }, {
     title: 'Workflows personalizados utilizando GitHub Actions',
     resources: [{
       name: 'Slides [ES]',
