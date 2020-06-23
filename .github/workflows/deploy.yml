@@ -31,7 +31,3 @@ jobs:
         git config --local user.name "GitHub Action"
         git commit -m "Update build files"
         git push origin gh-pages
-    - name: Push changes
-      uses: ad-m/github-push-action@gh-pages
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
