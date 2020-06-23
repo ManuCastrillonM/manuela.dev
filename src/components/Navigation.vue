@@ -19,6 +19,9 @@
           <a class="nav__item-cta" v-on:click="toggleNav()" href="#vlog">Vlog</a>
         </li>
         <li class="nav__item">
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav__item">
           <a class="nav__item-cta" v-on:click="toggleNav()" href="#talks">Talks</a>
         </li>
         <li class="nav__item">
