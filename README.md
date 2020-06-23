@@ -1,5 +1,7 @@
 # manuela.dev
 
+![Node.js CI](https://github.com/ManuCastrillonM/manuela.dev/workflows/Node.js%20CI/badge.svg)
+
 ## Project setup
 ```
 yarn install
