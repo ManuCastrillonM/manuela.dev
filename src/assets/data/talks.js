@@ -25,6 +25,9 @@ module.exports = [
     resources: [{
       name: 'Slides [ES]',
       url: 'https://slides.com/manucastrillonm/github-actions'
+    }, {
+      name: 'Video [ES]',
+      url: 'https://youtu.be/a2tX5907XEQ?t=1749'
     }]
   }, {
     title: 'Git from Zero to Hero',
