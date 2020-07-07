@@ -1,5 +1,11 @@
 module.exports = [
   {
+    title: 'Building a REST API using Express.js',
+    resources: [{
+      name: 'Slides [EN],
+      url: 'https://docs.google.com/presentation/d/1h1Lk7L2x3qksLI_CI22sTTxBb-2T1pqmQqKFew79d9A/edit?usp=sharing'
+    }]
+  }, {
     title: 'Construyendo web apps con Gatsby.js',
     resources: [{
       name: 'Slides [ES]',
