@@ -16,7 +16,6 @@
 </template>
 
 <script>
-// import blogs from '@/assets/data/blogs.js'
 
 export default {
   data () {

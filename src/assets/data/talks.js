@@ -1,12 +1,16 @@
 module.exports = [
   {
     title: 'Building a REST API using Express.js',
+    date: 'June 29, 2020',
+    event: 'Women Who Code Medellin',
     resources: [{
-      name: 'Slides [EN],
+      name: 'Slides [EN]',
       url: 'https://docs.google.com/presentation/d/1h1Lk7L2x3qksLI_CI22sTTxBb-2T1pqmQqKFew79d9A/edit?usp=sharing'
     }]
   }, {
     title: 'Construyendo web apps con Gatsby.js',
+    date: 'June 20, 2020',
+    event: 'Pioneras Developers (Online)',
     resources: [{
       name: 'Slides [ES]',
       url: 'https://docs.google.com/presentation/d/1FUTkUmHMUB8ETiWxci__VKfrGXc-tF2DVk4FbZJ7jvk/edit'
@@ -16,6 +20,8 @@ module.exports = [
     }]
   }, {
     title: 'Workflows personalizados utilizando GitHub Actions',
+    date: 'March 25, 2020',
+    event: 'Medellin.js (Online)',
     resources: [{
       name: 'Slides [ES]',
       url: 'https://slides.com/manucastrillonm/github-actions'

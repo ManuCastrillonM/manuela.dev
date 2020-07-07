@@ -5,6 +5,9 @@
       <li v-for="talk in filteredBlogs"
         :key="talk.title"
         class="talks__item wow fadeIn">
+        <template v-if="talk.date">
+        <span class="talks__date">{{ talk.date }} | {{ talk.event }}</span>
+        </template>
         <h3>{{ talk.title }}</h3>
         <div>
           <a v-for="resource in talk.resources"
@@ -51,6 +54,14 @@ export default {
 @import '../scss/typography';
 
 .talks {
+  &__date {
+    color: $mandy;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
   &__item {
     padding: 30px 10px;
     position: relative;
@@ -67,6 +78,7 @@ export default {
           border-color: transparent;
         }
 
+        .talks__date,
         .talks__resource {
           color: $white;
         }
