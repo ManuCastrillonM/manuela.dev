@@ -31,48 +31,64 @@ module.exports = [
     }]
   }, {
     title: 'Git from Zero to Hero',
+    date: 'March 7, 2020',
+    event: 'Codex UdeA (Medellin)',
     resources: [{
       name: 'Slides [EN]',
       url: 'https://drive.google.com/file/d/1Nacxq9M0MjDzsimHVgkb8d-ABZjLxaoM/view?usp=sharing'
     }]
   }, {
     title: 'The good, the bad, and the code review',
+    date: 'November 15, 2019',
+    event: 'GitHub Education summit (San Francisco)',
     resources: [{
       name: 'Slides [EN]',
       url: 'https://slides.com/manucastrillonm/github-education-day'
     }]
   }, {
     title: 'CNN in the browser using TensorFlow.js',
+    date: 'June 19, 2019',
+    event: 'Campus Party CO (Bogota)',
     resources: [{
       name: 'Slides [ES]',
       url: 'https://docs.google.com/presentation/d/1kpdVAoX3kGjTzFBKdy1OVvx3qRr7oSwJfHo2prQApE4/edit?usp=sharing'
     }]
   }, {
     title: 'A JavaScript Nightmare (coercion)',
+    date: 'May 22, 2019',
+    event: 'GitHub Campus Experts Meetup (Berlin)',
     resources: [{
       name: 'Slides [EN]',
       url: 'https://slides.com/manucastrillonm/js-coercion#/'
     }]
   }, {
     title: 'One day, one app, prototyping projects using Google Vision API',
+    date: 'April 6, 2019',
+    event: 'Women In Data Science Conf (Medellin)',
     resources: [{
       name: 'Slides [EN]',
       url: 'https://drive.google.com/file/d/1Oh96X3bgwyiE8bhVVIu_pyFxp1xOJVhX/view?usp=sharing'
     }]
   }, {
     title: 'Big Data from Scratch',
+    date: 'July 31, 2018',
+    event: 'UdeA',
     resources: [{
       name: 'Slides [EN]',
       url: 'https://docs.google.com/presentation/d/1-5ivAD8G4GYElUehyzHuMyEhLEBdcePT63mi_ipK2qE/edit#slide=id.g3f45ad4a1c_2_51'
     }]
   }, {
     title: 'What the Ho*k (react hooks)',
+    date: 'November, 2018',
+    event: 'React Medellin',
     resources: [{
       name: 'Slides [ES]',
       url: 'https://slides.com/manucastrillonm/react-hooks#/'
     }]
   }, {
     title: 'Tech conferences: Opportunities and scholarships',
+    date: 'October, 2018',
+    event: 'Node.js Medellin',
     resources: [{
       name: 'Slides [EN]',
       url: 'https://slides.com/manucastrillonm/tech-conf-scholarships#/'
