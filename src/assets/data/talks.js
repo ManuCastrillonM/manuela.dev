@@ -1,5 +1,14 @@
 module.exports = [
   {
+    title: 'Creciendo pero juntas',
+    date: 'July 24, 2020',
+    event: 'WIE USCO',
+    resources: [{
+      name: 'Slides [ES]',
+      url: 'https://docs.google.com/presentation/d/10wTR9eEB61CwfveqwXWot5Hv09E-KOA9zilqHZ_KpYo/edit?usp=sharing'
+    }]
+  },
+  {
     title: 'Building a REST API using Express.js',
     date: 'June 29, 2020',
     event: 'Women Who Code Medellin',
