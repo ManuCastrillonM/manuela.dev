@@ -1,5 +1,14 @@
 module.exports = [
   {
+    title: 'Building a bridge: Experience the industry as a student',
+    date: 'August 20, 2020',
+    event: 'MLH Hackon',
+    resources: [{
+      name: 'Slides [EN]',
+      url: 'https://docs.google.com/presentation/d/1dNVWf8bAFz8PNNy7uW-6ldzEq5rSz07OT9KuSKd8ELc/edit?usp=sharing'
+    }]
+  },
+  {
     title: 'Creciendo pero juntas',
     date: 'July 24, 2020',
     event: 'WIE USCO',
