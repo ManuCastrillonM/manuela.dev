@@ -1,5 +1,23 @@
 module.exports = [
   {
+    title: 'Intro a Git',
+    date: 'September 19, 2020',
+    event: 'Pioneras Developers',
+    resources: [{
+      name: 'Slides [ES]',
+      url: 'https://slides.com/manucastrillonm/pioneras-git'
+    }]
+  },
+  {
+    title: '10 cosas que me hubiera gustado saber cuando empecé a programar',
+    date: 'September 12. 2020',
+    event: 'Women Tech Makers',
+    resources: [{
+      name: 'Slides [ES]',
+      url: 'https://slides.com/manucastrillonm/wtm'
+    }]
+  },
+  {
     title: 'Building a bridge: Experience the industry as a student',
     date: 'August 20, 2020',
     event: 'MLH Hackon',
