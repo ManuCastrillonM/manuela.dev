@@ -32,7 +32,7 @@ export default {
         url: 'https://dev.to/manucastrillonm'
       }, {
         name: 'youtube',
-        url: 'https://www.youtube.com/channel/UC4LjWxfLOQlx2ciIu0KFtWQ'
+        url: 'https://www.youtube.com/c/ManuCastrillon'
       }]
     }
   },
