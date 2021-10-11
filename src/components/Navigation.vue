@@ -1,6 +1,5 @@
 <template>
-  <div class="nav"
-  :class="{'nav--active' : isActive}">
+  <div class="nav" :class="{ 'nav--active': isActive }">
     <div class="nav__toggle" v-on:click="toggleNav()">
       <div class="nav__toggle-line"></div>
     </div>
@@ -10,22 +9,34 @@
           <a class="nav__item-cta" href="#hero">Manu Castrillon</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#about">About</a>
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#about"
+            >About</a
+          >
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#blog">Blog</a>
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#blog"
+            >Blog</a
+          >
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#vlog">Vlog</a>
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#vlog"
+            >Vlog</a
+          >
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#portfolio">Portfolio</a>
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#portfolio"
+            >Portfolio</a
+          >
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#talks">Talks</a>
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#talks"
+            >Talks</a
+          >
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#contact">Contact</a>
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#contact"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
@@ -43,7 +54,9 @@ export default {
     toggleNav () {
       this.isActive = !this.isActive
 
-      if (this.isActive) {
+      const isMobile = document.documentElement.clientWidth < 1024
+
+      if (this.isActive && isMobile) {
         document.documentElement.style.overflow = 'hidden'
       } else {
         document.documentElement.style.overflow = 'auto'
