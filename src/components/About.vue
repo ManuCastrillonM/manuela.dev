@@ -3,11 +3,11 @@
     <h2 class="about__title wow fadeIn">About</h2>
     <div class="about__container wow fadeIn">
       <p class="about__description">
-        I'm a Web Engineer focused on building cool stuff using JavaScript. I'm
-        part of the GitHub Campus Experts program, where I help my classmates
-        learn about development and modern web technologies.<br />
-        Community leader, currently co-organizing GitConfCO and Vue Vixens CO.
-        Founder and supporter of Codex UdeA.<br />
+        I'm a Software Engineer focused on building cool stuff using JavaScript.
+        I'm part of the GitHub Campus Experts program, where I help my
+        classmates learn about development and modern web technologies.<br />
+        Community leader, currently co-organizing Frontend Foxes CO and Codex
+        UdeA.<br />
         I dream with a world where everyone can have the same opportunities to
         access education.<br />
         <b>My interests:</b> Diversity & Inclusion, Teach & Learn, Pizza &
