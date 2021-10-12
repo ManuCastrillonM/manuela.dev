@@ -1,24 +1,23 @@
 <template>
   <section class="portfolio" id="portfolio">
     <h2 class="portfolio__title wow fadeIn">Portfolio</h2>
-    <ul class="portfolio__list">
-      <li v-for="item in portfolio"
-        :key="item.name"
-        class="portfolio__item">
-        <img :src="getImage(item.image)"
-          :alt="`${item.name} screenshot`"
-          class="portfolio__image">
-        {{ item.name }}
+    <div class="portfolio__list">
+      <div v-for="item in portfolio" :key="item.name" class="portfolio__item">
+        <div
+          :style="{ backgroundImage: 'url(' + getImage(item.image) + ')' }"
+          class="portfolio__image"
+        />
+        <p class="portfolio__name">
+          {{ item.name }}
+        </p>
         <div class="portfolio__description">
           {{ item.description }}
-          <a :href="item.url"
-            target="blank"
-            class="portfolio__url">
+          <a :href="item.url" target="blank" class="portfolio__url">
             {{ item.url }}
           </a>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -47,6 +46,9 @@ export default {
 
 .portfolio {
   &__image {
+    background-position: center;
+    background-size: cover;
+    height: 170px;
     opacity: 0.85;
   }
 
@@ -54,10 +56,11 @@ export default {
     background: $mandy;
     color: $white;
     font-weight: 700;
-    max-width: 250px;
-    padding-bottom: 5px;
+    flex: none;
     position: relative;
     text-align: center;
+    height: 200px;
+    width: 250px;
 
     &:not(:first-child) {
       margin-left: 15px;
@@ -73,6 +76,7 @@ export default {
 
   &__list {
     display: flex;
+    overflow-x: scroll;
   }
 
   &__description {
@@ -89,6 +93,10 @@ export default {
     position: absolute;
     transition: all 0.2s ease-in;
     width: 100%;
+  }
+
+  &__name {
+    margin: 6px 0;
   }
 
   &__title {
