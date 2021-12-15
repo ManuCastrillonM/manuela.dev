@@ -2,17 +2,7 @@
   <section class="about" id="about">
     <h2 class="about__title wow fadeIn">About</h2>
     <div class="about__container wow fadeIn">
-      <p class="about__description">
-        I'm a Software Engineer focused on building cool stuff using JavaScript.
-        I'm part of the GitHub Campus Experts program, where I help my
-        classmates learn about development and modern web technologies.<br />
-        Community leader, currently co-organizing Frontend Foxes CO and Codex
-        UdeA.<br />
-        I dream with a world where everyone can have the same opportunities to
-        access education.<br />
-        <b>My interests:</b> Diversity & Inclusion, Teach & Learn, Pizza &
-        Buñuelos.
-      </p>
+      <p class="about__description" v-html="rawDescription" />
       <ul class="about__info">
         <li class="about__info-item">
           <span class="about__info-title">Name</span><br />
@@ -30,6 +20,22 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      rawDescription: `
+        I'm a Software Engineer focused on building cool stuff using JavaScript.
+        I'm part of the GitHub Campus Experts program, where I help my
+        classmates learn about development and modern web technologies.<br />
+        I dream a world where everyone can have the same opportunities to
+        access education.<br />
+        <b>My interests:</b> DEI, Teach, Learn, Gardening, and Crochet`
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 @import '../scss/variables';
