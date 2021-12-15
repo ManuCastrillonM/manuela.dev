@@ -46,8 +46,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/variables";
-@import "../scss/mixins";
+@import '../scss/variables';
+@import '../scss/mixins';
 
 .home {
   @include from('lg') {
@@ -58,7 +58,7 @@ export default {
     background: $pot-pourri;
 
     @include from('lg') {
-      width: 60%;
+      width: 70%;
       z-index: 1;
     }
   }
@@ -83,7 +83,7 @@ export default {
     @include from('lg') {
       position: fixed;
       right: 0;
-      width: 40%;
+      width: 30%;
     }
   }
 }

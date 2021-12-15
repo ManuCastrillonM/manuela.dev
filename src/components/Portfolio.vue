@@ -54,7 +54,7 @@ export default {
     background-position: center;
     background-size: cover;
     height: 170px;
-    opacity: 0.85;
+    opacity: 0.95;
   }
 
   &__item {
