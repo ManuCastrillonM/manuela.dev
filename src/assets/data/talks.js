@@ -1,13 +1,23 @@
 module.exports = [
   {
+    title: 'Estrategias para construir tu carrera en tecnología',
+    date: 'December 8, 2021',
+    event: 'Talent Land LATAM',
+    resources: [
+      {
+        name: 'Website [ES]',
+        url: 'https://www.talent-land.lat/speakers/manuela-castrillon/'
+      }
+    ]
+  },
+  {
     title: 'Hacktoberfest 2021, como contribuir en Open Source',
     date: 'October 11, 2021',
     event: 'Codex UdeA',
     resources: [
       {
         name: 'Slides [ES]',
-        url:
-          'https://docs.google.com/presentation/d/1t4PyHUzxnh0MjrV8PRs2CZ3u0SWxXTLobkPqvQ0AxFQ/edit?usp=sharing'
+        url: 'https://docs.google.com/presentation/d/1t4PyHUzxnh0MjrV8PRs2CZ3u0SWxXTLobkPqvQ0AxFQ/edit?usp=sharing'
       }
     ]
   },
@@ -40,8 +50,7 @@ module.exports = [
     resources: [
       {
         name: 'Slides [EN]',
-        url:
-          'https://docs.google.com/presentation/d/1dNVWf8bAFz8PNNy7uW-6ldzEq5rSz07OT9KuSKd8ELc/edit?usp=sharing'
+        url: 'https://docs.google.com/presentation/d/1dNVWf8bAFz8PNNy7uW-6ldzEq5rSz07OT9KuSKd8ELc/edit?usp=sharing'
       }
     ]
   },
@@ -52,8 +61,7 @@ module.exports = [
     resources: [
       {
         name: 'Slides [ES]',
-        url:
-          'https://docs.google.com/presentation/d/10wTR9eEB61CwfveqwXWot5Hv09E-KOA9zilqHZ_KpYo/edit?usp=sharing'
+        url: 'https://docs.google.com/presentation/d/10wTR9eEB61CwfveqwXWot5Hv09E-KOA9zilqHZ_KpYo/edit?usp=sharing'
       }
     ]
   },
@@ -64,8 +72,7 @@ module.exports = [
     resources: [
       {
         name: 'Slides [EN]',
-        url:
-          'https://docs.google.com/presentation/d/1h1Lk7L2x3qksLI_CI22sTTxBb-2T1pqmQqKFew79d9A/edit?usp=sharing'
+        url: 'https://docs.google.com/presentation/d/1h1Lk7L2x3qksLI_CI22sTTxBb-2T1pqmQqKFew79d9A/edit?usp=sharing'
       }
     ]
   },
@@ -76,8 +83,7 @@ module.exports = [
     resources: [
       {
         name: 'Slides [ES]',
-        url:
-          'https://docs.google.com/presentation/d/1FUTkUmHMUB8ETiWxci__VKfrGXc-tF2DVk4FbZJ7jvk/edit'
+        url: 'https://docs.google.com/presentation/d/1FUTkUmHMUB8ETiWxci__VKfrGXc-tF2DVk4FbZJ7jvk/edit'
       },
       {
         name: 'Video [ES]',
@@ -107,8 +113,7 @@ module.exports = [
     resources: [
       {
         name: 'Slides [EN]',
-        url:
-          'https://drive.google.com/file/d/1Nacxq9M0MjDzsimHVgkb8d-ABZjLxaoM/view?usp=sharing'
+        url: 'https://drive.google.com/file/d/1Nacxq9M0MjDzsimHVgkb8d-ABZjLxaoM/view?usp=sharing'
       }
     ]
   },
@@ -130,8 +135,7 @@ module.exports = [
     resources: [
       {
         name: 'Slides [ES]',
-        url:
-          'https://docs.google.com/presentation/d/1kpdVAoX3kGjTzFBKdy1OVvx3qRr7oSwJfHo2prQApE4/edit?usp=sharing'
+        url: 'https://docs.google.com/presentation/d/1kpdVAoX3kGjTzFBKdy1OVvx3qRr7oSwJfHo2prQApE4/edit?usp=sharing'
       }
     ]
   },
@@ -153,8 +157,7 @@ module.exports = [
     resources: [
       {
         name: 'Slides [EN]',
-        url:
-          'https://drive.google.com/file/d/1Oh96X3bgwyiE8bhVVIu_pyFxp1xOJVhX/view?usp=sharing'
+        url: 'https://drive.google.com/file/d/1Oh96X3bgwyiE8bhVVIu_pyFxp1xOJVhX/view?usp=sharing'
       }
     ]
   },
@@ -165,8 +168,7 @@ module.exports = [
     resources: [
       {
         name: 'Slides [EN]',
-        url:
-          'https://docs.google.com/presentation/d/1-5ivAD8G4GYElUehyzHuMyEhLEBdcePT63mi_ipK2qE/edit#slide=id.g3f45ad4a1c_2_51'
+        url: 'https://docs.google.com/presentation/d/1-5ivAD8G4GYElUehyzHuMyEhLEBdcePT63mi_ipK2qE/edit#slide=id.g3f45ad4a1c_2_51'
       }
     ]
   },
