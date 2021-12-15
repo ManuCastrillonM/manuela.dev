@@ -5,20 +5,20 @@
         <p class="wow zoomIn">Hello I'm</p>
         <h1 class="hero__title wow fadeIn">
           <span class="wow flipInY" data-wow-delay="0.15s">M</span>
-          <span class="wow flipInY" data-wow-delay="0.30s">a</span>
-          <span class="wow flipInY" data-wow-delay="0.45s">n</span>
-          <span class="wow flipInY" data-wow-delay="0.60s">u</span>
+          <span class="wow flipInY" data-wow-delay="0.20s">a</span>
+          <span class="wow flipInY" data-wow-delay="0.25s">n</span>
+          <span class="wow flipInY" data-wow-delay="0.30s">u</span>
           <br />
-          <span class="wow flipInY" data-wow-delay="0.75s">C</span>
-          <span class="wow flipInY" data-wow-delay="1s">a</span>
-          <span class="wow flipInY" data-wow-delay="1.15s">s</span>
-          <span class="wow flipInY" data-wow-delay="1.30s">t</span>
-          <span class="wow flipInY" data-wow-delay="1.45s">r</span>
-          <span class="wow flipInY" data-wow-delay="1.60s">i</span>
-          <span class="wow flipInY" data-wow-delay="1.75s">l</span>
-          <span class="wow flipInY" data-wow-delay="2s">l</span>
-          <span class="wow flipInY" data-wow-delay="2.15s">o</span>
-          <span class="wow flipInY" data-wow-delay="2.30s">n</span>
+          <span class="wow flipInY" data-wow-delay="0.35s">C</span>
+          <span class="wow flipInY" data-wow-delay="0.40s">a</span>
+          <span class="wow flipInY" data-wow-delay="0.45s">s</span>
+          <span class="wow flipInY" data-wow-delay="0.50s">t</span>
+          <span class="wow flipInY" data-wow-delay="0.55s">r</span>
+          <span class="wow flipInY" data-wow-delay="0.6s">i</span>
+          <span class="wow flipInY" data-wow-delay="0.65s">l</span>
+          <span class="wow flipInY" data-wow-delay="0.70s">l</span>
+          <span class="wow flipInY" data-wow-delay="0.75s">o</span>
+          <span class="wow flipInY" data-wow-delay="0.80s">n</span>
         </h1>
       </div>
       <div class="hero__image-wp wow zoomIn">

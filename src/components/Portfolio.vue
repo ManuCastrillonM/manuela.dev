@@ -10,11 +10,16 @@
         <p class="portfolio__name">
           {{ item.name }}
         </p>
-        <div class="portfolio__description">
-          {{ item.description }}
-          <a :href="item.url" target="blank" class="portfolio__url">
-            {{ item.url }}
-          </a>
+        <div class="portfolio__details">
+          <span class="portfolio__description">{{ item.description }}</span>
+          <div>
+            <a :href="item.url" target="blank" class="portfolio__url">
+              <i class="fas fa-globe"></i>
+            </a>
+            <a :href="item.repoUrl" target="blank" class="portfolio__url">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -67,7 +72,7 @@ export default {
     }
 
     &:hover {
-      .portfolio__description {
+      .portfolio__details {
         height: 100%;
         padding: 10px;
       }
@@ -80,6 +85,10 @@ export default {
   }
 
   &__description {
+    margin: 10px;
+  }
+
+  &__details {
     align-items: center;
     background-color: $mandy;
     bottom: 0;
@@ -105,8 +114,14 @@ export default {
 
   &__url {
     color: $white;
-    margin-top: 10px;
+    font-size: 25px;
+    margin: 10px;
     text-decoration: underline;
+    transition: 0.2s ease-in;
+
+    &:hover {
+      color: $silver;
+    }
   }
 }
 </style>
