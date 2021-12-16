@@ -1,41 +1,28 @@
 <template>
   <section class="about" id="about">
-    <h2 class="about__title wow fadeIn">About</h2>
+    <h2 class="about__title wow fadeIn">{{ $t('common.about') }}</h2>
     <div class="about__container wow fadeIn">
-      <p class="about__description" v-html="rawDescription" />
+      <p class="about__description" v-html="$t('about.bio')" />
       <ul class="about__info">
         <li class="about__info-item">
-          <span class="about__info-title">Name</span><br />
+          <span class="about__info-title">{{ $t('about.name') }}</span
+          ><br />
           Manuela Castrillón
         </li>
         <li class="about__info-item">
-          <span class="about__info-title">Email</span><br />
+          <span class="about__info-title">{{ $t('about.email') }}</span
+          ><br />
           hello@manuela.dev
         </li>
         <li class="about__info-item">
-          <span class="about__info-title">Location</span><br />
+          <span class="about__info-title">{{ $t('about.location') }}</span
+          ><br />
           Medellín - Colombia
         </li>
       </ul>
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      rawDescription: `
-        I'm a Software Engineer focused on building cool stuff using JavaScript.
-        I'm part of the GitHub Campus Experts program, where I help my
-        classmates learn about development and modern web technologies.<br />
-        I dream a world where everyone can have the same opportunities to
-        access education.<br />
-        <b>My interests:</b> DEI, Teach, Learn, Gardening, and Crochet`
-    }
-  }
-}
-</script>
 
 <style lang="scss">
 @import '../scss/variables';

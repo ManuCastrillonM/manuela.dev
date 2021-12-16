@@ -1,7 +1,8 @@
 module.exports = [
   {
     title: 'Estrategias para construir tu carrera en tecnología',
-    date: 'December 8, 2021',
+    date: '2021-12-08',
+    date1: 'December 8, 2021',
     event: 'Talent Land LATAM',
     resources: [
       {
@@ -12,7 +13,8 @@ module.exports = [
   },
   {
     title: 'Hacktoberfest 2021, como contribuir en Open Source',
-    date: 'October 11, 2021',
+    date: '2021-10-11',
+    date1: 'October 11, 2021',
     event: 'Codex UdeA',
     resources: [
       {
@@ -23,7 +25,8 @@ module.exports = [
   },
   {
     title: 'Intro a Git',
-    date: 'September 19, 2020',
+    date: '2020-09-19',
+    date1: 'September 19, 2020',
     event: 'Pioneras Developers',
     resources: [
       {
@@ -34,7 +37,8 @@ module.exports = [
   },
   {
     title: '10 cosas que me hubiera gustado saber cuando empecé a programar',
-    date: 'September 12. 2020',
+    date: '2020-09-12',
+    date1: 'September 12. 2020',
     event: 'Women Tech Makers',
     resources: [
       {
@@ -45,7 +49,8 @@ module.exports = [
   },
   {
     title: 'Building a bridge: Experience the industry as a student',
-    date: 'August 20, 2020',
+    date: '2020-08-20',
+    date1: 'August 20, 2020',
     event: 'MLH Hackon',
     resources: [
       {
@@ -56,7 +61,8 @@ module.exports = [
   },
   {
     title: 'Creciendo pero juntas',
-    date: 'July 24, 2020',
+    date: '2020-07-24',
+    date1: 'July 24, 2020',
     event: 'WIE USCO',
     resources: [
       {
@@ -67,7 +73,8 @@ module.exports = [
   },
   {
     title: 'Building a REST API using Express.js',
-    date: 'June 29, 2020',
+    date: '2020-06-29',
+    date1: 'June 29, 2020',
     event: 'Women Who Code Medellin',
     resources: [
       {
@@ -78,7 +85,8 @@ module.exports = [
   },
   {
     title: 'Construyendo web apps con Gatsby.js',
-    date: 'June 20, 2020',
+    date: '2020-06-20',
+    date1: 'June 20, 2020',
     event: 'Pioneras Developers (Online)',
     resources: [
       {
@@ -93,7 +101,8 @@ module.exports = [
   },
   {
     title: 'Workflows personalizados utilizando GitHub Actions',
-    date: 'March 25, 2020',
+    date: '2020-03-25',
+    date1: 'March 25, 2020',
     event: 'Medellin.js (Online)',
     resources: [
       {
@@ -108,7 +117,8 @@ module.exports = [
   },
   {
     title: 'Git from Zero to Hero',
-    date: 'March 7, 2020',
+    date: '2020-03-07',
+    date1: 'March 7, 2020',
     event: 'Codex UdeA (Medellin)',
     resources: [
       {
@@ -119,7 +129,8 @@ module.exports = [
   },
   {
     title: 'The good, the bad, and the code review',
-    date: 'November 15, 2019',
+    date: '2019-11-15',
+    date1: 'November 15, 2019',
     event: 'GitHub Education summit (San Francisco)',
     resources: [
       {
@@ -130,7 +141,8 @@ module.exports = [
   },
   {
     title: 'CNN in the browser using TensorFlow.js',
-    date: 'June 19, 2019',
+    date: '2019-06-19',
+    date1: 'June 19, 2019',
     event: 'Campus Party CO (Bogota)',
     resources: [
       {
@@ -141,7 +153,8 @@ module.exports = [
   },
   {
     title: 'A JavaScript Nightmare (coercion)',
-    date: 'May 22, 2019',
+    date: '2019-05-22',
+    date1: 'May 22, 2019',
     event: 'GitHub Campus Experts Meetup (Berlin)',
     resources: [
       {
@@ -152,7 +165,8 @@ module.exports = [
   },
   {
     title: 'One day, one app, prototyping projects using Google Vision API',
-    date: 'April 6, 2019',
+    date: '2019-04-06',
+    date1: 'April 6, 2019',
     event: 'Women In Data Science Conf (Medellin)',
     resources: [
       {
@@ -163,7 +177,8 @@ module.exports = [
   },
   {
     title: 'Big Data from Scratch',
-    date: 'July 31, 2018',
+    date: '2018-07-31',
+    date1: 'July 31, 2018',
     event: 'UdeA',
     resources: [
       {
@@ -174,7 +189,8 @@ module.exports = [
   },
   {
     title: 'What the Ho*k (react hooks)',
-    date: 'November, 2018',
+    date: '2018-11-01', // confirm day
+    date1: 'November, 2018',
     event: 'React Medellin',
     resources: [
       {
@@ -185,7 +201,8 @@ module.exports = [
   },
   {
     title: 'Tech conferences: Opportunities and scholarships',
-    date: 'October, 2018',
+    date: '2018-10-01', // confirm day
+    date1: 'October, 2018',
     event: 'Node.js Medellin',
     resources: [
       {
@@ -196,6 +213,7 @@ module.exports = [
   },
   {
     title: 'CSS Houdini',
+    event: 'Bogota JS',
     resources: [
       {
         name: 'Slides [EN]',
@@ -205,6 +223,7 @@ module.exports = [
   },
   {
     title: 'Building a better country trough tech',
+    event: 'React Conf',
     resources: [
       {
         name: 'Slides [EN]',
@@ -214,6 +233,7 @@ module.exports = [
   },
   {
     title: "SASS: Let's make CSS great againg",
+    event: 'Pioneras Developers',
     resources: [
       {
         name: 'Slides [ES]',
@@ -223,6 +243,7 @@ module.exports = [
   },
   {
     title: 'NgRx',
+    event: 'Angular Medellin',
     resources: [
       {
         name: 'Slides [EN]',
@@ -232,6 +253,7 @@ module.exports = [
   },
   {
     title: 'Como preparar una pizza con SMACSS',
+    event: 'Medellin JS',
     resources: [
       {
         name: 'Slides [ES]',
@@ -241,6 +263,7 @@ module.exports = [
   },
   {
     title: 'Introducción a Ionic',
+    event: 'Pioneras Developers',
     resources: [
       {
         name: 'Slides [ES]',

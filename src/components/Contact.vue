@@ -1,6 +1,6 @@
 <template>
   <section class="contact" id="contact">
-    <h2 class="contact__title wow fadeIn">Contact</h2>
+    <h2 class="contact__title wow fadeIn">{{ $t('common.contact') }}</h2>
     <ul class="contact__list">
       <li
         v-for="item in social"

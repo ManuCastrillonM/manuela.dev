@@ -1,21 +1,27 @@
 <template>
   <section class="talks" id="talks">
-    <h2 class="talks__title wow fadeIn">Talks</h2>
+    <h2 class="talks__title wow fadeIn">{{ $t('common.talks') }}</h2>
     <ul class="talks__list">
-      <li v-for="talk in filteredBlogs"
+      <li
+        v-for="talk in filteredBlogs"
         :key="talk.title"
-        class="talks__item wow fadeIn">
+        class="talks__item wow fadeIn"
+      >
         <template v-if="talk.date">
-        <span class="talks__date">{{ talk.date }} | {{ talk.event }}</span>
+          <span class="talks__date"
+            >{{ localizedDate(talk.date) }} | {{ talk.event }}</span
+          >
         </template>
         <h3>{{ talk.title }}</h3>
         <div>
-          <a v-for="resource in talk.resources"
+          <a
+            v-for="resource in talk.resources"
             :key="resource.name"
             :href="resource.url"
             target="blank"
             class="talks__resource"
-          >{{ resource.name }}</a>
+            >{{ resource.name }}</a
+          >
         </div>
       </li>
     </ul>
@@ -44,6 +50,18 @@ export default {
         return this.talks.slice(0, 4)
       }
     }
+  },
+  methods: {
+    localizedDate (talkDate) {
+      const dateElement = new Date(`${talkDate}T03:24:00`)
+      const locale = this.$i18n.locale
+
+      return dateElement.toLocaleDateString(locale, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })
+    }
   }
 }
 </script>
@@ -68,13 +86,13 @@ export default {
 
     @include from('lg') {
       padding: 50px 20px;
-      transition: all .3s ease-in;
+      transition: all 0.3s ease-in;
 
       &:hover {
         border-color: transparent;
         color: $white;
 
-        +.talks__item {
+        + .talks__item {
           border-color: transparent;
         }
 
@@ -108,7 +126,7 @@ export default {
       left: 0;
       opacity: 0;
       position: absolute;
-      transition: all .3s ease-in;
+      transition: all 0.3s ease-in;
       top: 0;
       width: 100%;
       z-index: -1;

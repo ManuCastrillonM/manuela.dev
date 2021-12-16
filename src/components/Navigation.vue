@@ -9,34 +9,43 @@
           <a class="nav__item-cta" href="#hero">Manu Castrillon</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#about"
-            >About</a
-          >
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#about">{{
+            $t('common.about')
+          }}</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#blog"
-            >Blog</a
-          >
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#blog">{{
+            $t('common.blog')
+          }}</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#vlog"
-            >Vlog</a
-          >
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#vlog">{{
+            $t('common.vlog')
+          }}</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#portfolio"
-            >Portfolio</a
-          >
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#portfolio">{{
+            $t('common.portfolio')
+          }}</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#talks"
-            >Talks</a
-          >
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#talks">{{
+            $t('common.talks')
+          }}</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#contact"
-            >Contact</a
-          >
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#contact">{{
+            $t('common.contact')
+          }}</a>
+        </li>
+        <li class="nav__item">
+          <button class="nav__locale-cta" v-on:click="changeLocale('en')">
+            en
+          </button>
+          /
+          <button class="nav__locale-cta" v-on:click="changeLocale('es')">
+            es
+          </button>
         </li>
       </ul>
     </nav>
@@ -61,6 +70,9 @@ export default {
       } else {
         document.documentElement.style.overflow = 'auto'
       }
+    },
+    changeLocale (locale) {
+      this.$i18n.locale = locale
     }
   }
 }
@@ -119,6 +131,15 @@ export default {
 
   &__item-cta {
     color: $black;
+  }
+
+  &__locale-cta {
+    background: none;
+    border: none;
+
+    &:hover {
+      color: $mandy;
+    }
   }
 
   &__menu {

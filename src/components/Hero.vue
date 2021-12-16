@@ -2,7 +2,7 @@
   <div class="hero" id="hero">
     <div class="hero__content">
       <div class="hero__text">
-        <p class="wow zoomIn">Hello I'm</p>
+        <p class="wow zoomIn">{{ $t('common.heroMessage') }}</p>
         <h1 class="hero__title wow fadeIn">
           <span class="wow flipInY" data-wow-delay="0.15s">M</span>
           <span class="wow flipInY" data-wow-delay="0.20s">a</span>

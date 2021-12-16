@@ -1,16 +1,22 @@
 <template>
   <section class="vlog" id="vlog">
-    <h2 class="vlog__title wow fadeIn">Vlog</h2>
+    <h2 class="vlog__title wow fadeIn">{{ $t('common.vlog') }}</h2>
     <div class="vlog__video-container wow fadeIn">
       <div class="vlog__video">
-        <iframe class="vlog__video-frame"
-        src="https://www.youtube.com/embed/TuBEj31oEEw?controls=0"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+        <iframe
+          class="vlog__video-frame"
+          src="https://www.youtube.com/embed/TuBEj31oEEw?controls=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
-    <a class="vlog__see-more" href="https://www.youtube.com/channel/UC4LjWxfLOQlx2ciIu0KFtWQ">See more</a>
+    <a
+      class="vlog__see-more"
+      href="https://www.youtube.com/channel/UC4LjWxfLOQlx2ciIu0KFtWQ"
+      >{{ $t('common.showMore') }}</a
+    >
   </section>
 </template>
 

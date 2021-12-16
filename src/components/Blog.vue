@@ -1,22 +1,25 @@
 <template>
   <section class="blog" id="blog">
-    <h2 class="blog__title wow fadeIn">Blog</h2>
+    <h2 class="blog__title wow fadeIn">{{ $t('common.blog') }}</h2>
     <ul class="blog__list">
-      <li v-for="article in articlesFormatted"
+      <li
+        v-for="article in articlesFormatted"
         :key="article.title"
-        class="blog__item wow fadeIn">
+        class="blog__item wow fadeIn"
+      >
         <span class="blog__date">{{ article.date }}</span>
         <h3 class="blog__name">
           <a :href="article.url" target="blank">{{ article.title }}</a>
         </h3>
       </li>
     </ul>
-    <a class="blog__read-more" href="https://dev.to/manucastrillonm">Read more</a>
+    <a class="blog__read-more" href="https://dev.to/manucastrillonm">{{
+      $t('common.readMore')
+    }}</a>
   </section>
 </template>
 
 <script>
-
 export default {
   data () {
     return {
@@ -34,12 +37,18 @@ export default {
   },
   computed: {
     articlesFormatted () {
-      return this.articles.slice(0, 3).map(item => {
+      return this.articles.slice(0, 3).map((item) => {
         const date = new Date(item.created_at)
+        const locale = this.$i18n.locale
+        const localizedDate = date.toLocaleDateString(locale, {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric'
+        })
 
         return {
           title: item.title,
-          date: date.toDateString(),
+          date: localizedDate,
           url: item.url
         }
       })
@@ -68,13 +77,13 @@ export default {
 
     @include from('lg') {
       padding: 50px 20px;
-      transition: all .3s ease-in;
+      transition: all 0.3s ease-in;
 
       &:hover {
         border-color: transparent;
         color: $white;
 
-        +.blog__item {
+        + .blog__item {
           border-color: transparent;
         }
 
@@ -108,7 +117,7 @@ export default {
       left: 0;
       opacity: 0;
       position: absolute;
-      transition: all .3s ease-in;
+      transition: all 0.3s ease-in;
       top: 0;
       width: 100%;
       z-index: -1;
