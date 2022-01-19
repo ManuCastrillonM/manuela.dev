@@ -9,6 +9,15 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/bio',
+    name: 'Bio',
+    beforeEnter (to, from, next) {
+      window.location.replace(
+        'https://docs.google.com/document/d/1c_8bzeil0hiYHrFyFNphI_B8ICm07XDAhyOxYiIjf0Y/edit?usp=sharing'
+      )
+    }
   }
 ]
 
