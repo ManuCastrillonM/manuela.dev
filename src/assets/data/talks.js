@@ -2,6 +2,7 @@ module.exports = [
   {
     title: 'GitHub Actions en acción',
     date: '2021-01-26',
+    date1: 'January 26, 2022',
     event: 'Git y GitHub en español',
     resources: [
       {
