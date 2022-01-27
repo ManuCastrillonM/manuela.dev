@@ -6,7 +6,7 @@ module.exports = [
     event: 'Git y GitHub en español',
     resources: [
       {
-        name: 'slides',
+        name: 'Slides [ES]',
         url: 'https://docs.google.com/presentation/d/1vuRc_RJMkTDQj-8fK7CH9h3HFVK2CimEw0Ak3soIBeU/edit?usp=sharing'
       }
     ]
