@@ -1,5 +1,16 @@
 module.exports = [
   {
+    title: 'GitHub Actions en acción',
+    date: '2021-01-26',
+    event: 'Git y GitHub en español',
+    resources: [
+      {
+        name: 'slides',
+        url: 'https://docs.google.com/presentation/d/1vuRc_RJMkTDQj-8fK7CH9h3HFVK2CimEw0Ak3soIBeU/edit?usp=sharing'
+      }
+    ]
+  },
+  {
     title: 'Estrategias para construir tu carrera en tecnología',
     date: '2021-12-08',
     date1: 'December 8, 2021',
