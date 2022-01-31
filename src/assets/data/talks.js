@@ -8,6 +8,10 @@ module.exports = [
       {
         name: 'Slides [ES]',
         url: 'https://docs.google.com/presentation/d/1vuRc_RJMkTDQj-8fK7CH9h3HFVK2CimEw0Ak3soIBeU/edit?usp=sharing'
+      },
+      {
+        name: 'Video [ES]',
+        url: 'https://www.youtube.com/watch?v=yy9YxHONdrk'
       }
     ]
   },
