@@ -1,6 +1,7 @@
 <template>
   <section class="contact" id="contact">
     <h2 class="contact__title wow fadeIn">{{ $t('common.contact') }}</h2>
+
     <ul class="contact__list">
       <li
         v-for="item in social"
@@ -10,6 +11,17 @@
         <a :href="item.url" target="_blank" rel="noopener noreferrer">
           <i :class="cssSocialClass(item.name)"></i
         ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.buymeacoffee.com/manucastrillon"
+          class="contact__coffee"
+          target="_blank"
+          ><img
+            class="contact__coffee-img"
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png"
+            alt="Buy Me A Coffee"
+        /></a>
       </li>
     </ul>
   </section>
@@ -60,6 +72,13 @@ export default {
 @import '../scss/typography';
 
 .contact {
+  &__coffee {
+    &-img {
+      height: 28px;
+      width: 101px;
+    }
+  }
+
   &__icon {
     color: $mandy;
     font-size: 28px;
@@ -76,6 +95,12 @@ export default {
     &:not(:last-child) {
       margin-right: 10px;
     }
+  }
+
+  &__list {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
   }
 
   &__title {
