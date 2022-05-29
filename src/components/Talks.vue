@@ -7,11 +7,10 @@
         :key="talk.title"
         class="talks__item wow fadeIn"
       >
-        <template v-if="talk.date">
-          <span class="talks__date"
-            >{{ localizedDate(talk.date) }} | {{ talk.event }}</span
-          >
-        </template>
+        <span class="talks__date"
+          >{{ talk.date ? localizedDate(talk.date) : ''
+          }}{{ talk.date && talk.event ? '  |  ' : '' }} {{ talk.event }}</span
+        >
         <h3>{{ talk.title }}</h3>
         <div>
           <a
