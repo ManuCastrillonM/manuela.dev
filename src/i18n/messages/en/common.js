@@ -11,6 +11,7 @@ export default {
   // ctas
   readMore: 'Read more',
   showMore: 'See more',
+  showLess: 'Show less',
   // footer
   footerMessage: 'Made with love and coffee by'
 }

@@ -26,8 +26,8 @@
       </li>
     </ul>
     <button class="talks__show-more" @click="showMore = !showMore">
-      <span v-if="!showMore">Show more</span>
-      <span v-else>Show less</span>
+      <span v-if="!showMore">{{ $t('common.showMore') }}</span>
+      <span v-else>{{ $t('common.showLess') }}</span>
     </button>
   </section>
 </template>
