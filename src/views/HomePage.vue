@@ -19,18 +19,17 @@
 </template>
 
 <script>
-import About from '@/components/About'
-import Blog from '@/components/Blog'
-import Contact from '@/components/Contact'
-import Bottom from '@/components/Footer'
-import Hero from '@/components/Hero'
-import Navigation from '@/components/Navigation'
-import Projects from '@/components/Projects'
-import Talks from '@/components/Talks'
-import Vlog from '@/components/Vlog'
+import About from '@/components/HomeAbout'
+import Blog from '@/components/HomeBlog'
+import Contact from '@/components/HomeContact'
+import Bottom from '@/components/HomeFooter'
+import Hero from '@/components/HomeHero'
+import Navigation from '@/components/HomeNavigation'
+import Projects from '@/components/HomeProjects'
+import Talks from '@/components/HomeTalks'
+import Vlog from '@/components/HomeVlog'
 
 export default {
-  name: 'Home',
   components: {
     About,
     Blog,
