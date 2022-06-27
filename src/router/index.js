@@ -34,6 +34,7 @@ const router = new VueRouter({
   publicPath: process.env.NODE_ENV === 'production' ? '/manuela.dev/' : '/'
 })
 
+// eslint-disable-next-line no-console
 console.log('env: ', process.env.NODE_ENV)
 
 export default router
