@@ -29,12 +29,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
-  routes,
-  publicPath: process.env.NODE_ENV === 'production' ? '/manuela.dev/' : '/'
+  routes
 })
-
-// eslint-disable-next-line no-console
-console.log('env: ', process.env.NODE_ENV)
 
 export default router
