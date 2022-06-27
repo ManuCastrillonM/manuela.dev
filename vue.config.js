@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
-  publicPath: process.env.NODE_ENV === 'production' ? '/manuela.dev/' : '/'
+  publicPath: process.env.BASE_URL
 })
