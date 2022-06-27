@@ -30,7 +30,10 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  publicPath: process.env.NODE_ENV === 'production' ? '/manuela.dev/' : '/'
 })
+
+console.log('env: ', process.env.NODE_ENV)
 
 export default router
