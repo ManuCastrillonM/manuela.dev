@@ -1,22 +1,22 @@
 <template>
-  <section class="portfolio" id="projects">
-    <h2 class="portfolio__title wow fadeIn">{{ $t('common.portfolio') }}</h2>
-    <div class="portfolio__list">
-      <div v-for="item in portfolio" :key="item.name" class="portfolio__item">
+  <section class="projects" id="projects">
+    <h2 class="projects__title wow fadeIn">{{ $t('common.projects') }}</h2>
+    <div class="projects__list">
+      <div v-for="item in projects" :key="item.name" class="projects__item">
         <div
           :style="{ backgroundImage: 'url(' + getImage(item.image) + ')' }"
-          class="portfolio__image"
+          class="projects__image"
         />
-        <p class="portfolio__name">
+        <p class="projects__name">
           {{ item.name }}
         </p>
-        <div class="portfolio__details">
-          <span class="portfolio__description">{{ item.description }}</span>
+        <div class="projects__details">
+          <span class="projects__description">{{ item.description }}</span>
           <div>
-            <a :href="item.url" target="blank" class="portfolio__url">
+            <a :href="item.url" target="blank" class="projects__url">
               <i class="fas fa-globe"></i>
             </a>
-            <a :href="item.repoUrl" target="blank" class="portfolio__url">
+            <a :href="item.repoUrl" target="blank" class="projects__url">
               <i class="fab fa-github"></i>
             </a>
           </div>
@@ -27,12 +27,12 @@
 </template>
 
 <script>
-import portfolio from '@/assets/data/portfolio.js'
+import projects from '@/assets/data/projects.js'
 
 export default {
   data () {
     return {
-      portfolio
+      projects
     }
   },
   methods: {
@@ -49,7 +49,7 @@ export default {
 @import '../scss/mixins';
 @import '../scss/typography';
 
-.portfolio {
+.projects {
   &__image {
     background-position: center;
     background-size: cover;
@@ -72,7 +72,7 @@ export default {
     }
 
     &:hover {
-      .portfolio__details {
+      .projects__details {
         height: 100%;
         padding: 10px;
       }
