@@ -5,7 +5,7 @@ export default {
   about: 'About',
   blog: 'Blog',
   vlog: 'Vlog',
-  portfolio: 'Portfolio',
+  projects: 'Projects',
   talks: 'Talks',
   contact: 'Contact',
   // ctas

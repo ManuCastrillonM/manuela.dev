@@ -6,7 +6,7 @@
         <about />
         <blog />
         <vlog />
-        <portfolio />
+        <projects />
         <talks />
         <contact />
         <bottom />
@@ -25,7 +25,7 @@ import Contact from '@/components/Contact'
 import Bottom from '@/components/Footer'
 import Hero from '@/components/Hero'
 import Navigation from '@/components/Navigation'
-import Portfolio from '@/components/Portfolio'
+import Projects from '@/components/Projects'
 import Talks from '@/components/Talks'
 import Vlog from '@/components/Vlog'
 
@@ -38,7 +38,7 @@ export default {
     Bottom,
     Hero,
     Navigation,
-    Portfolio,
+    Projects,
     Talks,
     Vlog
   }

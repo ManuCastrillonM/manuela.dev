@@ -1,5 +1,5 @@
 <template>
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio" id="projects">
     <h2 class="portfolio__title wow fadeIn">{{ $t('common.portfolio') }}</h2>
     <div class="portfolio__list">
       <div v-for="item in portfolio" :key="item.name" class="portfolio__item">

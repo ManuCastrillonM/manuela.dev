@@ -24,8 +24,8 @@
           }}</a>
         </li>
         <li class="nav__item">
-          <a class="nav__item-cta" v-on:click="toggleNav()" href="#portfolio">{{
-            $t('common.portfolio')
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#projects">{{
+            $t('common.projects')
           }}</a>
         </li>
         <li class="nav__item">

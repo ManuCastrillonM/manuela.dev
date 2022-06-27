@@ -5,7 +5,7 @@ export default {
   about: 'Sobre mi',
   blog: 'Blog',
   vlog: 'Vlog',
-  portfolio: 'Portafolio',
+  projects: 'Proyectos',
   talks: 'Charlas',
   contact: 'Contacto',
   // ctas
