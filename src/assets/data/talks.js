@@ -1,4 +1,15 @@
 module.exports = [
+   {
+    title: 'Lessons I learned as a GitHub Campus Expert',
+    date: '2022-08-27',
+    event: 'MLH Hackcon',
+    resources: [
+      {
+        name: 'Slides [EN]',
+        url: 'https://docs.google.com/presentation/d/1NuRrZcqlXguZndPTlfBmJCPeHlBWTD3rGYIQ5oc5Yuo/edit?usp=sharing'
+      }
+    ]
+  },
   {
     title: 'GitHub Actions en acción',
     date: '2022-01-26',
