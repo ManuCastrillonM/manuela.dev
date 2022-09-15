@@ -1,5 +1,10 @@
 module.exports = [
   {
+    title: 'PANEL: Latina Women polyglots in software development!',
+    date: '2022-09-15',
+    event: 'OctogatosConf 22'
+  },
+  {
     title: 'Lessons I learned as a GitHub Campus Expert',
     date: '2022-08-27',
     event: 'MLH Hackcon',
