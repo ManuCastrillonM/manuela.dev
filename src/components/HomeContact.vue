@@ -12,10 +12,10 @@
           <i :class="cssSocialClass(item.name)"></i
         ></a>
       </li>
-      <li>
+      <li class="contact__item">
         <a
           href="https://www.buymeacoffee.com/manucastrillon"
-          class="contact__coffee"
+          class="contact__coffee "
           target="_blank"
           ><img
             class="contact__coffee-img"
@@ -91,9 +91,14 @@ export default {
 
   &__item {
     display: inline-block;
+    transition: transform 0.1s ease-in;
 
     &:not(:last-child) {
       margin-right: 10px;
+    }
+
+    &:hover{
+      transform: scale(1.1);
     }
   }
 
