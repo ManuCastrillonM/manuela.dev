@@ -5,7 +5,7 @@
       <div class="vlog__video">
         <iframe
           class="vlog__video-frame"
-          src="https://www.youtube.com/embed/TuBEj31oEEw?controls=0"
+          src="https://www.youtube.com/embed/ioRAHtJMbg4"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -41,6 +41,7 @@
 
   &__video-container {
     background: $mandy;
+    border-radius: 4px;
     margin-bottom: 15px;
     padding: 20px;
 
@@ -50,6 +51,7 @@
   }
 
   &__video-frame {
+    border-radius: 4px;
     bottom: 0;
     height: 100%;
     left: 0;
