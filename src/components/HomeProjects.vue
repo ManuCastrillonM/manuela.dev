@@ -38,7 +38,7 @@ export default {
   methods: {
     getImage (element) {
       // eslint-disable-next-line global-require, import/no-dynamic-require
-      return require(`../assets/images/${element}`)
+      return require(`../assets/images/projects/${element}`)
     }
   }
 }
@@ -53,19 +53,17 @@ export default {
   &__image {
     background-position: center;
     background-size: cover;
-    height: 170px;
-    opacity: 0.95;
+    border-radius: 4px 4px 0 0;
+    width: 250px;
+    height: 0;
+    padding-top: 56.25%;
   }
 
   &__item {
-    background: $mandy;
     color: $white;
     font-weight: 700;
-    flex: none;
     position: relative;
     text-align: center;
-    height: 200px;
-    width: 250px;
 
     &:not(:first-child) {
       margin-left: 15px;
@@ -91,6 +89,7 @@ export default {
   &__details {
     align-items: center;
     background-color: $mandy;
+    border-radius: 4px;
     bottom: 0;
     color: $white;
     display: flex;
@@ -105,7 +104,10 @@ export default {
   }
 
   &__name {
-    margin: 6px 0;
+    background: $mandy;
+    border-radius: 0 0 4px 4px;
+    margin: 0;
+    padding: 4px 6px;
   }
 
   &__title {
