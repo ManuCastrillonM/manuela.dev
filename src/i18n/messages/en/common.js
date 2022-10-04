@@ -8,6 +8,7 @@ export default {
   projects: 'Projects',
   talks: 'Talks',
   contact: 'Contact',
+  courses: 'Courses',
   // ctas
   readMore: 'Read more',
   showMore: 'See more',

@@ -34,6 +34,11 @@
           }}</a>
         </li>
         <li class="nav__item">
+          <a class="nav__item-cta" v-on:click="toggleNav()" href="#courses">{{
+            $t('common.courses')
+          }}</a>
+        </li>
+        <li class="nav__item">
           <a class="nav__item-cta" v-on:click="toggleNav()" href="#contact">{{
             $t('common.contact')
           }}</a>

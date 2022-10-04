@@ -8,6 +8,7 @@
         <vlog />
         <projects />
         <talks />
+        <courses />
         <contact />
         <bottom />
       </div>
@@ -22,6 +23,7 @@
 import About from '@/components/HomeAbout'
 import Blog from '@/components/HomeBlog'
 import Contact from '@/components/HomeContact'
+import Courses from '@/components/HomeCourses'
 import Bottom from '@/components/HomeFooter'
 import Hero from '@/components/HomeHero'
 import Navigation from '@/components/HomeNavigation'
@@ -34,6 +36,7 @@ export default {
     About,
     Blog,
     Contact,
+    Courses,
     Bottom,
     Hero,
     Navigation,
