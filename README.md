@@ -8,7 +8,7 @@ In this repo you can find the codebase of my personal portfolio. Built using Vue
 # Clone repo
 git clone https://github.com/ManuCastrillonM/manuela.dev.git
 
-# Naviagate to project folder
+# Navigate to project folder
 cd manuela.dev
 
 # Install dependencies
