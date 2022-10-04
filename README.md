@@ -1,31 +1,19 @@
-# manuela.dev
+#  :watermelon: [manuela.dev](https://www.manuela.dev/)
 
-![Node.js CI](https://github.com/ManuCastrillonM/manuela.dev/workflows/Node.js%20CI/badge.svg)
+In this repo you can find the codebase of my personal portfolio. Built using Vue.js and deployed in GitHub Pages using GitHub Actions.
 
-## Project setup
+
+## :wrench: Project setup
 ```
+# Clone repo
+git clone https://github.com/ManuCastrillonM/manuela.dev.git
+
+# Naviagate to project folder
+cd manuela.dev
+
+# Install dependencies
 yarn install
-```
 
-### Compiles and hot-reloads for development
-```
+# Compiles and hot-reloads for development
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
