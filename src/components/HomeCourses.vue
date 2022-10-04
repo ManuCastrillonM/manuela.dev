@@ -9,8 +9,7 @@
                 target="_blank">
                 <div
                     class="courses__background"
-                    :style="{ backgroundImage: 'url(' + getImage(item.image) + ')' }">
-                </div>
+                    :style="{ backgroundImage: 'url(' + getImage(item.image) + ')' }"/>
 
                 <div class="courses__details">
                     <span class="courses__platform">{{ item.platform }}</span>
