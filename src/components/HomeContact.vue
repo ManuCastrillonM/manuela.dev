@@ -54,7 +54,7 @@ export default {
         },
         {
           name: 'youtube',
-          url: 'https://www.youtube.com/c/ManuCastrillon'
+          url: 'https://youtube.com/@ManuCastrillon'
         }
       ]
     }
