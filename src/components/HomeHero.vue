@@ -67,15 +67,15 @@
   }
 
   &__image-wp {
-    width: 250px;
+    width: 200px;
 
     @include from('md') {
-      width: 300px;
+      width: 250px;
     }
 
     @include from('lg') {
       transform: translateX(80px);
-      width: 500px;
+      width: 400px;
     }
   }
 
