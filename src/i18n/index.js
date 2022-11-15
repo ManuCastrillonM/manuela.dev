@@ -4,8 +4,10 @@ import messages from './messages'
 
 Vue.use(VueI18n)
 
+const selectedLocale = localStorage.getItem('locale') || 'en'
+
 const i18n = new VueI18n({
-  locale: 'en',
+  locale: selectedLocale,
   fallbackLocale: 'es',
   messages
 })

@@ -78,6 +78,7 @@ export default {
     },
     changeLocale (locale) {
       this.$i18n.locale = locale
+      localStorage.setItem('locale', locale)
     }
   }
 }
