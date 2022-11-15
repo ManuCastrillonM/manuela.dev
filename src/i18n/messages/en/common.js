@@ -11,7 +11,7 @@ export default {
   courses: 'Courses',
   // ctas
   readMore: 'Read more',
-  showMore: 'See more',
+  showMore: 'Show more',
   showLess: 'Show less',
   // footer
   footerMessage: 'Made with love and coffee by'
