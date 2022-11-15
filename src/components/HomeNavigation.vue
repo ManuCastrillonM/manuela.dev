@@ -119,7 +119,6 @@ export default {
   }
 
   &__item {
-    cursor: pointer;
     font-size: 18px;
     margin: 15px 0;
     text-align: center;
@@ -128,23 +127,19 @@ export default {
       text-align: left;
     }
 
-    &:hover {
-      .nav__item-cta {
-        color: $mandy;
-      }
-    }
   }
 
   &__item-cta {
-    color: $black;
+    color: $thunder;
   }
 
   &__locale-cta {
     background: none;
     border: none;
+    color: $thunder;
 
     &:hover {
-      color: $mandy;
+      color: $thunder;
     }
   }
 

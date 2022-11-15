@@ -159,7 +159,7 @@ export default {
   &__item {
     &-icon {
       align-items: center;
-      background: linear-gradient(to bottom right, $mandy 40%, #fdc9c9);
+      background: linear-gradient(to bottom right, $thunder 40%, #fdc9c9);
       border-radius: 0 50% 50%;
       display: flex;
       height: 50px;
@@ -184,7 +184,7 @@ export default {
 
     &-title {
       align-items: center;
-      color: $mandy;
+      color: $thunder;
       display: flex;
       font-size: 16px;
       margin-bottom: 10px;

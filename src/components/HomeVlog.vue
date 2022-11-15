@@ -40,7 +40,7 @@
   }
 
   &__video-container {
-    background: $mandy;
+    background: $thunder;
     border-radius: 4px;
     margin-bottom: 15px;
     padding: 20px;

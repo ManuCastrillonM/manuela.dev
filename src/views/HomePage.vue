@@ -57,7 +57,7 @@ export default {
   }
 
   &__container {
-    background: $pot-pourri;
+    background: $cherub;
 
     @include from('lg') {
       width: 70%;

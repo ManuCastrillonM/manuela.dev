@@ -9,19 +9,8 @@
         class="contact__item wow fadeIn"
       >
         <a :href="item.url" target="_blank" rel="noopener noreferrer">
-          <i :class="cssSocialClass(item.name)"></i
+          <i :class="cssSocialClass(item.name, item.type)"></i
         ></a>
-      </li>
-      <li class="contact__item">
-        <a
-          href="https://www.buymeacoffee.com/manucastrillon"
-          class="contact__coffee "
-          target="_blank"
-          ><img
-            class="contact__coffee-img"
-            src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png"
-            alt="Buy Me A Coffee"
-        /></a>
       </li>
     </ul>
   </section>
@@ -55,13 +44,18 @@ export default {
         {
           name: 'youtube',
           url: 'https://youtube.com/@ManuCastrillon'
+        },
+        {
+          name: 'coffee',
+          type: 'fas',
+          url: 'https://www.buymeacoffee.com/manucastrillon'
         }
       ]
     }
   },
   methods: {
-    cssSocialClass (item) {
-      return `contact__icon fab fa-${item}`
+    cssSocialClass (item, type = 'fab') {
+      return `contact__icon ${type} fa-${item}`
     }
   }
 }
@@ -80,7 +74,7 @@ export default {
   }
 
   &__icon {
-    color: $mandy;
+    color: $thunder;
     font-size: 28px;
     transition: 0.2s ease-in;
 

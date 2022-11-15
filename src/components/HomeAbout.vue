@@ -31,6 +31,7 @@
 
 .about {
   &__container {
+    align-items: center;
     display: flex;
     flex-direction: column;
 
@@ -51,7 +52,8 @@
   }
 
   &__info {
-    background: $mandy;
+    background: $thunder;
+    border-radius: 4px;
     color: $white;
     margin: 0;
     padding: 30px 20px;

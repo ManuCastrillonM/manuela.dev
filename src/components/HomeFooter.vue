@@ -18,7 +18,7 @@
   padding: 30px 0;
 
   &__user {
-    color: $mandy;
+    color: $thunder;
     font-weight: 700;
   }
 }

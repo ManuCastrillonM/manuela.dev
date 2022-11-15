@@ -13,7 +13,7 @@
         </h3>
       </li>
     </ul>
-    <a class="blog__read-more" href="https://dev.to/manucastrillonm">{{
+    <a class="blog__read-more" target="blank" rel="noopener noreferrer" href="https://dev.to/manucastrillonm">{{
       $t('common.readMore')
     }}</a>
   </section>
@@ -64,7 +64,7 @@ export default {
 
 .blog {
   &__date {
-    color: $mandy;
+    color: $thunder;
     display: block;
     font-size: 12px;
     margin-bottom: 5px;
@@ -110,7 +110,7 @@ export default {
     }
 
     &::after {
-      background: $mandy;
+      background: $thunder;
       content: '';
       display: block;
       height: 100%;

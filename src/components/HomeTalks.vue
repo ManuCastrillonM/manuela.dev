@@ -72,7 +72,7 @@ export default {
 
 .talks {
   &__date {
-    color: $mandy;
+    color: $thunder;
     display: block;
     font-size: 12px;
     margin-bottom: 5px;
@@ -118,7 +118,8 @@ export default {
     }
 
     &::after {
-      background: $mandy;
+      background: $thunder;
+      border-radius: 4px;
       content: '';
       display: block;
       height: 100%;
@@ -133,7 +134,7 @@ export default {
   }
 
   &__resource {
-    color: $mandy;
+    color: $thunder;
     display: inline-block;
     font-size: 12px;
     padding-top: 5px;
@@ -152,7 +153,6 @@ export default {
 
     background: none;
     border: none;
-    cursor: pointer;
   }
 
   &__title {

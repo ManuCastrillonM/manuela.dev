@@ -90,7 +90,7 @@ export default {
 
   &__details {
     align-items: center;
-    background-color: $mandy;
+    background-color: $thunder;
     border-radius: 4px;
     bottom: 0;
     color: $white;
@@ -106,7 +106,7 @@ export default {
   }
 
   &__name {
-    background: $mandy;
+    background: $thunder;
     border-radius: 0 0 4px 4px;
     margin: 0;
     padding: 4px 6px;

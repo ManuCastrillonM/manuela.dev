@@ -41,18 +41,8 @@
   display: flex;
   height: 100vh;
   justify-content: flex-end;
-  max-height: 600px;
   padding-top: 60px;
   position: relative;
-
-  @include from('md') {
-    max-height: 800px;
-  }
-
-  @include from('lg') {
-    max-height: unset;
-    min-height: 740px;
-  }
 
   &__content {
     align-items: flex-end;
@@ -66,21 +56,25 @@
     }
   }
 
-  &__image-wp {
-    width: 200px;
+  &__image {
+    border-radius: 4px;
 
-    @include from('md') {
-      width: 250px;
-    }
+    &-wp {
+      width: 200px;
 
-    @include from('lg') {
-      transform: translateX(80px);
-      width: 400px;
+      @include from('md') {
+        width: 250px;
+      }
+
+      @include from('lg') {
+        transform: translateX(80px);
+        width: 400px;
+      }
     }
   }
 
   &__text {
-    color: $mandy;
+    color: $thunder;
     font-weight: 700;
     left: 0;
     position: absolute;

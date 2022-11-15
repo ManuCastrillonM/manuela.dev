@@ -55,7 +55,7 @@ export default {
     }
 
     &__details {
-        background: $mandy;
+        background: $thunder;
         border-radius: 0 0 4px 4px;
         color: $white;
         margin: 0;
