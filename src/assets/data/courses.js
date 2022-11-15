@@ -10,6 +10,6 @@ module.exports = [
     language: 'es',
     link: 'https://codigofacilito.com/cursos/github',
     image: 'github-a-fondo.jpeg',
-    platform: 'Codigo Facilito'
+    platform: 'Código Facilito'
   }
 ]
