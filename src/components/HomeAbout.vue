@@ -14,11 +14,6 @@
           ><br />
           hello@manuela.dev
         </li>
-        <li class="about__info-item">
-          <span class="about__info-title">{{ $t('about.location') }}</span
-          ><br />
-          Medellín - Colombia
-        </li>
       </ul>
     </div>
   </section>
