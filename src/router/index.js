@@ -18,10 +18,17 @@ const routes = [
   },
   {
     path: '/bio',
-    name: 'Bio',
     beforeEnter (to, from, next) {
       window.location.replace(
         'https://docs.google.com/document/d/1c_8bzeil0hiYHrFyFNphI_B8ICm07XDAhyOxYiIjf0Y/edit?usp=sharing'
+      )
+    }
+  },
+  {
+    path: '/schedule',
+    beforeEnter (to, from, next) {
+      window.location.replace(
+        'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0SDKHlBMt9O88o-w0rj89mmk8FfaspqJvJ3lnJskcAw_v4HE31o2XQg3Kw5jcb57l0M8Xpu_nk'
       )
     }
   }
