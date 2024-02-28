@@ -1,4 +1,6 @@
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -8,10 +10,11 @@ html {
 
 body {
   background: $white;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -40,7 +43,7 @@ li {
 section {
   margin: 60px 0;
 
-  @include from('lg') {
+  @include from("lg") {
     margin: 80px 0;
   }
 }

@@ -24,7 +24,7 @@
       <div class="hero__image-wp wow zoomIn">
         <img
           class="hero__image"
-          src="../assets/images/hero.jpg"
+          src="../assets/images/hero.png"
           aria-hidden="true"
         />
       </div>

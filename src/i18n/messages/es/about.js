@@ -8,6 +8,7 @@ export default {
       Etas iniciativas, me han permitido tener el honor de ser reconocida como <b>GitHub Campus Expert</b>, 
       <b>Google Developer Expert</b> y <b>Women Techmakers Ambassador</b>.<br />
       <br />
+      Actualmente trabajo en Uber en las oficinas de Amsterdam <br/>
       Además del desarrollo de software, en mi tiempo libre me gusta hacer crochet, 
       cuidar de mis plantas y jugar con mi perro.`
 }

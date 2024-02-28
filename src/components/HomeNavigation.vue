@@ -6,7 +6,7 @@
     <nav class="nav__menu wow fadeIn">
       <ul class="nav__menu-list">
         <li class="nav__name">
-          <a class="nav__item-cta" href="#hero">Manu Castrillon</a>
+          <a class="nav__item-cta" href="#hero">manuela.dev</a>
         </li>
         <li class="nav__item">
           <a class="nav__item-cta" v-on:click="toggleNav()" href="#about">{{
@@ -94,6 +94,10 @@ export default {
 
   @include from('lg') {
     position: relative;
+  }
+
+  &__item {
+    color: $thunder;
   }
 
   &--active {
