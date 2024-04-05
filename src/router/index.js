@@ -20,7 +20,7 @@ const routes = [
     path: '/bio',
     beforeEnter (to, from, next) {
       window.location.replace(
-        'https://docs.google.com/document/d/1c_8bzeil0hiYHrFyFNphI_B8ICm07XDAhyOxYiIjf0Y/edit?usp=sharing'
+        'https://docs.google.com/document/d/1bPyrV5KaguAS1-Orz0rejRSKGuOcWHVQnjuIqMoPNrU/edit?usp=sharing'
       )
     }
   },
