@@ -1,5 +1,54 @@
 module.exports = [
   {
+    title: 'Core Web Vitals Mastery 2024',
+    date: '2024-02-06',
+    event: 'DevFest Paris'
+  },
+  {
+    title: 'The End of Third-Party Cookies: A New Era for Web Privacy',
+    date: '2023-07-15',
+    event: 'GDG Medellin',
+    resources: [
+      {
+        name: 'Video [ES]',
+        url: 'https://www.youtube.com/live/Kfp4COiig8M?si=w_C3lRkmJurITjCK&t=5776'
+      }
+    ]
+  },
+  {
+    title: 'About Git, Love, and Other Demons',
+    date: '2023-06-06',
+    event: 'Kubernetes Community Day',
+    resources: [
+      {
+        name: 'Video [ES]',
+        url: 'https://youtu.be/ppwdq8VuZ90?si=lkVnnKJmdj3vzBsr'
+      }
+    ]
+  },
+  {
+    title: 'Git desde cero',
+    date: '2023-04-14',
+    event: 'Undfnd shell bootcamp',
+    resources: [
+      {
+        name: 'Video [ES]',
+        url: 'https://www.youtube.com/watch?v=U6SANPFrCnI'
+      }
+    ]
+  },
+  {
+    title: 'Undoing changes and other horror stories',
+    date: '2023-04-01',
+    event: 'IWD Medellin',
+    resources: [
+      {
+        name: 'Video [ES]',
+        url: 'https://www.youtube.com/live/a27HfFiQ9Uc?si=fEPXWmPdoJdhZG-S&t=10340'
+      }
+    ]
+  },
+  {
     title: 'PANEL: Latina Women polyglots in software development!',
     date: '2022-09-15',
     event: 'OctogatosConf 22'
