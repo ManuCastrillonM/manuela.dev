@@ -1,0 +1,4 @@
+export const themeToggle = {
+  switchToLight: "Switch to light mode",
+  switchToDark: "Switch to dark mode",
+};

@@ -1,0 +1,285 @@
+.learn.section {
+  padding-block: 2.625rem 3rem;
+}
+
+.learn-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.learn-heading {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(2.375rem, 2rem + 1.2vw, 2.75rem);
+  color: var(--learn-title);
+}
+
+.learn-heading-underline {
+  position: absolute;
+  left: 0.05em;
+  bottom: -0.3em;
+  width: 70%;
+  height: 0.35em;
+}
+
+.learn-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.learn-card {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  height: 128px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+}
+
+.learn-card--lavender {
+  background: var(--learn-card-lavender-bg);
+  border-color: var(--learn-card-lavender-border);
+}
+
+.learn-card--green {
+  background: var(--learn-card-green-bg);
+  border-color: var(--learn-card-green-border);
+}
+
+.learn-card-icon {
+  width: 30px;
+  height: 30px;
+  color: var(--text-primary);
+}
+
+.learn-card-title {
+  margin: 0 0 4px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.learn-card-desc {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.learn-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.learn-card-link .arrow {
+  display: inline-block;
+  transition: transform var(--transition-fast);
+}
+
+.learn-card-link:hover,
+.learn-card-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.learn-card-link:hover .arrow,
+.learn-card-link:focus-visible .arrow {
+  transform: translateX(3px);
+}
+
+.learn-right {
+  min-width: 0;
+}
+
+.learn-videos-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: 24px;
+}
+
+.learn-videos-heading {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.learn-videos-viewall {
+  flex-shrink: 0;
+  font-size: 0.8125rem;
+}
+
+.learn-videos-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 78%;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-inline: calc(var(--space-5) * -1);
+  padding-inline: var(--space-5);
+  padding-bottom: var(--space-2);
+}
+
+.learn-video-card {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.learn-video-thumb-wrap {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--background-secondary);
+}
+
+.learn-video-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.learn-video-card:hover .learn-video-thumb,
+.learn-video-card:focus-visible .learn-video-thumb {
+  transform: scale(1.03);
+}
+
+.learn-video-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learn-video-play svg {
+  width: 52px;
+  height: 52px;
+  padding: 16px;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  color: var(--primary-dark);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: background-color var(--transition-fast);
+}
+
+:root[data-theme="dark"] .learn-video-play svg {
+  background: color-mix(in srgb, var(--text-primary) 90%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .learn-video-play svg {
+    background: color-mix(in srgb, var(--text-primary) 90%, transparent);
+  }
+}
+
+.learn-video-card:hover .learn-video-play svg,
+.learn-video-card:focus-visible .learn-video-play svg {
+  background: var(--surface);
+}
+
+:root[data-theme="dark"] .learn-video-card:hover .learn-video-play svg,
+:root[data-theme="dark"] .learn-video-card:focus-visible .learn-video-play svg {
+  background: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root:not([data-theme="light"]) .learn-video-card:hover .learn-video-play svg,
+  :root:not([data-theme="light"]) .learn-video-card:focus-visible .learn-video-play svg {
+    background: var(--text-primary);
+  }
+}
+
+.learn-video-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .learn-videos-grid {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow-x: visible;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  .learn-video-card {
+    min-width: 0;
+  }
+}
+
+@media (min-width: 900px) {
+
+  /* Three explicit rows (heading / courses card / YouTube card) so the right
+     column can be pinned to the YouTube row without hardcoding its offset. */
+  .learn-layout {
+    grid-template-columns: 320px minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    column-gap: 44px;
+    row-gap: 14px;
+  }
+
+  .learn-left {
+    display: contents;
+  }
+
+  .learn-heading {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 14px;
+  }
+
+  .learn-cards {
+    display: contents;
+  }
+
+  .learn-card--lavender {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .learn-card--green {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .learn-right {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    align-self: start;
+  }
+
+  .learn-videos-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+}

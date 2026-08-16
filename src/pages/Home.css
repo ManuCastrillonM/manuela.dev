@@ -1,0 +1,99 @@
+.header-band {
+  position: relative;
+  isolation: isolate;
+  background: var(--background);
+  padding-bottom: var(--space-6);
+  --shape-opacity: 0.1;
+}
+
+:root[data-theme="dark"] .header-band {
+  --shape-opacity: 0.85;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .header-band {
+    --shape-opacity: 0.85;
+  }
+}
+
+.header-band .nav {
+  position: relative;
+  z-index: 1;
+}
+
+.header-band>.container {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--space-6);
+}
+
+/* Large flat burgundy shapes, cropped by the viewport — no blur, no gradient. */
+
+.header-band::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -16%;
+  width: 42vw;
+  height: 42vw;
+  max-width: 560px;
+  max-height: 560px;
+  min-width: 340px;
+  min-height: 340px;
+  border-radius: 42% 58% 55% 45% / 48% 42% 58% 52%;
+  background: var(--primary-dark);
+  opacity: var(--shape-opacity);
+  z-index: -2;
+  pointer-events: none;
+}
+
+.header-band::after {
+  content: "";
+  position: absolute;
+  top: 44%;
+  left: -14%;
+  width: 26vw;
+  height: 30vw;
+  max-width: 360px;
+  max-height: 420px;
+  min-width: 220px;
+  min-height: 260px;
+  border-radius: 48% 52% 46% 54% / 55% 45% 55% 45%;
+  background: var(--primary-dark);
+  opacity: var(--shape-opacity);
+  z-index: -2;
+  pointer-events: none;
+}
+
+.header-band-shape {
+  position: absolute;
+  z-index: -2;
+  pointer-events: none;
+  opacity: var(--shape-opacity);
+}
+
+.header-band-shape-right-1 {
+  top: 2%;
+  right: 0%;
+  width: 30vw;
+  height: 30vw;
+  max-width: 420px;
+  max-height: 420px;
+  min-width: 260px;
+  min-height: 260px;
+  border-radius: 55% 45% 48% 52% / 45% 55% 45% 55%;
+  background: var(--primary-dark);
+}
+
+.header-band-shape-right-2 {
+  top: 32%;
+  right: 10%;
+  width: 20vw;
+  height: 20vw;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 180px;
+  min-height: 180px;
+  border-radius: 50%;
+  background: var(--primary-dark);
+}

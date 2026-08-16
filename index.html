@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Manuela Castrillón — Software Engineer, Speaker & Educator</title>
+    <meta
+      name="description"
+      content="Manuela Castrillón is a software engineer in Amsterdam building for the web, speaking at events, teaching, and maintaining open-source projects like Disney API."
+    />
+    <link rel="canonical" href="https://manuela.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Manuela Castrillón — Software Engineer, Speaker & Educator"
+    />
+    <meta
+      property="og:description"
+      content="Software engineer, speaker and educator building for the web and sharing what she learns along the way."
+    />
+    <meta property="og:url" content="https://manuela.dev/" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Manuela Castrillón — Software Engineer, Speaker & Educator"
+    />
+    <meta
+      name="twitter:description"
+      content="Software engineer, speaker and educator building for the web and sharing what she learns along the way."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          if (stored === "light" || stored === "dark") {
+            document.documentElement.setAttribute("data-theme", stored);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

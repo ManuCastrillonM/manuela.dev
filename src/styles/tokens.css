@@ -1,0 +1,125 @@
+/* Design tokens — semantic CSS variables so light/dark mode can switch cleanly. */
+
+:root {
+  --background: #fff9f2;
+  --background-secondary: #f6efe6;
+  --surface: #fffcf8;
+
+  --primary: #800020;
+  --primary-dark: #650015;
+  --on-primary: #fff9f2;
+
+  --text-primary: #241318;
+  --text-secondary: #6e5960;
+
+  --accent-lavender: #d8ccff;
+  --accent-yellow: #ffe8a6;
+  --accent-green: #d2efcb;
+
+  --border: #ded2c8;
+
+  /* Fixed dark ink for text sitting on pastel accent swatches (lavender/yellow/green stay light in both themes). */
+  --on-accent: #241318;
+
+  /* Featured Project section */
+  --featured-title: var(--primary-dark);
+  --featured-shape: #fff2d6;
+  --featured-primary-button-bg: var(--primary);
+  --featured-primary-button-text: var(--on-primary);
+
+  /* Learn with me section */
+  --learn-title: var(--primary);
+  --learn-card-lavender-bg: color-mix(in srgb, var(--accent-lavender) 55%, var(--surface));
+  --learn-card-lavender-border: transparent;
+  --learn-card-green-bg: color-mix(in srgb, var(--accent-green) 60%, var(--surface));
+  --learn-card-green-border: transparent;
+
+  --shadow-sm: 0 1px 2px rgba(36, 19, 24, 0.06);
+  --shadow-md: 0 10px 30px rgba(36, 19, 24, 0.08);
+
+  --font-display: "Bodoni Moda", serif;
+  --font-body: "Inter", sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 999px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  --container-width: 1220px;
+  --transition-fast: 150ms ease;
+  --transition: 220ms ease;
+}
+
+/* System preference, only when the user has not made an explicit choice */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #1a0f13;
+    --background-secondary: #24191d;
+    --surface: #24191d;
+
+    --primary: #800020;
+    --primary-dark: #650015;
+    --on-primary: #f2e8d6;
+
+    --text-primary: #f2e8d6;
+    --text-secondary: #cfc2b4;
+
+    --accent-lavender: #b9a7ff;
+    --accent-yellow: #ffd98a;
+    --accent-green: #bfe8b8;
+
+    --border: #3a3032;
+
+    --featured-title: var(--text-primary);
+    --featured-shape: color-mix(in srgb, var(--primary-dark) 22%, transparent);
+    --featured-primary-button-bg: var(--accent-yellow);
+    --featured-primary-button-text: var(--on-accent);
+
+    --learn-title: var(--text-primary);
+    --learn-card-lavender-bg: color-mix(in srgb, var(--accent-lavender) 10%, transparent);
+    --learn-card-lavender-border: color-mix(in srgb, var(--accent-lavender) 18%, transparent);
+    --learn-card-green-bg: color-mix(in srgb, var(--accent-green) 8%, transparent);
+    --learn-card-green-border: color-mix(in srgb, var(--accent-green) 16%, transparent);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* Explicit user choice, persisted in localStorage and applied via data-theme on <html> */
+:root[data-theme="dark"] {
+  --background: #110e10;
+  --background-secondary: #24191d;
+  --surface: #24191d;
+
+  --primary: #800020;
+  --primary-dark: #250A14;
+  --on-primary: #f2e8d6;
+
+  --text-primary: #f2e8d6;
+  --text-secondary: #cfc2b4;
+
+  --accent-lavender: #b9a7ff;
+  --accent-yellow: #ffd98a;
+  --accent-green: #bfe8b8;
+
+  --border: #3a3032;
+
+  --featured-title: var(--text-primary);
+  --featured-shape: color-mix(in srgb, var(--primary-dark) 22%, transparent);
+  --featured-primary-button-bg: var(--accent-yellow);
+  --featured-primary-button-text: var(--on-accent);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+}

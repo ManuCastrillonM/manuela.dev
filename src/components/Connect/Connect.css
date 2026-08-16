@@ -1,0 +1,107 @@
+.connect-panel {
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-7) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.connect-heading {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(1.9rem, 1.5rem + 2vw, 2.6rem);
+  color: var(--primary);
+  max-width: 14ch;
+}
+
+.connect-heading-sparkle {
+  position: absolute;
+  top: -0.1em;
+  right: -1.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.connect-subtitle {
+  color: var(--text-secondary);
+  margin-top: var(--space-3);
+}
+
+.connect-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4) var(--space-2) var(--space-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  min-height: 44px;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  border-color: var(--primary);
+  background: var(--background-secondary);
+}
+
+.social-link-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-full);
+  background: var(--background-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+:root[data-theme="dark"] .social-link-icon {
+  color: var(--accent-lavender);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .social-link-icon {
+    color: var(--accent-lavender);
+  }
+}
+
+.social-link-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.social-link-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.connect-doodle {
+  position: absolute;
+  bottom: var(--space-5);
+  right: var(--space-6);
+  width: 42px;
+  height: 34px;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .connect-panel {
+    padding: var(--space-8);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-7);
+  }
+
+  .connect-doodle {
+    display: block;
+  }
+}

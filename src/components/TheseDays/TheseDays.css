@@ -1,0 +1,200 @@
+.thesedays.section {
+  padding-block: var(--space-6);
+}
+
+.thesedays-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px clamp(20px, 4vw, 32px) 30px;
+}
+
+.thesedays-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesedays-heading {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 1.6rem + 1.3vw, 2.5rem);
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.thesedays-heading-burst {
+  width: 17px;
+  height: 17px;
+}
+
+.thesedays-subtitle {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin: 7px 0 0;
+}
+
+/* Timeline — vertical rail by default, horizontal row from 900px up (matches the nav's desktop breakpoint). */
+
+.thesedays-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
+.thesedays-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 16px;
+  row-gap: 4px;
+  padding-bottom: 24px;
+}
+
+.thesedays-item:last-child {
+  padding-bottom: 0;
+}
+
+.thesedays-item::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 46px;
+  bottom: 0;
+  width: 1px;
+  background: rgba(207, 194, 180, 0.28);
+}
+
+.thesedays-item:last-child::before {
+  display: none;
+}
+
+.thesedays-node {
+  display: none;
+}
+
+.thesedays-icon {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: start;
+  position: relative;
+  z-index: 1;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--on-accent);
+}
+
+.thesedays-icon--lavender {
+  background: var(--accent-lavender);
+}
+
+.thesedays-icon--yellow {
+  background: var(--accent-yellow);
+}
+
+.thesedays-icon--green {
+  background: var(--accent-green);
+}
+
+.thesedays-icon-glyph {
+  width: 19px;
+  height: 19px;
+}
+
+.thesedays-item-title {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+.thesedays-item-desc {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 900px) {
+  .thesedays-timeline {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: 28px;
+  }
+
+  .thesedays-timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 120px;
+    top: 23px;
+    height: 1px;
+    background: rgba(207, 194, 180, 0.28);
+    z-index: 0;
+  }
+
+  .thesedays-item {
+    display: block;
+    padding-bottom: 0;
+    padding-left: 40px;
+  }
+
+  .thesedays-item::before {
+    display: none;
+  }
+
+  .thesedays-item::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background: rgba(207, 194, 180, 0.18);
+  }
+
+  .thesedays-node {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 23px;
+    left: 18px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-yellow);
+    transform: translate(-3px, -3px);
+  }
+
+  .thesedays-item:first-child .thesedays-node {
+    left: 0;
+  }
+
+  .thesedays-icon {
+    display: inline-flex;
+    margin-bottom: 14px;
+  }
+
+  .thesedays-item-title {
+    margin-bottom: 6px;
+  }
+}

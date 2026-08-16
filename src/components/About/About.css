@@ -1,0 +1,123 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.about-portrait {
+  position: relative;
+  width: min(320px, 85vw);
+  aspect-ratio: 520 / 580;
+  justify-self: center;
+}
+
+.about-heading {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(2.375rem, 2rem + 1vw, 2.75rem);
+  color: var(--primary);
+  margin-bottom: var(--space-4);
+}
+
+:root[data-theme="dark"] .about-heading {
+  color: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .about-heading {
+    color: var(--text-primary);
+  }
+}
+
+.about-heading-underline {
+  position: absolute;
+  left: 0.05em;
+  bottom: -0.3em;
+  width: 1.7em;
+  height: 0.3em;
+}
+
+.about-paragraph {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 30em;
+}
+
+.about-cta {
+  margin-top: var(--space-2);
+}
+
+.about-credentials {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+
+.about-credential {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.about-credential-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--primary);
+}
+
+:root[data-theme="dark"] .about-credential-icon {
+  color: var(--accent-lavender);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .about-credential-icon {
+    color: var(--accent-lavender);
+  }
+}
+
+.about-credential-title {
+  display: block;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.about-credential-subtitle {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 760px) {
+  .about-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: var(--space-7);
+  }
+
+  .about-credentials {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 260px));
+    gap: 16px 40px;
+    margin-top: var(--space-6);
+  }
+}
+
+@media (min-width: 1080px) {
+  .about-grid {
+    grid-template-columns: 0.9fr 1.25fr 0.85fr;
+    gap: 40px;
+  }
+
+  .about-portrait {
+    width: 320px;
+  }
+
+  .about-credentials {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+}
