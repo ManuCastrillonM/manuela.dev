@@ -5,6 +5,7 @@ import { FeaturedProject } from "../components/FeaturedProject/FeaturedProject";
 import { LearnWithMe } from "../components/LearnWithMe/LearnWithMe";
 import { Talks } from "../components/Talks/Talks";
 import { About } from "../components/About/About";
+import { FunFacts } from "../components/FunFacts/FunFacts";
 import { Connect } from "../components/Connect/Connect";
 import { Footer } from "../components/Footer/Footer";
 import { ui } from "../data/ui";
@@ -38,6 +39,7 @@ export function Home() {
         <LearnWithMe />
         <Talks />
         <About />
+        <FunFacts />
         <Connect />
       </main>
       <Footer />

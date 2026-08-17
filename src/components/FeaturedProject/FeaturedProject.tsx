@@ -2,7 +2,7 @@ import { featuredProject } from "../../data/project";
 import { ui } from "../../data/ui";
 import { StarIcon, CodeIcon, UsersIcon } from "../Icons/Icons";
 import { Sparkle } from "../Doodles";
-import castleArt from "../../assets/castle.png";
+import apiNetworkArt from "../../assets/api-network-illustration.png";
 import "./FeaturedProject.css";
 
 const metricIcons = [StarIcon, CodeIcon, UsersIcon];
@@ -65,7 +65,7 @@ export function FeaturedProject() {
             </div>
           </div>
 
-          <img src={castleArt} alt="" className="featured-project-art" />
+          <img src={apiNetworkArt} alt="" className="featured-project-art" />
         </div>
       </div>
     </section>

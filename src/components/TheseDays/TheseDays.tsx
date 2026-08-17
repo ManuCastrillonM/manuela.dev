@@ -1,20 +1,20 @@
 import { thesedaysItems, thesedaysContent } from "../../data/thesedays";
 import {
   AwardIcon,
-  BuildingIcon,
+  UberIcon,
   MicIcon,
   CapIcon,
-  WandIcon,
+  DisneyIcon,
 } from "../Icons/Icons";
 import { Burst } from "../Doodles";
 import "./TheseDays.css";
 
 const iconMap = {
   award: AwardIcon,
-  building: BuildingIcon,
+  uber: UberIcon,
   mic: MicIcon,
   cap: CapIcon,
-  disney: WandIcon,
+  disney: DisneyIcon,
 };
 
 export function TheseDays() {
@@ -44,7 +44,9 @@ export function TheseDays() {
                 <span
                   className={`thesedays-icon thesedays-icon--${item.accent}`}
                 >
-                  <Icon className="thesedays-icon-glyph" />
+                  <Icon
+                    className={`thesedays-icon-glyph${item.icon === "uber" ? " thesedays-icon-glyph--wide" : ""}`}
+                  />
                 </span>
                 <p className="thesedays-item-title">{item.title}</p>
                 <p className="thesedays-item-desc">{item.description}</p>

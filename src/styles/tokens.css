@@ -27,6 +27,19 @@
   --featured-primary-button-bg: var(--primary);
   --featured-primary-button-text: var(--on-primary);
 
+  /* Connect section */
+  --connect-heading: var(--primary);
+
+  /* Fun facts section */
+  --funfacts-heading: var(--primary);
+  --fact-gaming: #b9a7ff;
+  --fact-chess: #f2c24e;
+  --fact-plants: #69b85c;
+  --fact-music: #9a3658;
+  /* Fixed across themes — decorative accents, not semantic surface/text colors. */
+  --funfacts-doodle: #b9a7ff;
+  --funfacts-underline: #ffd98a;
+
   /* Learn with me section */
   --learn-title: var(--primary);
   --learn-card-lavender-bg: color-mix(in srgb, var(--accent-lavender) 55%, var(--surface));
@@ -38,6 +51,7 @@
   --shadow-md: 0 10px 30px rgba(36, 19, 24, 0.08);
 
   --font-display: "Bodoni Moda", serif;
+  --font-editorial: "DM Serif Display", serif;
   --font-body: "Inter", sans-serif;
 
   --radius-sm: 8px;
@@ -85,6 +99,14 @@
     --featured-primary-button-bg: var(--accent-yellow);
     --featured-primary-button-text: var(--on-accent);
 
+    --connect-heading: var(--text-primary);
+
+    --funfacts-heading: var(--text-primary);
+    --fact-gaming: #b9a7ff;
+    --fact-chess: #ffd98a;
+    --fact-plants: #bfe8b8;
+    --fact-music: #d889a6;
+
     --learn-title: var(--text-primary);
     --learn-card-lavender-bg: color-mix(in srgb, var(--accent-lavender) 10%, transparent);
     --learn-card-lavender-border: color-mix(in srgb, var(--accent-lavender) 18%, transparent);
@@ -119,6 +141,14 @@
   --featured-shape: color-mix(in srgb, var(--primary-dark) 22%, transparent);
   --featured-primary-button-bg: var(--accent-yellow);
   --featured-primary-button-text: var(--on-accent);
+
+  --connect-heading: var(--text-primary);
+
+  --funfacts-heading: var(--text-primary);
+  --fact-gaming: #b9a7ff;
+  --fact-chess: #ffd98a;
+  --fact-plants: #bfe8b8;
+  --fact-music: #d889a6;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);

@@ -3,7 +3,7 @@ export const thesedaysContent = {
   subtitle: "A few things I'm focused on right now.",
 };
 
-export type ThesedaysIcon = "award" | "building" | "mic" | "cap" | "disney";
+export type ThesedaysIcon = "award" | "uber" | "mic" | "cap" | "disney";
 
 export interface ThesedaysItem {
   icon: ThesedaysIcon;
@@ -20,7 +20,7 @@ export const thesedaysItems: ThesedaysItem[] = [
     description: "Honored to be recognized.",
   },
   {
-    icon: "building",
+    icon: "uber",
     accent: "yellow",
     title: "Building at Uber in Amsterdam",
     description: "Building web experiences.",

@@ -1,0 +1,185 @@
+.funfacts {
+  padding-block: 36px 44px;
+}
+
+.funfacts-head {
+  text-align: center;
+}
+
+.funfacts-heading {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 1.45rem + 1.6vw, 2rem);
+  line-height: 1;
+  letter-spacing: -0.025em;
+  color: var(--funfacts-heading);
+  margin: 0 0 36px;
+}
+
+.funfacts-heading-doodle {
+  position: absolute;
+  top: -0.5em;
+  right: -2rem;
+  width: clamp(22px, 2.4vw, 32px);
+  height: clamp(22px, 2.4vw, 32px);
+  color: var(--funfacts-doodle);
+}
+
+.funfacts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  --funfacts-divider: color-mix(in srgb, var(--border) 70%, transparent);
+}
+
+.fun-fact {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  padding-block: 24px;
+  border-top: 1px solid var(--funfacts-divider);
+}
+
+.fun-fact:first-child {
+  border-top: none;
+  padding-top: 4px;
+}
+
+.fun-fact-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.fun-fact--gaming .fun-fact-icon {
+  color: var(--fact-gaming);
+}
+
+.fun-fact--chess .fun-fact-icon {
+  color: var(--fact-chess);
+}
+
+.fun-fact--plants .fun-fact-icon {
+  color: var(--fact-plants);
+}
+
+.fun-fact--music .fun-fact-icon {
+  color: var(--fact-music);
+}
+
+.fun-fact-title {
+  margin: 0 0 6px;
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.fun-fact-desc {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.fun-fact-highlight {
+  font-weight: 600;
+}
+
+.fun-fact--gaming .fun-fact-highlight {
+  color: var(--fact-gaming);
+}
+
+.fun-fact--chess .fun-fact-highlight {
+  color: var(--fact-chess);
+}
+
+.fun-fact--plants .fun-fact-highlight {
+  color: var(--fact-plants);
+}
+
+.fun-fact--music .fun-fact-highlight {
+  color: var(--fact-music);
+}
+
+.funfacts-closing {
+  margin: 44px 0 0;
+  text-align: center;
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.funfacts-closing-expressive {
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+  margin-left: 0.3em;
+}
+
+.funfacts-closing-underline {
+  position: absolute;
+  left: 0;
+  bottom: -0.32em;
+  width: 100%;
+  height: 0.28em;
+  color: var(--funfacts-underline);
+}
+
+@media (min-width: 760px) {
+  .funfacts-heading {
+    font-size: clamp(2rem, 1.6rem + 1.4vw, 2.5rem);
+    margin-bottom: 48px;
+  }
+
+  .funfacts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fun-fact {
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 24px;
+    padding: 34px 32px;
+    border-top: none;
+  }
+
+  .fun-fact:first-child {
+    padding-top: 34px;
+  }
+
+  .fun-fact:nth-child(1) {
+    border-right: 1px solid var(--funfacts-divider);
+    border-bottom: 1px solid var(--funfacts-divider);
+  }
+
+  .fun-fact:nth-child(2) {
+    border-bottom: 1px solid var(--funfacts-divider);
+  }
+
+  .fun-fact:nth-child(3) {
+    border-right: 1px solid var(--funfacts-divider);
+  }
+
+  .fun-fact-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .fun-fact-title {
+    font-size: 1.625rem;
+  }
+
+  .fun-fact-desc {
+    font-size: 1.0625rem;
+  }
+
+  .funfacts-closing {
+    margin-top: 52px;
+    font-size: 1.875rem;
+  }
+}
